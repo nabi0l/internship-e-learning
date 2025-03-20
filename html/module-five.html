@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnSphere</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../Assests/fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+
+<body class="bg-accentColor text-gray-600">
+    <div class="containers mt-20">
+        <div id="navbar"></div>
+        <div>
+            <div class="highlights flex flex-col-2 gap-6">
+                <section class="w-full mb-5">
+                <div class="sidebar bg-button text-heroText m-5 p-5 w-[450px] h-[auto] ">
+                    <h2 class="text-2xl font-semibold m-2 ">Master Full-stack Web Development</h2>
+                    <div class="modules space-y-3 bg-accentColor">
+                        <div class="module p-3 shadow">
+                            <div class="flex justify-between items-center cursor-pointer"  data-url="module-one.html">
+                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 1: Introduction to Web Development</h3>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                            <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor"> <!-- Added 'hidden' class -->
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                                    <a href="#intro-web" onclick="scrollToSection(event, 'intro-web')">What is Web Development?</a>
+                                </li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="#intro-mean" onclick="scrollToSection(event, 'intro-mean')">How the Web Works</a>
+                                </li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="#intro-front-back" onclick="scrollToSection(event, 'intro-front-back')">Front-end vs. Back-end</a>
+                                </li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="#intro-tools" onclick="scrollToSection(event, 'intro-tools')">Tools for Web Development</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="module p-3 shadow">
+                            <div class="flex justify-between items-center cursor-pointer"  data-url="module-two.html">
+                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 2: HTML & CSS Basics </h3>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                             <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                <li class=" bg-navColor px-3 py-3 rounded-lg text-center"><a href="#intro-basics" onclick="scrollToSection(event,'intro-basics')">Introduction to HTML & CSS</a></li>
+                                <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a href="#intro-html" onclick="scrollToSection(event,'intro-html')">HTML Basics</a></li>
+                                <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a href="#intro-css" onclick="scrollToSection(event,'intro-css')">CSS Basics</a></li>
+                              </ul>   
+                        </div>
+                        <div class="module p-3 shadow">
+                            <div class="flex justify-between items-center cursor-pointer"  data-url="module-three.html">
+                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 3: Responsive Web Design  </h3>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                           <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center">
+                                        <a href="#intro" onclick="scrollToSection(event,'intro')">Responsive Design Principles</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-mobile "onclick="scrollToSection(event,'intro-mobile')">Creating Mobile-Friendly Designs</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#media" onclick="scrollToSection(event,'media')">CSS Media Queries</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#image" onclick="scrollToSection(event,'image')">Responsive Images & Video</a></li>
+                                </ul>
+                        </div>
+                        <div class="module p-3 shadow">
+                            <div class="flex justify-between items-center cursor-pointer" data-url="module-four.html">
+                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 4: JavaScript Basics  </h3>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                          <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center"><a
+                                            href="#intro-variable">Variables & Data Types</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a
+                                            href="#intro-condition">Conditionals & Loops</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a
+                                            href="#intro-func">Functions & Event Handlers</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a
+                                            href="#intro-obj">Objects & Arrays</a></li>
+                                </ul>
+                        </div>
+                        <div class="module p-3 shadow">
+                            <div class="flex justify-between items-center cursor-pointer"  data-url="module-five.html">
+                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 5: Advanced JavaScript & DOM Manipulation  </h3>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                           <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center">
+                                        <a href="#domSection" onclick="scrollToSection(event, 'domSection')">Document Object
+                                            Model (DOM)</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#eventListener" onclick="scrollToSection(event, 'eventListener')">Event
+                                            Listeners & Event Propagation</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#formValidation" onclick="scrollToSection(event, 'formValidation')">Form
+                                            Validation</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#ajaxSection" onclick="scrollToSection(event, 'ajaxSection')">AJAX & API
+                                            Calls</a></li>
+                                </ul>
+                        </div>
+                        <div class="module p-3 shadow">
+                            <div class="flex justify-between items-center cursor-pointer" data-url="./module-six.html">
+                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 6: Introduction to Version Control with Git</h3>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                             <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                                        <a href="#intro-git" onclick="scrollToSection(event, 'intro-version')"> What is Version control</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#installgit" onclick="scrollToSection(event, 'installgit')">Installing Git</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#gitBasics" onclick="scrollToSection(event, 'gitBasics')">Git Basics</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#gitcollab" onclick="scrollToSection(event, 'gitcollab')">Git Collaboration & Workflows</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#gitmerge" onclick="scrollToSection(event, 'gitmerge')">Git Branching & Merging</a>
+                                    </li>
+                                </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+                <section class="mr-20 pr-14  ">
+                    <div class="description mt-5 p-2">
+                        <h2 class="text-2xl text-center mb-2 font-bold p-5" id="intro-basics ">5. Advanced JavaScript &
+                            DOM Manipulation</h2>
+                        <p class="text-lg leading-relaxed ">JavaScript, along with HTML and CSS, is the foundation of
+                            web development.
+                            In this module, you'll learn about advanced JavaScript topics such as DOM manipulation,
+                            event listeners, and form validation.
+                            By the end of this course, you'll have a solid foundation for building interactive and
+                            dynamic web pages.</p>
+
+                        <div class="containers">
+                            
+                            <div class="">
+                                
+                                <h3 class="text-xl p-5 cursor-pointer" id="domSection">5.1 DOM Manipulation</h3>
+                                <div class="">
+                                    <p class="text-lg leading-relaxed mt-3">
+                                        The Document Object Model (DOM) is a programming interface for HTML and XML
+                                        documents. It represents the page structure as a tree of objects, where each
+                                        object corresponds to a part of the document like elements, attributes, or text.
+                                    </p>
+                                    <p class="text-lg leading-relaxed mt-3">
+                                        JavaScript can interact with the DOM to modify content dynamically. You can add,
+                                        remove, or change elements, styles, and attributes, making your webpage
+                                        interactive. This capability is vital for creating modern, responsive websites
+                                        that adapt to user interactions.
+                                    </p>
+                                    <p class="text-lg leading-relaxed mt-3">
+                                        Beyond content modification, the DOM also enables event handling. By listening
+                                        to user actions such as clicks, key presses, and mouse movements, you can create
+                                        dynamic, responsive experiences. For example, a button click can reveal or hide
+                                        additional content.
+                                    </p>
+                                    <p class="text-lg  mt-3">
+                                        <strong>Example:</strong> Changing an element's text using JavaScript.
+                                    </p>
+                                    <pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto">
+                                            <code class="javascript">document.getElementById("myElement").innerText = "New Content";</code>
+                                        </pre>
+                                </div>
+                            </div>
+
+                            <!-- Card Section for DOM Manipulation Concepts -->
+                            <div class="flex flex-col-3 gap-6 mt-8">
+                                <div class="flex flex-col bg-white p-6 rounded-lg shadow-md">
+                                    <h4 class="text-xl font-bold">Accessing Elements</h4>
+                                    <p class="text-lg mt-3">You can access elements in the DOM using methods like
+                                        <code>getElementById()</code>, <code>getElementsByClassName()</code>, or
+                                        <code>querySelector()</code>. These methods return references to the elements,
+                                        allowing you to manipulate them.</p>
+                                </div>
+                                <div class="flex flex-col bg-white p-6 rounded-lg shadow-md">
+                                    <h4 class="text-xl font-bold">Modifying Content</h4>
+                                    <p class="text-lg mt-3">Once you access an element, you can modify its content using
+                                        properties like <code>innerText</code> or <code>innerHTML</code>. This is useful
+                                        for updating the content dynamically without reloading the page.</p>
+                                </div>
+                                <div class="flex flex-col bg-white p-6 rounded-lg shadow-md">
+                                    <h4 class="text-xl font-bold">Event Handling</h4>
+                                    <p class="text-lg mt-3">DOM manipulation also includes handling user events. You can
+                                        use methods like <code>addEventListener()</code> to execute code when specific
+                                        events, like a button click or mouse hover, occur.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <h3 class="text-xl p-5 mt-5 cursor-pointer" id="eventListener">5.2 Event Listeners &
+                            Event Propagation</h3>
+                        <div class="p-5 rounded-lg shadow-lg mt-3">
+                            <p class="text-lg leading-relaxed">
+                                Event listeners are a powerful feature in JavaScript that allow developers to create
+                                interactive and dynamic web pages. By attaching event listeners to elements like
+                                buttons, input fields, or links, you can execute specific functions in response to user
+                                actions such as clicking, typing, hovering, or submitting a form. This capability helps
+                                improve user experience by making web pages more responsive and engaging.
+                            </p>
+                            <p class="text-lg leading-relaxed mt-3">
+                                When an event occurs, the event listener captures it and runs the designated function,
+                                known as an "event handler." The <code>addEventListener()</code> method is commonly used
+                                to attach event listeners, offering flexibility since multiple listeners can be added to
+                                the same element without overwriting each other.
+                            </p>
+                            <p class="text-lg leading-relaxed mt-3">
+                                <strong>Event Propagation:</strong> JavaScript events follow a propagation model with
+                                two main phases:
+                                <em>capturing</em> and <em>bubbling</em>. During the capturing phase, the event travels
+                                from the window's root down to the target element. In the bubbling phase, the event
+                                moves back up from the target to the window. By default, most events propagate in the
+                                bubbling phase. Developers can control this behavior using methods like
+                                <code>event.stopPropagation()</code> to stop bubbling and
+                                <code>event.preventDefault()</code> to prevent the default action of the event.
+                            </p>
+                            <p class="text-lg leading-relaxed mt-3">
+                                Event listeners can be utilized to create interactive elements like dropdowns, form
+                                validation, modal pop-ups, and more. Understanding event listeners and propagation is
+                                essential for building advanced, user-friendly web applications.
+                            </p>
+                            <p class="text-lg leading-relaxed mt-3">
+                                <strong>Example:</strong> Adding a click event listener to a button that displays an
+                                alert message.
+                            </p>
+                            <pre><code class="javascript">
+                                document.getElementById("myButton").addEventListener("click", function() {
+                                    alert("Button clicked!");
+                                });
+                                    </code></pre>
+                        </div>
+
+                        <h3 class="text-xl mt-5 p-5 cursor-pointer" id="formValidation">5.3 Form Validation</h3>
+                        <div class="p-5  mt-3">
+                            <p class="text-lg leading-relaxed">
+                                Form validation is a crucial aspect of web development, ensuring that the data users
+                                input is accurate, complete, and secure before submitting it to the server. Without
+                                proper validation, incorrect data may lead to issues like errors during data processing,
+                                failed submissions, or even potential security risks like SQL injection attacks.
+                            </p>
+                            <p class="text-lg leading-relaxed mt-3">
+                                There are two primary types of form validation: <strong>client-side validation</strong>
+                                and <strong>server-side validation</strong>. Client-side validation, handled through
+                                JavaScript, provides immediate feedback to users, enhancing the user experience by
+                                reducing errors in real time. Server-side validation, processed on the server after
+                                submission, is essential for ensuring data integrity and security.
+                            </p>
+                            <p class="text-lg leading-relaxed mt-3">
+                                JavaScript can validate various input types like email addresses, phone numbers,
+                                passwords, and more. For example, you can check if required fields are filled, ensure
+                                email addresses have the correct format, or validate the strength of a password. Using
+                                regular expressions (regex) is a common approach to check patterns in user input.
+                            </p>
+                            <p class="text-lg leading-relaxed mt-3">
+                                <strong>Example:</strong> Validating an email input using JavaScript.
+                            </p>
+                            <div class="bg-gray-100 p-4 rounded-lg shadow-md mt-3 overflow-x-auto">
+                                <pre><code class="javascript">
+                                                 function validateEmail(email) {
+                                                  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                                                     return regex.test(email);
+                                                }
+
+                                       const emailInput = "example@domain.com";
+                                      if (validateEmail(emailInput)) {
+                                         console.log("Valid email address");
+                                          } else {
+                                          console.log("Invalid email address");
+                                        }
+                                         </code></pre>
+                            </div>
+                            <div class="text-lg leading-relaxed mt-3">
+                                By implementing form validation, you prevent incomplete, incorrect, or potentially
+                                harmful data from being submitted. It not only improves user experience but also
+                                enhances data security by restricting malicious inputs.
+                                </p>
+                            </div>
+
+
+                            <!-- AJAX & API Calls Section -->
+                            <h3 class="text-xl  mt-5 cursor-pointer" id="ajaxSection">5.4 AJAX & API Calls</h3>
+                            <div class="p-5 rounded-lg shadow-lg mt-3">
+                                <p class="text-lg leading-relaxed">
+                                    AJAX (Asynchronous JavaScript and XML) is a technique used to send and retrieve data
+                                    from a server asynchronously, without reloading the entire web page. It enables the
+                                    creation of dynamic and interactive web applications, providing a smoother user
+                                    experience.
+                                </p>
+                                <p class="text-lg leading-relaxed mt-3">
+                                    Although the acronym includes XML, modern applications commonly use JSON (JavaScript
+                                    Object Notation) for data exchange due to its simplicity and compatibility with
+                                    JavaScript. AJAX operations can be achieved using the <code>XMLHttpRequest</code>
+                                    object, <code>fetch()</code> API, or libraries like Axios.
+                                </p>
+                                <p class="text-lg leading-relaxed mt-3">
+                                    AJAX is particularly valuable when working with RESTful APIs, allowing you to
+                                    retrieve, update, or delete data from servers in real time. For example, you can use
+                                    AJAX to fetch product information, submit form data, or update a user's profile
+                                    details without refreshing the page.
+                                </p>
+                                <p class="text-lg leading-relaxed mt-3">
+                                    <strong>Example:</strong> Sending an AJAX request using the <code>fetch()</code>
+                                    method to retrieve user data from an API.
+                                </p>
+                                <div class="bg-gray-100 p-4 rounded-lg shadow-md mt-3 overflow-x-auto">
+                                    <pre><code class="javascript">
+                                         fetch('https://api.example.com/users')
+                                         .then(response => response.json())
+                                          .then(data => console.log(data))
+                                        .catch(error => console.error('Error fetching data:', error));
+                                    </code></pre>
+                                </div>
+                                <p class="text-lg leading-relaxed mt-3">
+                                    In the example above, the <code>fetch()</code> function sends a GET request to the
+                                    specified API endpoint. If successful, the response is converted to JSON format, and
+                                    the data is logged to the console. If there is an error during the request, it is
+                                    caught and displayed.
+                                </p>
+                                <p class="text-lg leading-relaxed mt-3">
+                                    Understanding AJAX and API calls is essential for modern web development, as it
+                                    allows you to build highly responsive applications that communicate with servers
+                                    seamlessly.
+                                </p>
+                            </div>
+
+
+
+
+                        </div>
+
+
+<div class="text flex flex-col-2 justify-between p-5 mb-5 mt-5" id="navigation-links">
+    <div class="previous" id="previous-container" style="display: none;">
+        <a href="#" id="previous-link" class="text-2xl font-bold">Previous</a>
+    </div>
+    <div class="next" id="next-container" style="display: none;">
+        <a href="#" id="next-link" class="text-2xl font-bold">Next</a>
+    </div>
+</div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../js/script.js"></script>
+    <script src="../js/course-detail.js"></script>
+</body>
+
+</html>

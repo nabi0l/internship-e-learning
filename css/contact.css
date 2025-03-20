@@ -1,0 +1,14 @@
+.hero{
+    width: 100%;
+}
+.map{
+    width: 800px;
+    height: 400px;
+}
+form input{
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    border: 1px solid #5D4737;
+    
+}

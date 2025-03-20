@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnSphere</title>
+    <link rel="stylesheet" href="../Assests/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../css/contact.css">
+  </head>
+  <body class="bg-accentColor text-gray-600">
+    <div class="containers">
+      <div id="navbar"></div>
+
+      <section class="hero p-5 w-full mt-20">
+        <div class="hero text-center items-center">
+          <h class="text-3xl font-bold p-5 ">Contact Us</h2>
+          <p class="text-xl font-medium items-center p-5 ">
+            Have questions, feedback, or ideas? Fill out the form below, and our
+            team will get back to you shortly. We’re excited to hear from you!
+          </p>
+        </div>
+        
+      </section>
+      
+
+      <section class="border w-full mx-auto p-6 shadow-md rounded-lg">
+        
+        <div class="flex flex-col-2 gap-6 justify-around p-5">
+        <div class="form flex flex-col gap-6 p-5 w-1/2">
+            <form action="" class="flex flex-col gap-4">
+                <!-- Name and Email Side by Side on Larger Screens -->
+                <div class="flex flex-col-2  gap-4 mb-3">
+                    <input type="text" placeholder="Name" required class="border p-4  mr-5  rounded-md focus:ring-2 focus:ring-blue-400" />
+                    <input type="email" placeholder="Email" required class="border p-3 ml-5  rounded-md focus:ring-2 focus:ring-blue-400" />
+                </div>
+                <!-- Phone Number -->
+                <input type="tel" placeholder="Phone Number" required class="border p-3 mb-3  rounded-md focus:ring-2 focus:ring-blue-400" />
+                <!-- Message Textarea -->
+                <textarea name="message" placeholder="Your Message" rows="5" required class="border mb-3  p-3 w-full rounded-md focus:ring-2 focus:ring-blue-400"></textarea>
+                <!-- Submit Button -->
+                <button type="submit" class="bg-button text-accentColor p-5 rounded-md hover:bg-opacity-90 transition-all duration-300 ">
+                    Send Message
+                </button>
+            </form>
+        </div>
+
+        <div class="social p-5">
+          <h3 class="text-2xl mb-2 p-3">Chat with Us</h3>
+          <p class="text-lg mb-2 ">We're here to help</p>
+          <div class="links text-lg p-5">
+            <a href="#" class="text-3xl p-2 hover:text-navColor transition-all duration-300">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" class="text-3xl p-2 hover:text-navColor transition-all duration-300">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+            <a href="#" class="text-3xl p-2 hover:text-navColor transition-all duration-300">
+                <i class="fab fa-viber"></i>
+            </a>
+          </div>
+
+          <h3 class="text-2xl p-3">Call us</h3>
+          <p class="text-lg mb-2">Call our team Mon-Fri from 8AM-pM</p>
+          <p class="text-gray-800">
+            <i class="fa fa-phone text-2xl p-2"></i>
+                <a href="tel:1234567890 text-lg ">+1 123 456 7890</a>
+          </p>
+        </div>
+      </div>
+       
+    </section>
+    
+    
+    <section class="p-6 bg-gray-100 rounded-lg shadow-md justify-center ">
+      <h2 class="text-2xl font-semibold text-center items-center mb-6 text-heroText p-5 mt-5">Visit us</h2>
+  
+      <div class="flex flex-col-2 sm:flex-row gap-8 p-5 items-center">
+          <!-- Map Section -->
+          <div class="w-full sm:w-1/2 mb-5">
+              <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31524.64691850317!2d38.740928161869356!3d9.010658127185769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b857d55ac9d6d%3A0xf6cf1520703b15bf!2sGreek%20Community%20School!5e0!3m2!1sen!2set!4v1742247223469!5m2!1sen!2set"
+                  width="100%" 
+                  height="400" 
+                  style="border:0; border-radius:10px;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+          </div>
+  
+          <!-- Location Details -->
+          <div class="w-full sm:w-1/2 flex flex-col space-y-6 text-heroText ml-5 p-5">
+              <div class="location">
+                  <h3 class="text-xl font-semibold text-gray-900">LearnSphere Inc.</h3>
+                  <p class="text-lg">123 Main St, Addis Ababa, Ethiopia</p>
+              </div>
+              <div class="hours">
+                  <h3 class="text-xl font-semibold text-gray-900">Operating Hours</h3>
+                  <p class="text-lg">Monday - Friday: <span class="font-medium">9 AM - 5 PM</span></p>
+                  <p class="text-lg">Saturday: <span class="font-medium">9 AM - 10 PM</span></p>
+                  <p class="text-lg">Sunday: <span class="font-medium ">Closed</span></p>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+      
+    </div>
+    <div id="footer"></div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

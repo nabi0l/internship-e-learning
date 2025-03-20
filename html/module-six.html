@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnSphere</title>
+    <link rel="stylesheet" href="../css/output.css" />
+    <link rel="stylesheet" href="../Assests/fontawesome-free-6.7.2-web/css/all.min.css" />
+</head>
+
+<body class="bg-accentColor text-gray-600">
+    <div class="containers mt-20">
+        <div id="navbar"></div>
+        <div>
+            <di class="highlights flex flex-col-2 gap-6">
+                <section class="w-full mb-5">
+                <div class="sidebar bg-button text-heroText m-5 p-5 w-[450px] h-[auto] ">
+                    <h2 class="text-2xl font-semibold m-2 ">Master Full-stack Web Development</h2>
+                    <div class="modules space-y-3 bg-accentColor">
+                        <div class="module p-3 shadow">
+                            <div class="flex justify-between items-center cursor-pointer"  data-url="module-one.html">
+                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 1: Introduction to Web Development</h3>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                            <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor"> <!-- Added 'hidden' class -->
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                                    <a href="#intro-web" onclick="scrollToSection(event, 'intro-web')">What is Web Development?</a>
+                                </li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="#intro-mean" onclick="scrollToSection(event, 'intro-mean')">How the Web Works</a>
+                                </li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="#intro-front-back" onclick="scrollToSection(event, 'intro-front-back')">Front-end vs. Back-end</a>
+                                </li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="#intro-tools" onclick="scrollToSection(event, 'intro-tools')">Tools for Web Development</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="module p-3 shadow">
+                            <div class="flex justify-between items-center cursor-pointer"  data-url="module-two.html">
+                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 2: HTML & CSS Basics </h3>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                             <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                <li class=" bg-navColor px-3 py-3 rounded-lg text-center"><a href="#intro-basics" onclick="scrollToSection(event,'intro-basics')">Introduction to HTML & CSS</a></li>
+                                <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a href="#intro-html" onclick="scrollToSection(event,'intro-html')">HTML Basics</a></li>
+                                <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a href="#intro-css" onclick="scrollToSection(event,'intro-css')">CSS Basics</a></li>
+                              </ul>   
+                        </div>
+                        <div class="module p-3 shadow">
+                            <div class="flex justify-between items-center cursor-pointer"  data-url="module-three.html">
+                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 3: Responsive Web Design  </h3>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                           <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center">
+                                        <a href="#intro" onclick="scrollToSection(event,'intro')">Responsive Design Principles</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-mobile "onclick="scrollToSection(event,'intro-mobile')">Creating Mobile-Friendly Designs</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#media" onclick="scrollToSection(event,'media')">CSS Media Queries</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#image" onclick="scrollToSection(event,'image')">Responsive Images & Video</a></li>
+                                </ul>
+                        </div>
+                        <div class="module p-3 shadow">
+                            <div class="flex justify-between items-center cursor-pointer" data-url="module-four.html">
+                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 4: JavaScript Basics  </h3>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                          <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center"><a
+                                            href="#intro-variable">Variables & Data Types</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a
+                                            href="#intro-condition">Conditionals & Loops</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a
+                                            href="#intro-func">Functions & Event Handlers</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a
+                                            href="#intro-obj">Objects & Arrays</a></li>
+                                </ul>
+                        </div>
+                        <div class="module p-3 shadow">
+                            <div class="flex justify-between items-center cursor-pointer"  data-url="module-five.html">
+                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 5: Advanced JavaScript & DOM Manipulation  </h3>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                           <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center">
+                                        <a href="#domSection" onclick="scrollToSection(event, 'domSection')">Document Object
+                                            Model (DOM)</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#eventListener" onclick="scrollToSection(event, 'eventListener')">Event
+                                            Listeners & Event Propagation</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#formValidation" onclick="scrollToSection(event, 'formValidation')">Form
+                                            Validation</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#ajaxSection" onclick="scrollToSection(event, 'ajaxSection')">AJAX & API
+                                            Calls</a></li>
+                                </ul>
+                        </div>
+                        <div class="module p-3 shadow">
+                            <div class="flex justify-between items-center cursor-pointer" data-url="./module-six.html">
+                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 6: Introduction to Version Control with Git</h3>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                             <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                                        <a href="#intro-git" onclick="scrollToSection(event, 'intro-version')"> What is Version control</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#installgit" onclick="scrollToSection(event, 'installgit')">Installing Git</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#gitBasics" onclick="scrollToSection(event, 'gitBasics')">Git Basics</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#gitcollab" onclick="scrollToSection(event, 'gitcollab')">Git Collaboration & Workflows</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#gitmerge" onclick="scrollToSection(event, 'gitmerge')">Git Branching & Merging</a>
+                                    </li>
+                                </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+                <section class="mr-20 pr-14">
+                    <div class="description mt-5 p-2">
+                        <h2 class="text-2xl text-center mb-2 font-bold p-5" id="intro-git ">
+                            6. Introduction to Version Control with Git
+                        </h2>
+                        <p class="text-lg text-gray-700 mb-5">
+                            Version control is a system that records changes to a file or
+                            set of files over time so that you can view, restore, or compare
+                            different versions. Git is a popular version control system that
+                            is commonly used for software development.
+                        </p>
+
+
+                        <h3 class="text-lg mb-3 p-5" id="intro-version">6.1 What is Version control</h3>
+                        <p class="text-gray-700 text-lg">
+                            Version control is a system that records changes to a file or
+                            set of files over time, allowing you to view, restore, or
+                            compare different versions. It helps keep track of changes made
+                            to a project, make it easier to collaborate with others, and
+                            maintain a clean and organized codebase.
+                        </p>
+
+                        <h3 class="text-xl mt-5 p-5 cursor-pointer" id="installgit">6.2 Installing Git</h3>
+                        <div class="p-5 rounded-lg shadow-lg mt-3">
+                            <p class="text-lg leading-relaxed">
+                                Git is a powerful and widely-used distributed version control system that allows
+                                developers to track changes, collaborate on projects, and manage code efficiently. It
+                                does not require a central server to function, making it versatile for both personal and
+                                collaborative projects.
+                            </p>
+                            <p class="text-lg leading-relaxed mt-3">
+                                Installing Git is the first step to start managing your projects with version control.
+                                Depending on your operating system, there are different ways to install Git. Below is a
+                                step-by-step guide to help you set it up:
+                            </p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                                <!-- Windows Installation Card -->
+                                <div class="bg-white p-6 rounded-lg shadow-md">
+                                    <h4 class="text-xl font-bold">Installing Git on Windows</h4>
+                                    <ul class="list-disc list-inside mt-3 text-lg">
+                                        <li>Visit the official Git website: <a href="https://git-scm.com/downloads"
+                                                class="text-blue-600 hover:text-blue-800" target="_blank">Git
+                                                Downloads</a>.</li>
+                                        <li>Download the Git for Windows installer.</li>
+                                        <li>Run the installer and follow the setup wizard.</li>
+                                        <li>Select recommended default settings during installation.</li>
+                                        <li>Verify the installation by typing <code>git --version</code> in Command
+                                            Prompt.</li>
+                                    </ul>
+                                </div>
+                                <!-- macOS Installation Card -->
+                                <div class="bg-white p-6 rounded-lg shadow-md">
+                                    <h4 class="text-xl font-bold">Installing Git on macOS</h4>
+                                    <ul class="list-disc list-inside mt-3 text-lg">
+                                        <li>Open the Terminal application.</li>
+                                        <li>Type <code>git --version</code> to check if Git is already installed.</li>
+                                        <li>If not installed, download Git from <a href="https://git-scm.com/downloads"
+                                                class="text-blue-600 hover:text-blue-800" target="_blank">Git
+                                                Downloads</a> or use Homebrew:</li>
+                                        <li><code>brew install git</code> (requires Homebrew installed).</li>
+                                        <li>Confirm installation with <code>git --version</code>.</li>
+                                    </ul>
+                                </div>
+                                <!-- Linux Installation Card -->
+                                <div class="bg-white p-6 rounded-lg shadow-md">
+                                    <h4 class="text-xl font-bold">Installing Git on Linux</h4>
+                                    <ul class="list-disc list-inside mt-3 text-lg">
+                                        <li>Open your terminal.</li>
+                                        <li>For Debian-based systems (Ubuntu): <code>sudo apt-get install git</code>
+                                        </li>
+                                        <li>For Red Hat-based systems (Fedora): <code>sudo dnf install git</code></li>
+                                        <li>Verify installation with <code>git --version</code>.</li>
+                                        <li>Configure your Git username and email:</li>
+                                        <ul class="list-disc list-inside ml-6">
+                                            <li><code>git config --global user.name "Your Name"</code></li>
+                                            <li><code>git config --global user.email "you@example.com"</code></li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="text-lg leading-relaxed mt-5">
+                                After installing Git, it's recommended to set up your username and email, as shown in
+                                the Linux section, to personalize your commits. By following these steps, you can
+                                successfully install Git and start managing your code efficiently.
+                            </p>
+                        </div>
+
+                        <h3 class="text-2xl mt-5 p-5  cursor-pointer" id="gitBasics">6.3 Git Basics</h3>
+                        <div class=" p-5  mt-3">
+                            <p class="text-lg leading-relaxed ">
+                                Git is a powerful command-line tool that allows developers to manage their code versions
+                                efficiently. Knowing the fundamental Git commands is essential for version control and
+                                collaboration. Below are some basic Git commands to get you started:
+                            </p>
+                            <div class="grid grid-cols- md:grid-cols-3 gap-6 mt-5">
+                                <!-- Card 1 -->
+                                <div class=" p-4 rounded-lg shadow-md bg-button">
+                                    <h4 class="text-xl font-bold ">Initializing a Repository</h4>
+                                    <p class="text-lg mt-3">
+                                        Use <code class=" p-1 rounded">git init</code> to create a new Git repository in
+                                        your project folder. This command sets up a hidden <code>.git</code> directory,
+                                        enabling version control.
+                                    </p>
+                                </div>
+                                <!-- Card 2 -->
+                                <div class=" p-4 rounded-lg shadow-md bg-button">
+                                    <h4 class="text-xl font-bold ">Checking Status</h4>
+                                    <p class="text-lg mt-3">
+                                        The <code class=" p-1 rounded">git status</code> command shows the current
+                                        status of your working directory and staging area. It helps track changes and
+                                        identify staged files.
+                                    </p>
+                                </div>
+                                <!-- Card 3 -->
+                                <div class=" p-4 rounded-lg shadow-md bg-button">
+                                    <h4 class="text-xl font-bold ">Adding Files</h4>
+                                    <p class="text-lg mt-3">
+                                        Use <code class=" p-1 rounded">git add</code> to stage files for committing. You
+                                        can add specific files or use <code>. (dot)</code> to stage all changes.
+                                    </p>
+                                </div>
+                                <!-- Card 4 -->
+                                <div class=" p-4 rounded-lg shadow-md bg-button">
+                                    <h4 class="text-xl font-bold ">Committing Changes</h4>
+                                    <p class="text-lg mt-3">
+                                        Use <code class=" p-1 rounded">git commit -m "Your message"</code> to create a
+                                        commit with a message describing the changes. Commits are saved snapshots of
+                                        your project.
+                                    </p>
+                                </div>
+                                <!-- Card 5 -->
+                                <div class=" p-4 rounded-lg shadow-md bg-button">
+                                    <h4 class="text-xl font-bold ">Viewing Commit History</h4>
+                                    <p class="text-lg mt-3">
+                                        The <code class=" p-1 rounded">git log</code> command displays the commit
+                                        history, showing commit IDs, authors, dates, and messages.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <h3 class="text-2xl  mt-5 p-5  cursor-pointer" id="gitcollab">6.4 Git Collaboration & Workflows
+                        </h3>
+                        <p class="text-lg mb-2">
+                            Git collaboration is a powerful feature that allows developers
+                            to work together on a project by using branches, merging
+                            changes, and resolving conflicts. Here are some Git
+                            collaboration workflows:
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-5">
+                            <!-- Card 1 -->
+                            <div class="p-4 bg-gray-100 rounded-lg shadow-md">
+                                <h4 class="text-xl font-bold">Creating Branches</h4>
+                                <p class="text-lg mt-3">
+                                    Use <code class="bg-gray-200 p-1 rounded">git branch</code> to create a new branch
+                                    with the current commit. Branches help you isolate features or bug fixes.
+                                </p>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="p-4 bg-gray-100 rounded-lg shadow-md">
+                                <h4 class="text-xl font-bold">Switching Branches</h4>
+                                <p class="text-lg mt-3">
+                                    The <code class="bg-gray-200 p-1 rounded">git checkout</code> command lets you
+                                    switch between branches, allowing you to work on different versions of your project.
+                                </p>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="p-4 bg-gray-100 rounded-lg shadow-md">
+                                <h4 class="text-xl font-bold">Merging Branches</h4>
+                                <p class="text-lg mt-3">
+                                    Use <code class="bg-gray-200 p-1 rounded">git merge</code> to combine changes from
+                                    one branch into another. It's essential for integrating features.
+                                </p>
+                            </div>
+                            <!-- Card 4 -->
+                            <div class="p-4 bg-gray-100 rounded-lg shadow-md">
+                                <h4 class="text-xl font-bold">Rebasing Branches</h4>
+                                <p class="text-lg mt-3">
+                                    The <code class="bg-gray-200 p-1 rounded">git rebase</code> command reapplies
+                                    commits from one branch onto another, helping keep a linear commit history.
+                                </p>
+                            </div>
+                            <!-- Card 5 -->
+                            <div class="p-4 bg-gray-100 rounded-lg shadow-md">
+                                <h4 class="text-xl font-bold">Stashing Changes</h4>
+                                <p class="text-lg mt-3">
+                                    Use <code class="bg-gray-200 p-1 rounded">git stash</code> to temporarily save
+                                    uncommitted changes, so you can work on something else without losing progress.
+                                </p>
+                            </div>
+                            <!-- Card 6 -->
+                            <div class="p-4 bg-gray-100 rounded-lg shadow-md">
+                                <h4 class="text-xl font-bold">Cherry-Picking Commits</h4>
+
+                                <p class="text-lg mt-3">
+                                    The <code class="bg-gray-200 p-1 rounded">git cherry-pick</code> command applies a
+                                    specific commit from one branch to another, ideal for q
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-lg p-5 mb-3" id="gitmerge">6.5 Git Branching & Merging</h3>
+                        <p class="text-lg">
+                            Git branching and merging are essential Git workflows for
+                            collaborating on a project. Here are some tips for managing
+                            branches and merging changes:
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-5">
+                            <!-- Step 1 -->
+                            <div class="p-4  rounded-lg shadow-md">
+                                <h4 class="text-xl font-bold">Step 1: Create a Branch</h4>
+                                <p class="text-lg mt-3">
+                                    Create a separate branch for each feature or bug fix you work on. This helps isolate
+                                    changes and prevents conflicts.
+                                </p>
+                            </div>
+                            <!-- Step 2 -->
+                            <div class="p-4  rounded-lg shadow-md">
+                                <h4 class="text-xl font-bold">Step 2: Make Changes & Commit</h4>
+                                <p class="text-lg mt-3">
+                                    Implement your changes and use <code
+                                        class="bg-gray-200 p-1 rounded">git commit</code> to save them to your branch.
+                                </p>
+                            </div>
+                            <!-- Step 3 -->
+                            <div class="p-4  rounded-lg shadow-md">
+                                <h4 class="text-xl font-bold">Step 3: Create a Pull Request</h4>
+                                <p class="text-lg mt-3">
+                                    When ready, open a pull request to merge your branch into the main branch. This
+                                    facilitates code review.
+                                </p>
+                            </div>
+                            <!-- Step 4 -->
+                            <div class="p-4  rounded-lg shadow-md">
+                                <h4 class="text-xl font-bold">Step 4: Review & Approve</h4>
+                                <p class="text-lg mt-3">
+                                    Collaboratively review the pull request with your team, making sure the code meets
+                                    standards before merging.
+                                </p>
+                            </div>
+                            <!-- Step 5 -->
+                            <div class="p-4  rounded-lg shadow-md col-span-2">
+                                <h4 class="text-xl font-bold">Step 5: Delete Merged Branch</h4>
+                                <p class="text-lg mt-3">
+                                    After successfully merging, delete the branch to keep the repository clean and
+                                    organized.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <h3 class="text-xl font-bold mb-3 p-5 text-center mt-4">Conclusion</h3>
+                        <p class="text-gray-700">
+                            Git is a powerful tool for version control and collaboration in
+                            software development. By understanding its basics, using
+                            branching and merging workflows, and staying up-to-date with the
+                            latest features and bug fixes, you can become more efficient and
+                            effective in your project. Good luck with your learning journey!
+                        </p>
+                    
+<div class="text flex flex-col-2 justify-between p-5 mb-5 mt-5" id="navigation-links">
+    <div class="previous" id="previous-container" style="display: none;">
+        <a href="#" id="previous-link" class="text-2xl font-bold">Previous</a>
+    </div>
+    <div class="next" id="next-container" style="display: none;">
+        <a href="#" id="next-link" class="text-2xl font-bold">Next</a>
+    </div>
+</div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../js/script.js"></script>
+    <script src="../js/course-detail.js"></script>
+</body>
+
+</html>

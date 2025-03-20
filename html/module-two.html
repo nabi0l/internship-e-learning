@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnSphere</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../Assests/fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+<body class="bg-accentColor text-gray-600">
+    <div class="containers mt-20">
+        <div id="navbar"></div>
+        <div>
+            <div class="highlights flex flex-col-2 gap-6">
+
+                <section class="w-full mb-5">
+                <div class="sidebar bg-button text-heroText m-5 p-5 w-[450px] h-[auto] ">
+                    <h2 class="text-2xl font-semibold m-2 ">Master Full-stack Web Development</h2>
+                    <div class="modules space-y-3 bg-accentColor">
+                        <div class="module p-3 shadow">
+                            <div class="flex justify-between items-center cursor-pointer"  data-url="module-one.html">
+                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 1: Introduction to Web Development</h3>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                            <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor"> <!-- Added 'hidden' class -->
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                                    <a href="#intro-web" onclick="scrollToSection(event, 'intro-web')">What is Web Development?</a>
+                                </li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="#intro-mean" onclick="scrollToSection(event, 'intro-mean')">How the Web Works</a>
+                                </li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="#intro-front-back" onclick="scrollToSection(event, 'intro-front-back')">Front-end vs. Back-end</a>
+                                </li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="#intro-tools" onclick="scrollToSection(event, 'intro-tools')">Tools for Web Development</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="module p-3 shadow">
+                            <div class="flex justify-between items-center cursor-pointer"  data-url="module-two.html">
+                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 2: HTML & CSS Basics </h3>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                             <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                <li class=" bg-navColor px-3 py-3 rounded-lg text-center"><a href="#intro-basics" onclick="scrollToSection(event,'intro-basics')">Introduction to HTML & CSS</a></li>
+                                <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a href="#intro-html" onclick="scrollToSection(event,'intro-html')">HTML Basics</a></li>
+                                <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a href="#intro-css" onclick="scrollToSection(event,'intro-css')">CSS Basics</a></li>
+                              </ul>   
+                        </div>
+                        <div class="module p-3 shadow">
+                            <div class="flex justify-between items-center cursor-pointer"  data-url="module-three.html">
+                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 3: Responsive Web Design  </h3>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                           <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center">
+                                        <a href="#intro" onclick="scrollToSection(event,'intro')">Responsive Design Principles</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-mobile "onclick="scrollToSection(event,'intro-mobile')">Creating Mobile-Friendly Designs</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#media" onclick="scrollToSection(event,'media')">CSS Media Queries</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#image" onclick="scrollToSection(event,'image')">Responsive Images & Video</a></li>
+                                </ul>
+                        </div>
+                        <div class="module p-3 shadow">
+                            <div class="flex justify-between items-center cursor-pointer" data-url="module-four.html">
+                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 4: JavaScript Basics  </h3>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                          <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center"><a
+                                            href="#intro-variable">Variables & Data Types</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a
+                                            href="#intro-condition">Conditionals & Loops</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a
+                                            href="#intro-func">Functions & Event Handlers</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a
+                                            href="#intro-obj">Objects & Arrays</a></li>
+                                </ul>
+                        </div>
+                        <div class="module p-3 shadow">
+                            <div class="flex justify-between items-center cursor-pointer"  data-url="./module-five.html">
+                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 5: Advanced JavaScript & DOM Manipulation  </h3>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                           <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center">
+                                        <a href="#domSection" onclick="scrollToSection(event, 'domSection')">Document Object
+                                            Model (DOM)</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#eventListener" onclick="scrollToSection(event, 'eventListener')">Event
+                                            Listeners & Event Propagation</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#formValidation" onclick="scrollToSection(event, 'formValidation')">Form
+                                            Validation</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#ajaxSection" onclick="scrollToSection(event, 'ajaxSection')">AJAX & API
+                                            Calls</a></li>
+                                </ul>
+                        </div>
+                        <div class="module p-3 shadow">
+                            <div class="flex justify-between items-center cursor-pointer" data-url="./module-six.html">
+                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 6: Introduction to Version Control with Git</h3>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                             <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                                        <a href="#intro-git" onclick="scrollToSection(event, 'intro-version')"> What is Version control</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#installgit" onclick="scrollToSection(event, 'installgit')">Installing Git</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#gitBasics" onclick="scrollToSection(event, 'gitBasics')">Git Basics</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#gitcollab" onclick="scrollToSection(event, 'gitcollab')">Git Collaboration & Workflows</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#gitmerge" onclick="scrollToSection(event, 'gitmerge')">Git Branching & Merging</a>
+                                    </li>
+                                </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+                <section class=" mr-20 pr-14 ">
+                    <div class="description mt-5 p-2">
+
+                     <h2 class="text-2xl text-center mb-2 font-bold " id="intro-basics">2. Introduction to HTML and CSS Basics</h2>
+                       <p class="text-lg">HTML and CSS are fundamental for web development. HTML structures the content of a webpage using elements like headings, paragraphs, links, and images, while CSS enhances its appearance by defining styles such as colors, fonts, spacing, and layouts. HTML ensures content is well-organized and meaningful, while CSS makes it visually appealing and responsive across different devices.
+                         Together, they create structured, stylish, and user-friendly web pages.</p>
+
+                        <h2 class="text-xl  mb-2 p-5 " id="intro-html">2.1 HTML Basics</h2>
+                        <p class="text-lg">HTML (HyperText Markup Language) is a standard markup language used to create web pages.
+                             It describes the structure of a document, including the document's title, headings, paragraphs, images, hyperlinks, and more.
+                              HTML documents consist of HTML tags, which define the content and structure of the page.</p>
+                              <h2 class="text-2xl text-center mb-2 font-bold " id="intro-web">HTML Structure</h2>
+                              <p class="text-lg">HTML elements are the building blocks of an HTML document. They are represented by tags enclosed in angle brackets (<>) and consist of a start tag, content, and end tag. The content inside the tags defines the content of the element. Here are some common HTML elements:</p>
+                             
+                              <div class="image-result flex flex-row gap-6 p-5 items-center">
+                                <div class="description w-1/2">
+                                    <ul class="list-disc ml-4 mb-4 text-xl p-2">
+                                        <li>&lt;html&gt; - The root element of an HTML document</li>
+                                        <li>&lt;head&gt; - Contains meta information about the document</li>
+                                        <li>&lt;body&gt; - Contains the visible content of the document</li>
+                                        <li>&lt;h1&gt; - Defines a large heading</li>
+                                        <li>&lt;p&gt; - Defines a paragraph</li>
+                                        <li>&lt;img&gt; - Defines an image</li>
+                                        <li>&lt;a&gt; - Defines a hyperlink</li>
+                                    </ul>
+                                </div>
+                                <div class="w-1/2 flex justify-center">
+                                    <img src="../html/Modules/web/code.png" alt="Code Image" class="w-full h-80">
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                      
+
+                        <h2 class="text-xl p-5 mb-2  " id="intro-css">2.2 CSS Basics</h2>
+                        <p class="text-lg">CSS is a styling language used to control the layout and appearance of web pages.
+                             It is used to separate the presentation of a document from its structure, making it easier to maintain and optimize the presentation of
+                              a document while maintaining its structure while maintaining its presentation capabilities and performance characteristics
+                            </p>
+                            <h2 class="text-2xl text-center mb-2 font-bold " id="intro-web">CSS Syntax</h2>
+                            <p class="text-lg">CSS syntax consists of selectors (e.g. element, class, id) followed by a property-value pair (e.g. font-family: Arial, sans-serif; color: blue;). CSS properties define the visual characteristics of an HTML element. Common CSS properties include: </p>
+                            
+                        <h4>Example</h4>
+                        <div class="image-result flex flex-row  p-5 items-center">
+                            <!-- <div class="description w-1/2">
+                                <ul class="list-disc ml-4 text-xl p-2">
+                                    <li>font-family </li>
+                                    <li>font-size</li>
+                                    <li>color</li>
+                                    <li>background-color</li>
+                                    <li>text-align</li>
+                                    <li>margin</li>
+                                    <li>padding</li>
+                                    <li>display</li>
+                                    <li>justify-content</li>
+                                    <li>align-items</li>
+    
+                                </ul>
+                            </div> -->
+                        <div class="flex justify-center items-center w-1/2">
+                            <img src="../html/Modules/web/code2.png" alt="Code Image" class="w-full h-60">
+                        </div>
+                      </div>
+
+                 <div class="text flex flex-col-2 justify-between p-5 mb-5 mt-5" id="navigation-links">
+    <div class="previous" id="previous-container" style="display: none;">
+        <a href="#" id="previous-link" class="text-2xl font-bold">Previous</a>
+    </div>
+    <div class="next" id="next-container" style="display: none;">
+        <a href="#" id="next-link" class="text-2xl font-bold">Next</a>
+    </div>
+</div>            </div>  
+                    
+                    
+                </section>
+
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../js/script.js"></script>
+    <script src="../js/course-detail.js"></script>
+</body>
+</html>
