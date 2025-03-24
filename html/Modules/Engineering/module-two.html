@@ -15,13 +15,13 @@
     <div class="containers mt-20">
       <div id="navbar"></div>
       <div>
-        <div class="highlights flex flex-col-2 gap-6">
-          <section class="w-full mb-5">
+        <div class="highlights flex flex-col md:flex-row gap-6">
+          <section class="w-full md:w-1/3 mb-5">
             <div
-              class="sidebar bg-button text-heroText m-5 p-5 w-[450px] h-[auto]"
+              class="sidebar bg-button text-heroText m-5 p-5 h-auto hidden md:block"
             >
               <h2 class="text-2xl font-semibold m-2">
-                Master Full-stack Web Development
+                Explore Engineering Fundamentals
               </h2>
               <div class="modules space-y-3 bg-accentColor">
                 <div class="module p-3 shadow">
@@ -29,7 +29,7 @@
                     class="flex justify-between items-center cursor-pointer"
                     data-url="/html/Modules/Engineering/module-one.html"
                   >
-                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                    <h3 class="text-lg font-semibold mb-2 mt-2">
                       Module 1: Fundamentals of Engineering
                     </h3>
                     <i class="fas fa-caret-down"></i>
@@ -66,7 +66,7 @@
                     class="flex justify-between items-center cursor-pointer"
                     data-url="/html/Modules/Engineering/module-two.html"
                   >
-                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                    <h3 class="text-lg font-semibold mb-2 mt-2">
                       Module 2: Engineering Design and Analysis
                     </h3>
                     <i class="fas fa-caret-down"></i>
@@ -103,7 +103,7 @@
             </div>
           </section>
 
-          <section class="mr-20 pr-14">
+          <section class="w-full md:w-2/3 mr-20 pr-7 pl-7 mb-5">
             <div class="description mt-5 p-2">
               <h2 class="text-2xl font-semibold m-2 p-5 text-center">
                 2. Engineering Design and Analysis
@@ -208,27 +208,28 @@
                 new materials with improved properties.
               </p>
 
-              <div class="">
-                <div class="p-6">
-                  <div class="card p-6">
-                    <h4 class="font-semibold mb-4 text-xl">
-                      Materials Properties
-                    </h4>
-                    <p class="text-lg mb-4">
-                      Exploring the physical and chemical behavior of metals,
-                      ceramics, and polymers.
-                    </p>
-                    <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/BHZALtqAjeM?si=grWZBRQR3dgeOhhr"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
-                      allowfullscreen
-                    ></iframe>
+              <div class="p-6">
+                <div class="card p-6">
+                  <h4 class="font-semibold mb-4 text-xl">
+                    Materials Properties
+                  </h4>
+                  <p class="text-lg mb-4">
+                    Exploring the physical and chemical behavior of metals,
+                    ceramics, and polymers.
+                  </p>
+                  <div class="flex items-center justify-center mt-4">
+                     <iframe
+                    width="100%"
+                    height="315"
+                    src="https://www.youtube.com/embed/BHZALtqAjeM?si=grWZBRQR3dgeOhhr"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
                   </div>
+                 
                 </div>
               </div>
 
@@ -315,22 +316,17 @@
               <div
                 class="p-6 space-y-6 bg-course-gradient rounded-lg shadow-lg mt-20"
               >
-                <!-- Heading Section -->
                 <h3
                   class="text-3xl font-bold text-white bg-navColor p-5 rounded-lg shadow-md"
                 >
                   Learning Activities and Resources
                 </h3>
-
-                <!-- Paragraph Section -->
                 <p class="text-lg text-gray-800 leading-relaxed">
                   To help you learn more about engineering design and analysis,
                   you can find various learning activities and resources
                   available on the LearnSphere platform. Some popular learning
                   activities include:
                 </p>
-
-                <!-- List of Learning Activities -->
                 <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
                   <li
                     class="hover:text-accentColor transition duration-300 ease-in-out"
@@ -358,8 +354,6 @@
                     Interactive learning tools and simulations
                   </li>
                 </ul>
-
-                <!-- Additional Resources Section -->
                 <p class="text-lg text-gray-800 leading-relaxed">
                   You can also find additional resources and learning materials
                   on the following websites:
@@ -394,8 +388,6 @@
                     >
                   </li>
                 </ul>
-
-                <!-- Conclusion Section -->
                 <p class="text-lg text-gray-800 leading-relaxed">
                   As you continue your learning journey, remember to practice
                   active engagement and seek feedback from your peers and

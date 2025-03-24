@@ -1,471 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LearnSphere</title>
     <link rel="stylesheet" href="/css/output.css" />
-    <link
-      rel="stylesheet"
-      href="/Assests/fontawesome-free-6.7.2-web/css/all.min.css"
-    />
-  </head>
-  <body class="bg-accentColor text-gray-600">
+    <link rel="stylesheet" href="/Assests/fontawesome-free-6.7.2-web/css/all.min.css" />
+</head>
+
+<body class="bg-accentColor text-gray-600">
     <div class="containers mt-20">
-      <div id="navbar"></div>
-      <div>
-        <div class="highlights flex flex-col-2 gap-6">
-          <section class="w-full mb-5">
-            <div
-              class="sidebar bg-button text-heroText m-5 p-5 w-[450px] h-[auto]"
-            >
-              <h2 class="text-2xl font-semibold m-2">
-                Master Full-stack Web Development
-              </h2>
-              <div class="modules space-y-3 bg-accentColor">
-                <div class="module p-3 shadow">
-                  <div
-                    class="flex justify-between items-center cursor-pointer"
-                    data-url="/html/Modules/Bussiness/module-one.html"
-                  >
-                    <h3 class="text-lg font-semibod mb-2 mt-2">
-                      Module 1: Introduction to Business Management
-                    </h3>
-                    <i class="fas fa-caret-down"></i>
-                  </div>
-                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
-                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
-                      <a href="#intro" onclick="scrollToSection(event, 'intro')"
-                        >Business Basics</a
-                      >
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a
-                        href="#intro-mgt"
-                        onclick="scrollToSection(event, 'intro-mgt')"
-                        >Management Theories</a
-                      >
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a
-                        href="#intro-org"
-                        onclick="scrollToSection(event, 'intro-org')"
-                        >Organizational Structure</a
-                      >
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a
-                        href="#intro-strategic"
-                        onclick="scrollToSection(event, 'intro-strategic')"
-                        >Strategic Planning</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+        <div id="navbar"></div>
+        <div>
+            <div class="highlights flex flex-col md:flex-row gap-6">
+                <section class="w-full md:w-1/3 mb-5">
+                    <div class="sidebar bg-button text-heroText m-5 p-5 h-auto hidden md:block">
+                        <h2 class="text-2xl font-semibold m-2">Master Business Management</h2>
+                        <div class="modules space-y-3 bg-accentColor">
+                            <div class="module p-3 shadow">
+                                <div class="flex justify-between items-center cursor-pointer" data-url="/html/Modules/Bussiness/module-one.html">
+                                    <h3 class="text-lg font-semibold mb-2 mt-2">Module 1: Introduction to Business Management</h3>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                                        <a href="#intro" onclick="scrollToSection(event, 'intro')">Business Basics</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-mgt" onclick="scrollToSection(event, 'intro-mgt')">Management Theories</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-org" onclick="scrollToSection(event, 'intro-org')">Organizational Structure</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-strategic" onclick="scrollToSection(event, 'intro-strategic')">Strategic Planning</a>
+                                    </li>
+                                </ul>
+                            </div>
 
-                <div class="module p-3 shadow">
-                  <div
-                    class="flex justify-between items-center cursor-pointer"
-                    data-url="/html/Modules/Bussiness/module-two.html"
-                  >
-                    <h3 class="text-lg font-semibod mb-2 mt-2">
-                      Module 2: Marketing and Financial Management
-                    </h3>
-                    <i class="fas fa-caret-down"></i>
-                  </div>
-                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
-                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
-                      <a
-                        href="#intro-marketing"
-                        onclick="scrollToSection(event,'intro-marketing')"
-                        >Marketing Basics</a
-                      >
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a
-                        href="#intro-financial"
-                        onclick="scrollToSection(event,'intro-financial')"
-                        >Financial Management</a
-                      >
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a
-                        href="#intro-human"
-                        onclick="scrollToSection(event,'intro-human')"
-                        >Human Resource Management</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+                            <div class="module p-3 shadow">
+                                <div class="flex justify-between items-center cursor-pointer" data-url="/html/Modules/Bussiness/module-two.html">
+                                    <h3 class="text-lg font-semibold mb-2 mt-2">Module 2: Marketing and Financial Management</h3>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                                        <a href="#intro-marketing" onclick="scrollToSection(event,'intro-marketing')">Marketing Basics</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-financial" onclick="scrollToSection(event,'intro-financial')">Financial Management</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-human" onclick="scrollToSection(event,'intro-human')">Human Resource Management</a>
+                                    </li>
+                                </ul>
+                            </div>
 
-                <div class="module p-3 shadow">
-                  <div
-                    class="flex justify-between items-center cursor-pointer"
-                    data-url="/html/Modules/Bussiness/module-three.html"
-                  >
-                    <h3 class="text-lg font-semibod mb-2 mt-2">
-                      Module 3: Human Resource and Operations Management
-                    </h3>
-                    <i class="fas fa-caret-down"></i>
-                  </div>
-                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
-                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
-                      <a href="#hrm" onclick="scrollToSection(event,'hrm')"
-                        >Human Resource Management (HRM)</a
-                      >
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a
-                        href="#operation "
-                        onclick="scrollToSection(event,'operation')"
-                        >Operations Management</a
-                      >
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a
-                        href="#project"
-                        onclick="scrollToSection(event,'project')"
-                        >Project Management</a
-                      >
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a
-                        href="#bussiness"
-                        onclick="scrollToSection(event,'bussiness')"
-                        >Business Communication and Negotiation</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                            <div class="module p-3 shadow">
+                                <div class="flex justify-between items-center cursor-pointer" data-url="/html/Modules/Bussiness/module-three.html">
+                                    <h3 class="text-lg font-semibold mb-2 mt-2">Module 3: Human Resource and Operations Management</h3>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                                        <a href="#hrm" onclick="scrollToSection(event,'hrm')">Human Resource Management (HRM)</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#operation" onclick="scrollToSection(event,'operation')">Operations Management</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#project" onclick="scrollToSection(event,'project')">Project Management</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#bussiness" onclick="scrollToSection(event,'bussiness')">Business Communication and Negotiation</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="w-full md:w-2/3 mr-20 pr-7 pl-7">
+                    <div class="description mt-5 p-2">
+                        <h2 class="text-2xl font-semibold m-2 p-5 text-center">3. Human Resource and Operations Management</h2>
+                        <p class="text-lg">
+                            Human Resource and Operations Management (HRM) is a crucial aspect of successful business operations. It involves managing human resources, including employees, contractors, and suppliers, to ensure efficient and effective business performance. This module will provide you with an overview of HRM concepts, practices, and best practices.
+                        </p>
+                        <p class="text-lg mt-2">By the end of this module, you will be able to:</p>
+                        <ul class="list-disc pl-6 space-y-2 text-md p-2">
+                            <li>Understand the importance of HRM in business operations</li>
+                            <li>Identify the roles and responsibilities of HR professionals</li>
+                            <li>Describe the importance of training HR professionals</li>
+                            <li>Describe the importance of managing employee turnover and benefits</li>
+                        </ul>
+
+                        <h3 class="text-lg font-semibold m-2 p-5" id="intro-human">3.1 Human Resource Management (HRM)</h3>
+                        <p class="text-lg">
+                            Human Resource Management (HRM) is a crucial aspect of successful business operations. It involves managing human resources, including employees, contractors, and suppliers, to ensure efficient and effective business performance. This module will provide you with an overview of HRM concepts, practices, and best practices. HRM plays a vital role in managing employee turnover and benefits, as well as ensuring that employees are well-informed and engaged in the workplace. As a human resource manager, you will be responsible for ensuring that employees are well-informed and engaged in the workplace, providing training and development opportunities, and addressing any concerns or issues that may arise.
+                        </p>
+
+                        <div>
+                            <h3 class="text-center text-xl p-2 mt-3 font-semibold">Human Resource Management Fundamentals</h3>
+                            <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                <!-- Recruitment and Selection Card -->
+                                <div class="card p-6 rounded-lg shadow-md hover:shadow-xl">
+                                    <h4 class="font-semibold text-xl mb-4">Recruitment and Selection</h4>
+                                    <p class="text-md text-gray-700">The process of attracting, screening, and selecting qualified candidates for a job role within the organization.</p>
+                                </div>
+
+                                <!-- Training and Development Card -->
+                                <div class="card p-6 rounded-lg shadow-md hover:shadow-xl">
+                                    <h4 class="font-semibold text-xl mb-4">Training and Development</h4>
+                                    <p class="text-md text-gray-700">Providing employees with opportunities to enhance their skills, knowledge, and abilities to perform effectively.</p>
+                                </div>
+
+                                <!-- Employee Relations Card -->
+                                <div class="card p-6 rounded-lg shadow-md hover:shadow-xl">
+                                    <h4 class="font-semibold text-xl mb-4">Employee Relations</h4>
+                                    <p class="text-md text-gray-700">Building and maintaining positive relationships between employees and the organization to improve morale and productivity.</p>
+                                </div>
+
+                                <!-- Compensation and Benefits Card -->
+                                <div class="card p-6 rounded-lg shadow-md hover:shadow-xl">
+                                    <h4 class="font-semibold text-xl mb-4">Compensation and Benefits</h4>
+                                    <p class="text-md text-gray-700">Designing and managing pay structures, benefits packages, and incentives to attract and retain employees.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="text-lg font-semibold m-2 p-5" id="intro-financial">3.2 Operations Management</h3>
+                        <p class="text-lg">
+                            Operations Management (OM) is a crucial aspect of successful business operations. It involves managing the production, distribution, and logistics of goods and services within a company. This module will provide you with an overview of OM concepts, practices, and best practices. OM plays a vital role in managing the supply chain, ensuring that goods and services are delivered efficiently and effectively, and addressing any issues or concerns that may arise. As an operations manager, you will be responsible for ensuring that the supply chain is functioning efficiently, managing inventory levels, and addressing any concerns or issues that arise.
+                        </p>
+
+                        <h3 class="text-lg font-semibold m-2 p-5" id="intro-financial">3.3 Project Management</h3>
+                        <p class="text-lg">
+                            Project Management (PM) is a crucial aspect of successful business operations. It involves managing projects, tasks, and milestones within a company. This module will provide you with an overview of PM concepts, practices, and best practices.
+                        </p>
+                        <p class="text-lg mt-2">
+                            PM plays a role in the development environment for developers and developers of the application being developed. As a project manager, you will be responsible for ensuring that the project is completed on time, within budget, and with the highest possible quality.
+                        </p>
+
+                        <div>
+                            <div class="flex flex-wrap justify-center gap-6 p-6">
+                                <!-- Card 1 -->
+                                <div class="w-full md:w-60 rounded-lg shadow-lg p-5">
+                                    <h3 class="text-lg text-center font-bold mb-2">Planning and Scheduling</h3>
+                                    <p class="text-gray-700">Setting objectives, timelines, and milestones. Using tools like Gantt charts to track progress.</p>
+                                </div>
+
+                                <!-- Card 2 -->
+                                <div class="w-full md:w-60 rounded-lg shadow-lg p-5">
+                                    <h3 class="text-lg text-center font-bold mb-2">Risk Management</h3>
+                                    <p class="text-gray-700">Identifying, assessing, and mitigating risks. Creating contingency plans for unexpected issues.</p>
+                                </div>
+
+                                <!-- Card 3 -->
+                                <div class="w-full md:w-60 rounded-lg shadow-lg p-5">
+                                    <h3 class="text-lg text-center font-bold mb-2">Resource Management</h3>
+                                    <p class="text-gray-700">Efficiently allocating resources like time, budget, and personnel to optimize productivity.</p>
+                                </div>
+
+                                <!-- Card 4 -->
+                                <div class="w-full md:w-60 rounded-lg shadow-lg p-5">
+                                    <h3 class="text-lg text-center font-bold mb-2">Communication & Collaboration</h3>
+                                    <p class="text-gray-700">Maintaining clear communication with stakeholders and ensuring teamwork.</p>
+                                </div>
+
+                                <!-- Card 5 -->
+                                <div class="w-full md:w-60 rounded-lg shadow-lg p-5">
+                                    <h3 class="text-lg text-center font-bold mb-2">Quality Control</h3>
+                                    <p class="text-gray-700">Monitoring project deliverables to meet standards and ensure customer satisfaction.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-6 space-y-6 bg-course-gradient rounded-lg shadow-lg mt-20">
+                            <h3 class="text-3xl font-bold text-white bg-navColor p-5 rounded-lg shadow-md">Learning Activities and Resources</h3>
+                            <p class="text-lg text-gray-800 leading-relaxed">To help you learn more about engineering design and analysis, you can find various learning activities and resources available on the LearnSphere platform. Some popular learning activities include:</p>
+                            <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+                                <li class="hover:text-accentColor transition duration-300 ease-in-out">Coursework assignments and quizzes</li>
+                                <li class="hover:text-accentColor transition duration-300 ease-in-out">Online lectures and videos</li>
+                                <li class="hover:text-accentColor transition duration-300 ease-in-out">Problem-solving exercises</li>
+                                <li class="hover:text-accentColor transition duration-300 ease-in-out">Discussion forums and Q&A</li>
+                                <li class="hover:text-accentColor transition duration-300 ease-in-out">Interactive learning tools and simulations</li>
+                            </ul>
+                            <p class="text-lg text-gray-800 leading-relaxed">You can also find additional resources and learning materials on the following websites:</p>
+                            <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+                                <li><a href="https://www.learnsphere.com/" class="text-accentColor hover:underline transition duration-300">LearnSphere</a></li>
+                                <li><a href="https://www.coursera.org/" class="text-accentColor hover:underline transition duration-300">Coursera</a></li>
+                                <li><a href="https://www.edx.org/" class="text-accentColor hover:underline transition duration-300">edX</a></li>
+                                <li><a href="https://www.udemy.com/" class="text-accentColor hover:underline transition duration-300">Udemy</a></li>
+                            </ul>
+                            <p class="text-lg text-gray-800 leading-relaxed">As you continue your learning journey, remember to practice active engagement and seek feedback from your peers and instructors. Good luck with your engineering design and analysis course!</p>
+                        </div>
+                    </div>
+                </section>
             </div>
-          </section>
-
-          <section class="mr-20 pr-14">
-            <div class="description mt-5 p-2">
-              <h2 class="text-2xl font-semibold m-2 p-5 text-center">
-                3. Human Resource and Operations Management
-              </h2>
-              <p class="text-lg">
-                Human Resource and Operations Management (HRM) is a crucial
-                aspect of successful business operations. It involves managing
-                human resources, including employees, contractors, and
-                suppliers, to ensure efficient and effective business
-                performance. This module will provide you with an overview of
-                HRM concepts, practices, and best practices.
-              </p>
-              <p class="text-lg mt-2">
-                By the end of this module, you will be able to:
-              </p>
-              <ul class="list-disc pl-6 space-y-2 text-md p-2">
-                <li>Understand the importance of HRM in business operations</li>
-                <li>
-                  Identify the roles and responsibilities of HR professionals
-                </li>
-                <li>Describe the importance of training HR professionals</li>
-                <li>
-                  Describe the importance of managing employee turnover and
-                  benefits
-                </li>
-              </ul>
-
-              <h3 class="text-lg font-semibold m-2 p-5" id="intro-financial">
-                1.1 Human Resource Management(HRM)
-              </h3>
-              <p class="text-lg">
-                Human Resource Management (HRM) is a crucial aspect of
-                successful business operations. It involves managing human
-                resources, including employees, contractors, and suppliers, to
-                ensure efficient and effective business performance. This module
-                will provide you with an overview of HRM concepts, practices,
-                and best practices. HRM plays a vital role in managing employee
-                turnover and benefits, as well as ensuring that employees are
-                well-informed and engaged in the workplace. As a human resource
-                manager, you will be responsible for ensuring that employees are
-                well-informed and engaged in the workplace, providing training
-                and development opportunities, and addressing any concerns or
-                issues that may arise.
-              </p>
-
-              <div>
-                <h3 class="text-center text-xl p-2 mt-3 font-semibold">
-                  Human Resource Management Fundamentals
-                </h3>
-                <div
-                  class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-                >
-                  <!-- Recruitment and Selection Card -->
-                  <div class="card p-6 rounded-lg shadow-md hover:shadow-xl">
-                    <h4 class="font-semibold text-xl mb-4">
-                      Recruitment and Selection
-                    </h4>
-                    <p class="text-md text-gray-700">
-                      The process of attracting, screening, and selecting
-                      qualified candidates for a job role within the
-                      organization.
-                    </p>
-                  </div>
-
-                  <!-- Training and Development Card -->
-                  <div class="card p-6 rounded-lg shadow-md hover:shadow-xl">
-                    <h4 class="font-semibold text-xl mb-4">
-                      Training and Development
-                    </h4>
-                    <p class="text-md text-gray-700">
-                      Providing employees with opportunities to enhance their
-                      skills, knowledge, and abilities to perform effectively.
-                    </p>
-                  </div>
-
-                  <!-- Employee Relations Card -->
-                  <div class="card p-6 rounded-lg shadow-md hover:shadow-xl">
-                    <h4 class="font-semibold text-xl mb-4">
-                      Employee Relations
-                    </h4>
-                    <p class="text-md text-gray-700">
-                      Building and maintaining positive relationships between
-                      employees and the organization to improve morale and
-                      productivity.
-                    </p>
-                  </div>
-
-                  <!-- Compensation and Benefits Card -->
-                  <div class="card p-6 rounded-lg shadow-md hover:shadow-xl">
-                    <h4 class="font-semibold text-xl mb-4">
-                      Compensation and Benefits
-                    </h4>
-                    <p class="text-md text-gray-700">
-                      Designing and managing pay structures, benefits packages,
-                      and incentives to attract and retain employees.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <h3 class="text-lg font-semibold m-2 p-5" id="intro-financial">
-                3.2 Operations Management
-              </h3>
-              <p class="text-lg">
-                Operations Management (OM) is a crucial aspect of successful
-                business operations. It involves managing the production ,
-                distribution, and logistics of goods and services within a
-                company. This module will provide you with an overview of OM
-                concepts, practices, and best practices. OM plays a vital role
-                in managing the supply chain, ensuring that goods and services
-                are delivered efficiently and effectively, and addressing any
-                issues or concerns that may arise. As an operations manager, you
-                will be responsible for ensuring that the supply chain is
-                functioning efficiently, managing inventory levels, and
-                addressing any concerns or issues that arise.
-              </p>
-
-              <h3 class="text-lg font-semibold m-2 p-5" id="intro-financial">
-                3.3 Project Management
-              </h3>
-              <p class="text-lg">
-                Project Management (PM) is a crucial aspect of successful
-                business operations. It involves managing projects, tasks, and
-                milestones within a company. This module will provide you with
-                an overview of PM concepts, practices, and best practices.
-              </p>
-              <p class="text-lg mt-2">
-                PM plays a role in the development environment for developers
-                and developers of the application being developed. PM plays a
-                vital role in managing the development environment for
-                developers and developers of the application being developed. As
-                a project manager, you will be responsible for ensuring that the
-                project is completed on time, within budget, and with the
-                highest possible quality.
-              </p>
-
-              <div>
-                <div class="flex flex-wrap justify-center gap-6 p-6">
-                  <!-- Card 1 -->
-                  <div
-                    class="w-full md:w-60  rounded-lg shadow-lg p-5 "
-                  >
-                    <h3 class="text-lg  text-center font-bold mb-2 ">
-                      Planning and Scheduling
-                    </h3>
-                    <p class="text-gray-700">
-                      Setting objectives, timelines, and milestones. Using tools
-                      like Gantt charts to track progress.
-                    </p>
-                  </div>
-
-                  <!-- Card 2 -->
-                  <div
-                    class="w-full md:w-60  rounded-lg shadow-lg p-5 "
-                  >
-                    <h3 class="text-lg text-center font-bold mb-2 ">
-                      Risk Management
-                    </h3>
-                    <p class="text-gray-700">
-                      Identifying, assessing, and mitigating risks. Creating
-                      contingency plans for unexpected issues.
-                    </p>
-                  </div>
-
-                  <!-- Card 3 -->
-                  <div
-                    class="w-full md:w-60 rounded-lg shadow-lg p-5 "
-                  >
-                    <h3 class="text-lg text-center font-bold mb-2 ">
-                      Resource Management
-                    </h3>
-                    <p class="text-gray-700">
-                      Efficiently allocating resources like time, budget, and
-                      personnel to optimize productivity.
-                    </p>
-                  </div>
-
-                  <!-- Card 4 -->
-                  <div
-                    class="w-full md:w-60  rounded-lg shadow-lg p-5 "
-                  >
-                    <h3 class="text-lg text-center font-bold mb-2 ">
-                      Communication & Collaboration
-                    </h3>
-                    <p class="text-gray-700">
-                      Maintaining clear communication with stakeholders and
-                      ensuring teamwork.
-                    </p>
-                  </div>
-
-                  <!-- Card 5 -->
-                  <div
-                    class="w-full md:w-60  rounded-lg shadow-lg p-5 "
-                  >
-                    <h3 class="text-lg text-center font-bold mb-2 ">
-                      Quality Control
-                    </h3>
-                    <p class="text-gray-700">
-                      Monitoring project deliverables to meet standards and
-                      ensure customer satisfaction.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="cards">
-                  <div class="card"></div>
-                </div>
-              </div>
-
-              <div
-                class="p-6 space-y-6 bg-course-gradient rounded-lg shadow-lg mt-20"
-              >
-                <!-- Heading Section -->
-                <h3
-                  class="text-3xl font-bold text-white bg-navColor p-5 rounded-lg shadow-md"
-                >
-                  Learning Activities and Resources
-                </h3>
-
-                <!-- Paragraph Section -->
-                <p class="text-lg text-gray-800 leading-relaxed">
-                  To help you learn more about engineering design and analysis,
-                  you can find various learning activities and resources
-                  available on the LearnSphere platform. Some popular learning
-                  activities include:
-                </p>
-
-                <!-- List of Learning Activities -->
-                <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
-                  <li
-                    class="hover:text-accentColor transition duration-300 ease-in-out"
-                  >
-                    Coursework assignments and quizzes
-                  </li>
-                  <li
-                    class="hover:text-accentColor transition duration-300 ease-in-out"
-                  >
-                    Online lectures and videos
-                  </li>
-                  <li
-                    class="hover:text-accentColor transition duration-300 ease-in-out"
-                  >
-                    Problem-solving exercises
-                  </li>
-                  <li
-                    class="hover:text-accentColor transition duration-300 ease-in-out"
-                  >
-                    Discussion forums and Q&A
-                  </li>
-                  <li
-                    class="hover:text-accentColor transition duration-300 ease-in-out"
-                  >
-                    Interactive learning tools and simulations
-                  </li>
-                </ul>
-
-                <!-- Additional Resources Section -->
-                <p class="text-lg text-gray-800 leading-relaxed">
-                  You can also find additional resources and learning materials
-                  on the following websites:
-                </p>
-                <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
-                  <li>
-                    <a
-                      href="https://www.learnsphere.com/"
-                      class="text-accentColor hover:underline transition duration-300"
-                      >LearnSphere</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.coursera.org/"
-                      class="text-accentColor hover:underline transition duration-300"
-                      >Coursera</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.edx.org/"
-                      class="text-accentColor hover:underline transition duration-300"
-                      >edX</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.udemy.com/"
-                      class="text-accentColor hover:underline transition duration-300"
-                      >Udemy</a
-                    >
-                  </li>
-                </ul>
-
-                <!-- Conclusion Section -->
-                <p class="text-lg text-gray-800 leading-relaxed">
-                  As you continue your learning journey, remember to practice
-                  active engagement and seek feedback from your peers and
-                  instructors. Good luck with your engineering design and
-                  analysis course!
-                </p>
-              </div>
-            </div>
-          </section>
         </div>
-      </div>
     </div>
     <div id="footer"></div>
     <script src="/js/course-detail.js"></script>
-      <script src="../components/nav.js"></script>
-  </body>
+    <script src="../components/nav.js"></script>
+</body>
 </html>

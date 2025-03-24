@@ -11,103 +11,121 @@
     <div class="containers mt-20">
         <div id="navbar"></div>
         <div>
-            <div class="highlights flex flex-col-2 gap-6">
-               <section class="w-full mb-5">
-                <div class="sidebar bg-button text-heroText m-5 p-5 w-[450px] h-[auto] ">
-                    <h2 class="text-2xl font-semibold m-2 ">Master Full-stack Web Development</h2>
-                    <div class="modules space-y-3 bg-accentColor">
-                        <div class="module p-3 shadow">
-                            <div class="flex justify-between items-center cursor-pointer"  data-url="module-one.html">
-                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 1: Introduction to Web Development</h3>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                            <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor"> <!-- Added 'hidden' class -->
-                                <li class="bg-navColor px-3 py-3 rounded-lg text-center">
-                                    <a href="#intro-web" onclick="scrollToSection(event, 'intro-web')">What is Web Development?</a>
-                                </li>
-                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                    <a href="#intro-mean" onclick="scrollToSection(event, 'intro-mean')">How the Web Works</a>
-                                </li>
-                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                    <a href="#intro-front-back" onclick="scrollToSection(event, 'intro-front-back')">Front-end vs. Back-end</a>
-                                </li>
-                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                    <a href="#intro-tools" onclick="scrollToSection(event, 'intro-tools')">Tools for Web Development</a>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        <div class="module p-3 shadow">
-                            <div class="flex justify-between items-center cursor-pointer"  data-url="module-two.html">
-                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 2: HTML & CSS Basics </h3>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                             <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
-                                <li class=" bg-navColor px-3 py-3 rounded-lg text-center"><a href="#intro-basics" onclick="scrollToSection(event,'intro-basics')">Introduction to HTML & CSS</a></li>
-                                <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a href="#intro-html" onclick="scrollToSection(event,'intro-html')">HTML Basics</a></li>
-                                <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a href="#intro-css" onclick="scrollToSection(event,'intro-css')">CSS Basics</a></li>
-                              </ul>   
-                        </div>
-                        <div class="module p-3 shadow">
-                            <div class="flex justify-between items-center cursor-pointer"  data-url="module-three.html">
-                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 3: Responsive Web Design  </h3>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                           <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center">
-                                        <a href="#intro" onclick="scrollToSection(event,'intro')">Responsive Design Principles</a></li>
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#intro-mobile "onclick="scrollToSection(event,'intro-mobile')">Creating Mobile-Friendly Designs</a></li>
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#media" onclick="scrollToSection(event,'media')">CSS Media Queries</a></li>
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#image" onclick="scrollToSection(event,'image')">Responsive Images & Video</a></li>
-                                </ul>
-                        </div>
-                        <div class="module p-3 shadow">
-                            <div class="flex justify-between items-center cursor-pointer" data-url="module-four.html">
-                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 4: JavaScript Basics  </h3>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                          <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center"><a
-                                            href="#intro-variable">Variables & Data Types</a></li>
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a
-                                            href="#intro-condition">Conditionals & Loops</a></li>
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a
-                                            href="#intro-func">Functions & Event Handlers</a></li>
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a
-                                            href="#intro-obj">Objects & Arrays</a></li>
-                                </ul>
-                        </div>
-                        <div class="module p-3 shadow">
-                            <div class="flex justify-between items-center cursor-pointer"  data-url="./module-five.html">
-                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 5: Advanced JavaScript & DOM Manipulation  </h3>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                           <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center">
-                                        <a href="#domSection" onclick="scrollToSection(event, 'domSection')">Document Object
-                                            Model (DOM)</a></li>
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#eventListener" onclick="scrollToSection(event, 'eventListener')">Event
-                                            Listeners & Event Propagation</a></li>
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#formValidation" onclick="scrollToSection(event, 'formValidation')">Form
-                                            Validation</a></li>
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#ajaxSection" onclick="scrollToSection(event, 'ajaxSection')">AJAX & API
-                                            Calls</a></li>
-                                </ul>
-                        </div>
-                        <div class="module p-3 shadow">
-                            <div class="flex justify-between items-center cursor-pointer" data-url="./module-six.html">
-                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 6: Introduction to Version Control with Git</h3>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                             <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+            <div class="highlights flex flex-col md:flex-row gap-6">
+                <section class="w-full md:w-1/3 mb-5">
+                    <div class="sidebar bg-button text-heroText m-5 p-5 h-auto hidden md:block">
+                        <h2 class="text-2xl font-semibold m-2">Master Full-stack Web Development</h2>
+                        <div class="modules space-y-3 bg-accentColor">
+                            <div class="module p-3 shadow">
+                                <div class="flex justify-between items-center cursor-pointer" data-url="module-one.html">
+                                    <h3 class="text-lg font-semibold mb-2 mt-2">Module 1: Introduction to Web Development</h3>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
                                     <li class="bg-navColor px-3 py-3 rounded-lg text-center">
-                                        <a href="#intro-git" onclick="scrollToSection(event, 'intro-version')"> What is Version control</a>
+                                        <a href="#intro-web" onclick="scrollToSection(event, 'intro-web')">What is Web Development?</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-mean" onclick="scrollToSection(event, 'intro-mean')">How the Web Works</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-front-back" onclick="scrollToSection(event, 'intro-front-back')">Front-end vs. Back-end</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-tools" onclick="scrollToSection(event, 'intro-tools')">Tools for Web Development</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="module p-3 shadow">
+                                <div class="flex justify-between items-center cursor-pointer" data-url="module-two.html">
+                                    <h3 class="text-lg font-semibold mb-2 mt-2">Module 2: HTML & CSS Basics</h3>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                                        <a href="#intro-basics" onclick="scrollToSection(event,'intro-basics')">Introduction to HTML & CSS</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-html" onclick="scrollToSection(event,'intro-html')">HTML Basics</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-css" onclick="scrollToSection(event,'intro-css')">CSS Basics</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="module p-3 shadow">
+                                <div class="flex justify-between items-center cursor-pointer" data-url="module-three.html">
+                                    <h3 class="text-lg font-semibold mb-2 mt-2">Module 3: Responsive Web Design</h3>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                                        <a href="#intro" onclick="scrollToSection(event,'intro')">Responsive Design Principles</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-mobile" onclick="scrollToSection(event,'intro-mobile')">Creating Mobile-Friendly Designs</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#media" onclick="scrollToSection(event,'media')">CSS Media Queries</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#image" onclick="scrollToSection(event,'image')">Responsive Images & Video</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="module p-3 shadow">
+                                <div class="flex justify-between items-center cursor-pointer" data-url="module-four.html">
+                                    <h3 class="text-lg font-semibold mb-2 mt-2">Module 4: JavaScript Basics</h3>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                                        <a href="#intro-variable" onclick="scrollToSection(event, 'intro-variable')">Variables & Data Types</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-condition" onclick="scrollToSection(event, 'intro-condition')">Conditionals & Loops</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-func" onclick="scrollToSection(event, 'intro-func')">Functions & Event Handlers</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-obj" onclick="scrollToSection(event, 'intro-obj')">Objects & Arrays</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="module p-3 shadow">
+                                <div class="flex justify-between items-center cursor-pointer" data-url="./module-five.html">
+                                    <h3 class="text-lg font-semibold mb-2 mt-2">Module 5: Advanced JavaScript & DOM Manipulation</h3>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                                        <a href="#domSection" onclick="scrollToSection(event, 'domSection')">Document Object Model (DOM)</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#eventListener" onclick="scrollToSection(event, 'eventListener')">Event Listeners & Event Propagation</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#formValidation" onclick="scrollToSection(event, 'formValidation')">Form Validation</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#ajaxSection" onclick="scrollToSection(event, 'ajaxSection')">AJAX & API Calls</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="module p-3 shadow">
+                                <div class="flex justify-between items-center cursor-pointer" data-url="./module-six.html">
+                                    <h3 class="text-lg font-semibold mb-2 mt-2">Module 6: Introduction to Version Control with Git</h3>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                                        <a href="#intro-git" onclick="scrollToSection(event, 'intro-version')">What is Version Control</a>
                                     </li>
                                     <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
                                         <a href="#installgit" onclick="scrollToSection(event, 'installgit')">Installing Git</a>
@@ -122,32 +140,30 @@
                                         <a href="#gitmerge" onclick="scrollToSection(event, 'gitmerge')">Git Branching & Merging</a>
                                     </li>
                                 </ul>
+                            </div>
                         </div>
-
                     </div>
-                </div>
-            </section> 
+                </section>
 
-                <section class="mr-20 pr-14">
+                <section class="w-full md:w-2/3 mb-5 mr-20 pr-7 pl-7">
                     <div class="description mt-5 p-2">
                         <h2 class="text-2xl text-center mb-2 font-bold" id="intro-basics">3. Responsive Web Design</h2>
-                        <p class="text-lg leading-relaxed">Responsive web design (RWD) is the process of designing websites that look good and function well on a variety of devices, including tablets, smartphones, and desktops. 
-                            It involves creating designs that adapt to different screen sizes and resolutions, ensuring that the content and functionality are displayed correctly and easily.</p>
+                        <p class="text-lg leading-relaxed">Responsive web design (RWD) is the process of designing websites that look good and function well on a variety of devices, including tablets, smartphones, and desktops. It involves creating designs that adapt to different screen sizes and resolutions, ensuring that the content and functionality are displayed correctly and easily.</p>
                 
-                        <h3 class="text-xl mt-5 p-5 " id="intro">3.1 Responsive Design Principles</h3>
+                        <h3 class="text-xl mt-5 p-5" id="intro">3.1 Responsive Design Principles</h3>
                         <p class="mb-4 text-lg">Responsive design principles ensure a seamless experience across multiple devices, enabling adaptability and ease of use.</p>
                         
                         <!-- Cards Section -->
-                        <div class="grid grid-cols-2 gap-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                             <div class="card bg-button text-accentColor p-4 rounded-lg shadow-md">
                                 <h4 class="text-xl font-semibold">Mobile-first design</h4>
                                 <p class="text-sm mt-2">Start with small screens and work your way up to larger screens for optimal mobile-friendly designs.</p>
                             </div>
-                            <div class="card bg-button text-accentColor  p-4 rounded-lg shadow-md">
+                            <div class="card bg-button text-accentColor p-4 rounded-lg shadow-md">
                                 <h4 class="text-xl font-semibold">Fluid grids</h4>
                                 <p class="text-sm mt-2">Use relative units like percentages and ems to create fluid layouts that adapt to different screen sizes.</p>
                             </div>
-                            <div class="card bg-button text-accentColor  p-4 rounded-lg shadow-md">
+                            <div class="card bg-button text-accentColor p-4 rounded-lg shadow-md">
                                 <h4 class="text-xl font-semibold">Media queries</h4>
                                 <p class="text-sm mt-2">Use CSS media queries to apply different styles for different screen sizes and devices.</p>
                             </div>
@@ -157,24 +173,25 @@
                             </div>
                         </div>
                 
-                        <h3 class="text-xl p-5 mt-5 " id="intro-mobile">3.2 Creating Mobile-Friendly Designs</h3>
-                        <p class="mb-4 text-lg">
-                            Mobile-friendly designs are crucial for enhancing the user experience across smaller screens, such as smartphones and tablets. With the increasing use of mobile devices for browsing the internet, it is essential to create designs that adapt seamlessly to varying screen sizes and resolutions. Mobile-friendly designs prioritize ease of navigation, readability, and accessibility, ensuring that content is not only visually appealing but also functional on small screens.
-                        </p>
+                        <h3 class="text-xl p-5 mt-5" id="intro-mobile">3.2 Creating Mobile-Friendly Designs</h3>
+                        <p class="mb-4 text-lg">Mobile-friendly designs are crucial for enhancing the user experience across smaller screens, such as smartphones and tablets. With the increasing use of mobile devices for browsing the internet, it is essential to create designs that adapt seamlessly to varying screen sizes and resolutions. Mobile-friendly designs prioritize ease of navigation, readability, and accessibility, ensuring that content is not only visually appealing but also functional on small screens.</p>
                         
-
                         <ul class="list-none text-lg text-navColor pl-5 space-y-2">
-                            <li class="p-4 rounded-lg  shadow-md hover:shadow-xl hover:bg-gray-200 transition-all duration-300">
+                            <li class="p-4 rounded-lg shadow-md hover:shadow-xl hover:bg-gray-200 transition-all duration-300">
                                 Use relative units: Use percentages, ems, or rem units instead of pixels to make your designs responsive.
                             </li>
                             <li class="p-4 rounded-lg shadow-md hover:shadow-xl hover:bg-gray-200 transition-all duration-300">
-                                Use viewport units: Use vw, vh, vmin, and vmax units to make your designs responsive.</li>
-                            <li class="p-4 rounded-lg  shadow-md hover:shadow-xl hover:bg-gray-200 transition-all duration-300">
-                                Use flexible grid systems: Use CSS Flexbox or CSS Grid to create a responsive grid layout.</li>
-                            <li class="p-4 rounded-lg  shadow-md hover:shadow-xl hover:bg-gray-200 transition-all duration-300">
-                                Use media queries: Use CSS media queries to apply different styles for different screen sizes and devices.</li>
-                            <li class="p-4 rounded-lg  shadow-md hover:shadow-xl hover:bg-gray-200 transition-all duration-300">
-                                Use progressive enhancement: Start with a basic design and gradually enhance it with more advanced features.</li>
+                                Use viewport units: Use vw, vh, vmin, and vmax units to make your designs responsive.
+                            </li>
+                            <li class="p-4 rounded-lg shadow-md hover:shadow-xl hover:bg-gray-200 transition-all duration-300">
+                                Use flexible grid systems: Use CSS Flexbox or CSS Grid to create a responsive grid layout.
+                            </li>
+                            <li class="p-4 rounded-lg shadow-md hover:shadow-xl hover:bg-gray-200 transition-all duration-300">
+                                Use media queries: Use CSS media queries to apply different styles for different screen sizes and devices.
+                            </li>
+                            <li class="p-4 rounded-lg shadow-md hover:shadow-xl hover:bg-gray-200 transition-all duration-300">
+                                Use progressive enhancement: Start with a basic design and gradually enhance it with more advanced features.
+                            </li>
                         </ul>
                 
                         <h3 class="text-xl p-5 mt-5" id="media">3.3 CSS Media Queries</h3>
@@ -209,48 +226,45 @@
                         <h3 class="text-xl p-5 mt-5" id="image">3.4 Responsive Images and Videos</h3>
                         <p class="mb-4 text-lg">Responsive images and videos ensure that they adapt to different screen sizes and resolutions, ensuring a seamless viewing experience on various devices.</p>
                         <p class="text-lg">To make images responsive, you can use CSS media queries to apply different styles for different screen sizes and resolutions.</p>
-                        <p class="text-lg">To make videos responsive, you can use the  <code class="text-xl font-bold"> &lt;width&gt;</code> and  <code class="text-xl font-bold">&lt;height&gt;</code> attributes in the video tag or use CSS media queries to apply different styles for different screen sizes and resolutions.</p>
+                        <p class="text-lg">To make videos responsive, you can use the <code class="text-xl font-bold"> &lt;width&gt;</code> and <code class="text-xl font-bold">&lt;height&gt;</code> attributes in the video tag or use CSS media queries to apply different styles for different screen sizes and resolutions.</p>
                         
-                        <h3 class="text-xl p-5 mt-5"> Advanced Responsive Design Techniques</h3>
+                        <h3 class="text-xl p-5 mt-5">Advanced Responsive Design Techniques</h3>
                         <p class="mb-4 text-lg">Advanced responsive design techniques include:</p>
                         
                         <!-- Attractive Unordered List -->
                         <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <li class=" p-4 rounded-lg shadow-md ">
+                            <li class="p-4 rounded-lg shadow-md">
                                 <div class="flex items-center space-x-3">
                                     <span class="text-xl text-heroText p-5">&#10003;</span>
                                     <p class="text-lg text-gray-700">Use flexible units: Use percentages, ems, or rem units to create flexible layouts that adapt to different screen sizes and resolutions.</p>
                                 </div>
                             </li>
-                            <li class=" p-4 rounded-lg shadow-md ">
+                            <li class="p-4 rounded-lg shadow-md">
                                 <div class="flex items-center space-x-3">
                                     <span class="text-xl text-heroText p-5">&#10003;</span>
                                     <p class="text-lg text-gray-700">Use fluid grids: Use CSS Flexbox or CSS Grid to create responsive grid layouts.</p>
                                 </div>
                             </li>
-                            <li class=" p-4 rounded-lg shadow-md ">
+                            <li class="p-4 rounded-lg shadow-md">
                                 <div class="flex items-center space-x-3">
                                     <span class="text-xl text-heroText p-5">&#10003;</span>
                                     <p class="text-lg text-gray-700">Use media queries: Use CSS media queries to apply different styles for different screen sizes and devices.</p>
                                 </div>
                             </li>
-                            <li class="p-4 rounded-lg shadow-md ">
+                            <li class="p-4 rounded-lg shadow-md">
                                 <div class="flex items-center space-x-3">
                                     <span class="text-xl text-heroText p-5">&#10003;</span>
                                     <p class="text-lg text-gray-700">Use flexible units: Use percentages, ems, or rem units to create flexible layouts that adapt to different screen sizes and resolutions.</p>
                                 </div>
                             </li>
                         </ul>
-        
-                
                     </div>
                 </section>
-                
             </div>
         </div>
     </div>
     <div id="footer"></div>
-     <script src="../components/nav.js"></script>
+    <script src="../components/nav.js"></script>
     <script src="/js/course-detail.js"></script>
 </body>
 </html>

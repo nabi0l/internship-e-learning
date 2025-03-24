@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LearnSphere</title>
-    <link rel="stylesheet" href="/Assests/fontawesome-free-6.7.2-web/css/all.min.css">
-    <link rel="stylesheet" href="/css/output.css">
-    <link rel="stylesheet" href="../css/course-detail.css">
+    <link rel="stylesheet" href="/Assests/fontawesome-free-6.7.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="/css/output.css" />
+    <link rel="stylesheet" href="../css/course-detail.css" />
 </head>
+
 <body class="bg-accentColor text-gray-600">
-    
     <div>
         <div id="navbar"></div>
 
-        <div class="highlights flex flex-col-2 gap-6 p-2 mt-20">
-
-            <section class="w-full mb-5">
-                <div class="sidebar bg-button text-heroText m-5 p-5 w-[450px] h-[auto] ">
-                    <h2 class="text-2xl font-semibold m-2 ">Master Full-stack Web Development</h2>
+        <div class="highlights flex flex-col md:flex-row gap-6 p-2 mt-20">
+            <section class="w-full md:w-1/3 mb-5">
+                <div class="sidebar bg-button text-heroText m-5 p-5 h-auto hidden md:block">
+                    <h2 class="text-2xl font-semibold m-2">Master Full-stack Web Development</h2>
                     <div class="modules space-y-3 bg-accentColor">
                         <div class="module p-3 shadow">
-                            <div class="flex justify-between items-center cursor-pointer"  data-url="module-one.html">
-                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 1: Introduction to Web Development</h3>
+                            <div class="flex justify-between items-center cursor-pointer" data-url="module-one.html">
+                                <h3 class="text-lg font-semibold mb-2 mt-2">Module 1: Introduction to Web Development</h3>
                                 <i class="fas fa-caret-down"></i>
                             </div>
-                            <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor"> <!-- Added 'hidden' class -->
+                            <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
                                 <li class="bg-navColor px-3 py-3 rounded-lg text-center">
                                     <a href="#intro-web" onclick="scrollToSection(event, 'intro-web')">What is Web Development?</a>
                                 </li>
@@ -39,191 +39,175 @@
                                 </li>
                             </ul>
                         </div>
-                        
+
                         <div class="module p-3 shadow">
-                            <div class="flex justify-between items-center cursor-pointer"  data-url="module-two.html">
-                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 2: HTML & CSS Basics </h3>
+                            <div class="flex justify-between items-center cursor-pointer" data-url="module-two.html">
+                                <h3 class="text-lg font-semibold mb-2 mt-2">Module 2: HTML & CSS Basics</h3>
                                 <i class="fas fa-caret-down"></i>
                             </div>
-                             <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
-                                <li class=" bg-navColor px-3 py-3 rounded-lg text-center"><a href="#intro-basics" onclick="scrollToSection(event,'intro-basics')">Introduction to HTML & CSS</a></li>
-                                <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a href="#intro-html" onclick="scrollToSection(event,'intro-html')">HTML Basics</a></li>
-                                <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a href="#intro-css" onclick="scrollToSection(event,'intro-css')">CSS Basics</a></li>
-                              </ul>   
-                        </div>
-                        <div class="module p-3 shadow">
-                            <div class="flex justify-between items-center cursor-pointer"  data-url="module-three.html">
-                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 3: Responsive Web Design  </h3>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                           <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center">
-                                        <a href="#intro" onclick="scrollToSection(event,'intro')">Responsive Design Principles</a></li>
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#intro-mobile "onclick="scrollToSection(event,'intro-mobile')">Creating Mobile-Friendly Designs</a></li>
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#media" onclick="scrollToSection(event,'media')">CSS Media Queries</a></li>
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#image" onclick="scrollToSection(event,'image')">Responsive Images & Video</a></li>
-                                </ul>
-                        </div>
-                        <div class="module p-3 shadow">
-                            <div class="flex justify-between items-center cursor-pointer" data-url="module-four.html">
-                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 4: JavaScript Basics  </h3>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                          <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center"><a
-                                            href="#intro-variable">Variables & Data Types</a></li>
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a
-                                            href="#intro-condition">Conditionals & Loops</a></li>
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a
-                                            href="#intro-func">Functions & Event Handlers</a></li>
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a
-                                            href="#intro-obj">Objects & Arrays</a></li>
-                                </ul>
-                        </div>
-                        <div class="module p-3 shadow">
-                            <div class="flex justify-between items-center cursor-pointer"  data-url="./module-five.html">
-                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 5: Advanced JavaScript & DOM Manipulation  </h3>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                           <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center">
-                                        <a href="#domSection" onclick="scrollToSection(event, 'domSection')">Document Object
-                                            Model (DOM)</a></li>
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#eventListener" onclick="scrollToSection(event, 'eventListener')">Event
-                                            Listeners & Event Propagation</a></li>
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#formValidation" onclick="scrollToSection(event, 'formValidation')">Form
-                                            Validation</a></li>
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#ajaxSection" onclick="scrollToSection(event, 'ajaxSection')">AJAX & API
-                                            Calls</a></li>
-                                </ul>
-                        </div>
-                        <div class="module p-3 shadow">
-                            <div class="flex justify-between items-center cursor-pointer" data-url="./module-six.html">
-                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 6: Introduction to Version Control with Git</h3>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                             <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
-                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
-                                        <a href="#intro-git" onclick="scrollToSection(event, 'intro-version')"> What is Version control</a>
-                                    </li>
-                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#installgit" onclick="scrollToSection(event, 'installgit')">Installing Git</a>
-                                    </li>
-                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#gitBasics" onclick="scrollToSection(event, 'gitBasics')">Git Basics</a>
-                                    </li>
-                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#gitcollab" onclick="scrollToSection(event, 'gitcollab')">Git Collaboration & Workflows</a>
-                                    </li>
-                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#gitmerge" onclick="scrollToSection(event, 'gitmerge')">Git Branching & Merging</a>
-                                    </li>
-                                </ul>
+                            <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                                    <a href="#intro-basics" onclick="scrollToSection(event,'intro-basics')">Introduction to HTML & CSS</a>
+                                </li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="#intro-html" onclick="scrollToSection(event,'intro-html')">HTML Basics</a>
+                                </li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="#intro-css" onclick="scrollToSection(event,'intro-css')">CSS Basics</a>
+                                </li>
+                            </ul>
                         </div>
 
+                        <div class="module p-3 shadow">
+                            <div class="flex justify-between items-center cursor-pointer" data-url="module-three.html">
+                                <h3 class="text-lg font-semibold mb-2 mt-2">Module 3: Responsive Web Design</h3>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                            <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                                    < a href="#intro" onclick="scrollToSection(event,'intro')">Responsive Design Principles</a></li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="#intro-mobile" onclick="scrollToSection(event,'intro-mobile')">Creating Mobile-Friendly Designs</a></li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="#media" onclick="scrollToSection(event,'media')">CSS Media Queries</a></li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="#image" onclick="scrollToSection(event,'image')">Responsive Images & Video</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="module p-3 shadow">
+                            <div class="flex justify-between items-center cursor-pointer" data-url="module-four.html">
+                                <h3 class="text-lg font-semibold mb-2 mt-2">Module 4: JavaScript Basics</h3>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                            <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                                    <a href="#intro-variable">Variables & Data Types</a></li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="#intro-condition">Conditionals & Loops</a></li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="#intro-func">Functions & Event Handlers</a></li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="#intro-obj">Objects & Arrays</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="module p-3 shadow">
+                            <div class="flex justify-between items-center cursor-pointer" data-url="./module-five.html">
+                                <h3 class="text-lg font-semibold mb-2 mt-2">Module 5: Advanced JavaScript & DOM Manipulation</h3>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                            <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                                    <a href="#domSection" onclick="scrollToSection(event, 'domSection')">Document Object Model (DOM)</a></li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="#eventListener" onclick="scrollToSection(event, 'eventListener')">Event Listeners & Event Propagation</a></li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="#formValidation" onclick="scrollToSection(event, 'formValidation')">Form Validation</a></li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="#ajaxSection" onclick="scrollToSection(event, 'ajaxSection')">AJAX & API Calls</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="module p-3 shadow">
+                            <div class="flex justify-between items-center cursor-pointer" data-url="./module-six.html">
+                                <h3 class="text-lg font-semibold mb-2 mt-2">Module 6: Introduction to Version Control with Git</h3>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                            <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                                    <a href="#intro-git" onclick="scrollToSection(event, 'intro-version')">What is Version Control</a></li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="#installgit" onclick="scrollToSection(event, 'installgit')">Installing Git</a></li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="#gitBasics" onclick="scrollToSection(event, 'gitBasics')">Git Basics</a></li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="# gitcollab" onclick="scrollToSection(event, 'gitcollab')">Git Collaboration & Workflows</a></li>
+                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                    <a href="#gitmerge" onclick="scrollToSection(event, 'gitmerge')">Git Branching & Merging</a></li>
+                                </ul>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section class=" mr-20 pr-14 ">
+            <section class="mr-20 pr-7 pl-7 w-full md:w-2/3">
                 <div class="description mt-5 p-2">
-                    <h2 class="text-2xl text-center mb-2 font-bold " id="intro-web">Introduction to Web Development</h2>
+                    <h2 class="text-2xl text-center mb-2 font-bold" id="intro-web">Introduction to Web Development</h2>
                     <h2 class="text-xl font-semibold mb-3 p-4">Overview</h2>
-                    <p class="text-lg p-2">Web development is the process of building and maintaining websites and web applications.
-                         It encompasses everything from creating simple static websites to complex web applications, involving various technologies and tools. 
-                        This module will guide you through the fundamentals of web development, covering both front-end and back-end concepts, essential tools, and best practices.</p>
+                    <p class="text-lg p-2">Web development is the process of building and maintaining websites and web applications. It encompasses everything from creating simple static websites to complex web applications, involving various technologies and tools. This module will guide you through the fundamentals of web development, covering both front-end and back-end concepts, essential tools, and best practices.</p>
 
-                    <h3 class="font-medium text-xl m-3 p-5" id="intro-mean">1.1 What is web Development?</h3>  
-                    <p class="text-lg p-2">Web development is the process of building and maintaining websites and web applications. 
-                        It involves various technologies, tools, and programming languages to create interactive and user-friendly web experiences.
-                         Web developers use front-end and back-end technologies to design, develop, and deploy websites that meet the needs of users and businesses.</p>
-                    <p> </p>     
-                           
+                    <h3 class="font-medium text-xl m-3 p-5" id="intro-mean">1.1 What is Web Development?</h3>
+                    <p class="text-lg p-2">Web development is the process of building and maintaining websites and web applications. It involves various technologies, tools, and programming languages to create interactive and user-friendly web experiences. Web developers use front-end and back-end technologies to design, develop, and deploy websites that meet the needs of users and businesses.</p>
+
                     <h3 class="font-medium text-xl m-3 p-5" id="intro-web">1.2 How the Web Works</h3>
-                    <p class="text-lg p-2">The web works on the principles of client-server architecture, where a client (e.g., a web browser) requests information from a server (e.g., a web server).
-                         The server processes the request, generates the appropriate response, and sends it back to the client.
-                         This allows for dynamic and interactive web experiences, as users can view and interact with content on the web.</p>
+                    <p class="text-lg p-2">The web works on the principles of client-server architecture, where a client (e.g., a web browser) requests information from a server (e.g., a web server). The server processes the request, generates the appropriate response, and sends it back to the client. This allows for dynamic and interactive web experiences, as users can view and interact with content on the web.</p>
 
-                     <div class="video">
-                        
+                    <div class="flex items-center justify-center mt-4">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/cpkd4EYYQ8o?si=qTJ4I8ystkjRwdQx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                     </div>
-                     
-                     <h3 class="font-medium text-xl m-3 p-5" id="intro-front-back">1.3 Front-end vs. Back-end</h3>
-                     <p class="text-lg p-2">Web development can be divided into front-end and back-end development.
-                         Front-end development involves designing and implementing the user interface (UI) and user experience (UX) of websites and web applications, using HTML, CSS, and JavaScript.
-                         Back-end development involves developing the server-side logic and data processing, using programming languages like Python, Java, or Node.js, along with databases like MySQL, PostgreSQL, or MongoDB.</p>
-                      <div class="division">
+                    </div>
+
+                    <h3 class="font-medium text-xl m-3 p-5" id="intro-front-back">1.3 Front-end vs. Back-end</h3>
+                    <p class="text-lg p-2">Web development can be divided into front-end and back-end development. Front-end development involves designing and implementing the user interface (UI) and user experience (UX) of websites and web applications, using HTML, CSS, and JavaScript. Back-end development involves developing the server-side logic and data processing, using programming languages like Python, Java, or Node.js, along with databases like MySQL, PostgreSQL, or MongoDB.</p>
+
+                    <div class="division">
                         <h2 class="text-xl p-3 font-semibold mt-2 mb-3">Front-end Basics</h2>
-                        <p class="text-lg p-2">Front-end development focuses on the client-side of web applications, where users interact with the website or web application.
-                            Front-end developers use HTML, CSS, and JavaScript to create the visual and interactive elements of a website, such as text, images, buttons, forms, and animations.</p>
-                            <div class="cards flex flex-col-3 gap-5 shadow-navColor-2">
-                                <div class="card border-2 border-navColor m-2 p-2 text-center">
-                                    <i class="fa-brands fa-html5 text-5xl "></i>
-                                    <h3 class="text-center text-2xl ">HTML</h3>
-                                    <p class="max-w-xl text-center">HTML (HyperText Markup Language) is the standard markup language for creating web pages and web applications.</p>
-                                </div>
-                                <div class="card border-2 border-navColor m-2 p-2 text-center">
-                                    <i class="fa-brands fa-css3 text-5xl"></i>
-                                    <h3 class="text-center text-2xl">CSS</h3>
-                                    <p class="max-w-xl text-center">CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in HTML.</p>
-                                </div>
-                                <div class="card border-2 border-navColor  m-2 p-2 text-center">
-                                    <i class="fa-brands fa-js text-5xl"></i>
-                                    <h3 class="text-center text-2xl">JavaScript</h3>
-                                    <p class="max-w-xl text-center">JavaScript is a programming language that enables interactive web pages and web applications.</p>
-                                </div>
+                        <p class="text-lg p-2">Front-end development focuses on the client-side of web applications, where users interact with the website or web application. Front-end developers use HTML, CSS, and JavaScript to create the visual and interactive elements of a website, such as text, images, buttons, forms, and animations.</p>
+                        <div class="cards flex flex-col md:flex-row gap-5 shadow-navColor-2">
+                            <div class="card border-2 border-navColor m-2 p-2 text-center">
+                                <i class="fa-brands fa-html5 text-5xl"></i>
+                                <h3 class="text-center text-2xl">HTML</h3>
+                                <p class="max-w-xl text-center">HTML (HyperText Markup Language) is the standard markup language for creating web pages and web applications.</p>
                             </div>
-                            <h2 class="text-xl p-3 font-semibold mt-3 mb-3">Back-end Basics</h2>
-                            <p class="text-lg p-2">Back-end development focuses on the server-side of web applications, where data is processed and stored.
-                                Back-end developers use programming languages like Python, Java, or Node.js to write server-side code that handles HTTP requests, interacts with databases, and provides API endpoints for clients to access data.</p>
-                            <div class="cards flex flex-3 gap-5 items-center">
-                                <div class="card border-2 border-navColor  m-2 p-2 text-center">
-                                    <i class="fa-brands fa-node-js text-5xl"></i>
-                                    <h3 class="text-center text-2xl">Node.js</h3>
-                                    <p class="max-w-lg text-center">Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine that allows developers to run JavaScript on the server-side.</p>
-                                </div>
-                                <div class="card border-2 border-navColor m-2 p-2 text-center">
-                                    <i class="fa-brands fa-js text-5xl"></i>
-                                    <h3 class="text-center text-2xl">Express.js</h3>
-                                    <p class="max-w-lg text-center">Express.js is a popular web application framework for Node.js that provides a robust set of features for building web applications.</p>
-                                </div>            
+                            <div class="card border-2 border-navColor m-2 p-2 text-center">
+                                <i class="fa-brands fa-css3 text-5xl"></i>
+                                <h3 class="text-center text-2xl">CSS</h3>
+                                <p class="max-w-xl text-center">CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in HTML.</p>
                             </div>
-                      </div>   
-                     <h3 class="font-medium text-xl m-3 p-5" id="intro-tools">1.4 Tools for Web Development</h3>
-                        <p class="text-lg p-2">There are various tools and technologies used in web development to streamline the development process and improve productivity.
-                            Some common tools include text editors like Visual Studio Code, IDEs like WebStorm, version control systems like Git, and package managers like npm.
-                            Web developers also use frameworks and libraries like React, Angular, and Express to build web applications more efficiently.</p>
-
-                            <div class="cards flex flex-col-3 gap-5 shadow-navColor-2">
-                                <div class="card border-2 border-navColor  m-2 p-2 text-center">
-                                    <i class="fa-brands fa-git-alt text-5xl"></i>
-                                    <h3 class="text-center text-2xl">Git</h3>
-                                    <p class="max-w-lg text-center">Git is a distributed version control system that allows developers to track changes to files and collaborate on projects.</p>
-                                </div>
-
-                                <div class="card border-2 border-navColor m-2 p-2 text-center">
-                                    <i class="fa-brands fa-npm text-5xl"></i>
-                                    <h3 class="text-center text-2xl">npm</h3>
-                                    <p class="max-w-lg text-center">npm is a package manager for JavaScript and other Node.js projects that helps developers install, manage, and share packages.</p>
-                                </div>
-                                
+                            <div class="card border-2 border-navColor m-2 p-2 text-center">
+                                <i class="fa-brands fa-js text-5xl"></i>
+                                <h3 class="text-center text-2xl">JavaScript</h3>
+                                <p class="max-w-xl text-center">JavaScript is a programming language that enables interactive web pages and web applications.</p>
                             </div>
+                        </div>
+                        <h2 class="text-xl p-3 font-semibold mt-3 mb-3">Back-end Basics</h2>
+                        <p class="text-lg p-2">Back-end development focuses on the server-side of web applications, where data is processed and stored. Back-end developers use programming languages like Python, Java, or Node.js to write server-side code that handles HTTP requests, interacts with databases, and provides API endpoints for clients to access data.</p>
+                        <div class="cards flex flex-col md:flex-row gap-5 items-center">
+                            <div class="card border-2 border-navColor m-2 p-2 text-center">
+                                <i class="fa-brands fa-node-js text-5xl"></i>
+                                <h3 class="text-center text-2xl">Node.js</h3>
+                                <p class="max-w-lg text-center">Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine that allows developers to run JavaScript on the server-side.</p>
+                            </div>
+                            <div class="card border-2 border-navColor m-2 p-2 text-center">
+                                <i class="fa-brands fa-js text-5xl"></i>
+                                <h3 class="text-center text-2xl">Express.js</h3>
+                                <p class="max-w-lg text-center">Express.js is a popular web application framework for Node.js that provides a robust set of features for building web applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="font-medium text-xl m-3 p-5" id="intro-tools">1.4 Tools for Web Development</h3>
+                    <p class="text-lg p-2">There are various tools and technologies used in web development to streamline the development process and improve productivity. Some common tools include text editors like Visual Studio Code, IDEs like WebStorm, version control systems like Git, and package managers like npm. Web developers also use frameworks and libraries like React, Angular, and Express to build web applications more efficiently.</p>
 
+                    <div class="cards flex flex-col md:flex-row gap-5 shadow-navColor-2">
+                        <div class="card border-2 border-navColor m-2 p-2 text-center">
+                            <i class="fa-brands fa-git-alt text-5xl"></i>
+                            <h3 class="text-center text-2xl">Git</h3>
+                            <p class="max-w-lg text-center">Git is a distributed version control system that allows developers to track changes to files and collaborate on projects.</p>
+                        </div>
+
+                        <div class="card border-2 border-navColor m-2 p-2 text-center">
+                            <i class="fa-brands fa-npm text-5xl"></i>
+                            <h3 class="text-center text-2xl">npm</h3>
+                            <p class="max-w-lg text-center">npm is a package manager for JavaScript and other Node.js projects that helps developers install, manage, and share packages.</p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
     </div>
     <div id="footer"></div>
-     <script src="../components/nav.js"></script>
-    <script src="/js/course-detail.js">
-        
-    </script>
+    <script src="../components/nav.js"></script>
+    <script src="/js/course-detail.js"></script>
 </body>
+
 </html>

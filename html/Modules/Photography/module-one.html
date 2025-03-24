@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,68 +12,50 @@
     <div class="containers mt-20">
         <div id="navbar"></div>
         <div>
-            <div class="highlights flex flex-col-2 gap-6">
-                <section class="w-full mb-5">
-                    <div class="sidebar bg-button text-heroText m-5 p-5 w-[450px] h-[auto]">
-                        <h2 class="text-2xl font-semibold m-2">
-                            Master Full-stack Web Development
-                        </h2>
+            <div class="highlights flex flex-col md:flex-row gap-6">
+                <!-- Sidebar Section -->
+                <section class="w-full md:w-1/3 mb-5">
+                    <div class="sidebar bg-button text-heroText m-5 p-5 h-auto hidden md:block">
+                        <h2 class="text-2xl font-semibold m-2">Master Full-stack Web Development</h2>
                         <div class="modules space-y-3 bg-accentColor">
                             <div class="module p-3 shadow">
-                                <div class="flex justify-between items-center cursor-pointer"
-                                    data-url="/html/Modules/Photography/module-one.html">
-                                    <h3 class="text-lg font-semibod mb-2 mt-2">
-                                        Module 1: Basics of Photography
-                                    </h3>
+                                <div class="flex justify-between items-center cursor-pointer" data-url="/html/Modules/Photography/module-one.html">
+                                    <h3 class="text-lg font-semibold mb-2 mt-2">Module 1: Basics of Photography</h3>
                                     <i class="fas fa-caret-down"></i>
                                 </div>
                                 <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
                                     <li class="bg-navColor px-3 py-3 rounded-lg text-center">
-                                        <a href="#intro" onclick="scrollToSection(event, 'intro')">Understanding Your
-                                            Camera</a>
+                                        <a href="#intro" onclick="scrollToSection(event, 'intro')">Understanding Your Camera</a>
                                     </li>
                                     <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#intro-framing"
-                                            onclick="scrollToSection(event, 'intro-framing')">Composition and
-                                            Framing</a>
+                                        <a href="#intro-framing" onclick="scrollToSection(event, 'intro-framing')">Composition and Framing</a>
                                     </li>
                                     <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#intro-lighting"
-                                            onclick="scrollToSection(event, 'intro-lighting')">Lighting Techniques</a>
+                                        <a href="#intro-lighting" onclick="scrollToSection(event, 'intro-lighting')">Lighting Techniques</a>
                                     </li>
                                     <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#intro-photography"
-                                            onclick="scrollToSection(event, 'intro-photography')">Photography Styles</a>
+                                        <a href="#intro-photography" onclick="scrollToSection(event, 'intro-photography')">Photography Styles</a>
                                     </li>
                                 </ul>
                             </div>
 
                             <div class="module p-3 shadow">
-                                <div class="flex justify-between items-center cursor-pointer"
-                                    data-url="/html/Modules/Photography/module-two.html">
-                                    <h3 class="text-lg font-semibod mb-2 mt-2">
-                                        Module 2: Advanced Photography Techniques
-                                    </h3>
+                                <div class="flex justify-between items-center cursor-pointer" data-url="/html/Modules/Photography/module-two.html">
+                                    <h3 class="text-lg font-semibold mb-2 mt-2">Module 2: Advanced Photography Techniques</h3>
                                     <i class="fas fa-caret-down"></i>
                                 </div>
                                 <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
                                     <li class="bg-navColor px-3 py-3 rounded-lg text-center">
-                                        <a href="#intro-vcm"
-                                            onclick="scrollToSection(event,'intro-vcm')">Post-Processing and Editing</a>
+                                        <a href="#intro-vcm" onclick="scrollToSection(event,'intro-vcm')">Post-Processing and Editing</a>
                                     </li>
                                     <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#intro-basics"
-                                            onclick="scrollToSection(event,'intro-basics')">Specialized Photography</a>
+                                        <a href="#intro-basics" onclick="scrollToSection(event,'intro-basics')">Specialized Photography</a>
                                     </li>
                                     <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#intro-design"
-                                            onclick="scrollToSection(event,'intro-design')">Storytelling through
-                                            Photography</a>
+                                        <a href="#intro-design" onclick="scrollToSection(event,'intro-design')">Storytelling through Photography</a>
                                     </li>
                                     <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#intro-portfolio"
-                                            onclick="scrollToSection(event,'intro-portfolio')">Building a Photography
-                                            Portfolio</a>
+                                        <a href="#intro-portfolio" onclick="scrollToSection(event,'intro-portfolio')">Building a Photography Portfolio</a>
                                     </li>
                                 </ul>
                             </div>
@@ -82,7 +63,8 @@
                     </div>
                 </section>
 
-                <section class="mr-20 pr-14">
+                <!-- Main Content Section -->
+                <section class="w-full md:w-2/3 mr-20 pr-7 pl-7">
                     <div class="description mt-5 p-2">
                         <h2 class="text-2xl font-semibold m-2 p-5 text-center">Basics of Photography</h2>
                         <p class="text-lg font-semibold">Overview</p>
@@ -91,235 +73,213 @@
                             including camera settings, lighting, and composition. This
                             module will help you develop a solid foundation for learning
                             more advanced photography techniques.
-                            
                         </p>
 
-                        <h3 class="text-lg font-semibold mb-2 mt-2 p-5">
-                            1.1 Understanding Your Camera
-                        </h3>
-                        <p class="text-lg">Your camera is your primary tool in photography, and understanding its
-                            components and settings is essential for capturing great photos.
-                            Whether you're using a DSLR, mirrorless, or even a smartphone camera, mastering the basics
-                            will help you achieve the results you want.
+                        <h3 class="text-lg font-semibold mb-2 mt-2 p-5">1.1 Understanding Your Camera</h3>
+                        <p class="text-lg">
+                            Your camera is your primary tool in photography, and
+                            understanding its components and settings is essential for
+                            capturing great photos. Whether you're using a DSLR, mirrorless,
+                            or even a smartphone camera, mastering the basics will help you
+                            achieve the results you want.
                         </p>
-                        <div class="flex items-center gap-2 mt-4">
-                           
-                        <div>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/V7z7BAZdt2M?si=9FZnCqGVJAxFOFgq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
+                        <div class="flex items-center justify-center mt-4">
+                            <iframe
+                                width="100%"
+                                height="315"
+                                src="https://www.youtube.com/embed/V7z7BAZdt2M?si=9FZnCqGVJAxFOFgq"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            ></iframe>
                         </div>
 
-                        <h3 class="text-lg font-semibold mb-2 mt-6 p-5">
-                            1.2 Composition and Framing
-                        </h3>
-                        <p class="text-lg ">Composition and framing are two of the most important elements in
-                            photography that help convey your message and create visually appealing images.
-                            They guide how the viewer's eye moves through the image and determine the emotional impact
-                            of your photo.
+                        <h3 class="text-lg font-semibold mb-2 mt-6 p-5">1.2 Composition and Framing</h3>
+                        <p class="text-lg">
+                            Composition and framing are two of the most important elements
+                            in photography that help convey your message and create visually
+                            appealing images. They guide how the viewer's eye moves through
+                            the image and determine the emotional impact of your photo.
                         </p>
 
                         <div>
                             <h4 class="text-lg font-semibold mb-2 p-5 text-center">Composition Techniques</h4>
-                            <div class="cards  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
-                                <div class=" flex flex-col card p-4 rounded-lg bg-white shadow-md">
-                                    <h3 class="text-lg font-semibold">
-                                        Art Direction
-                                    </h3>
+                            <div class="cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                                <div class="flex flex-col card p-4 rounded-lg bg-white shadow-md">
+                                    <h3 class="text-lg font-semibold">Art Direction</h3>
                                     <p>
-                                        Art direction is the placement of elements in the frame to create a sense of
-                                        depth and interest.
-                                        This technique can help create a sense of depth and immersion in your photo.
+                                        Art direction is the placement of elements in the frame to
+                                        create a sense of depth and interest. This technique can
+                                        help create a sense of depth and immersion in your photo.
                                     </p>
                                 </div>
-                                <div class=" flex flex-col card p-4 rounded-lg bg-white shadow-md">
-                                    <h3 class="text-lg font-semibold">
-                                        Perspective
-                                    </h3>
+                                <div class="flex flex-col card p-4 rounded-lg bg-white shadow-md">
+                                    <h3 class="text-lg font-semibold">Perspective</h3>
                                     <p>
-                                        Perspective is the way an object appears to be viewed from different angles.
-                                        This technique can help create a sense of depth and immersion in your photo.
+                                        Perspective is the way an object appears to be viewed from
+                                        different angles. This technique can help create a sense
+                                        of depth and immersion in your photo.
                                     </p>
                                 </div>
-                                <div class=" flex flex-col card p-4 rounded-lg bg-white shadow-md">
-                                    <h3 class="text-lg font-semibold">
-                                        Balance
-                                    </h3>
+                                <div class="flex flex-col card p-4 rounded-lg bg-white shadow-md">
+                                    <h3 class="text-lg font-semibold">Balance</h3>
                                     <p>
-                                        Balance is the arrangement of elements in the frame to create a sense of balance
-                                        and harmony.
-                                        This technique can help create a sense of balance and harmony in your photo.
+                                        Balance is the arrangement of elements in the frame to
+                                        create a sense of balance and harmony. This technique can
+                                        help create a sense of balance and harmony in your photo.
                                     </p>
                                 </div>
-                                <div class=" flex flex-col card p-4 rounded-lg bg-white shadow-md">
-                                    <h3 class="text-lg font-semibold">
-                                        Proportions
-                                    </h3>
+                                <div class="flex flex-col card p-4 rounded-lg bg-white shadow-md">
+                                    <h3 class="text-lg font-semibold">Proportions</h3>
                                     <p>
-                                        Proportions are the relationships between the size, shape, and position of
-                                        elements in the frame.
-                                        This technique can help create a sense of balance and harmony in your photo.
+                                        Proportions are the relationships between the size, shape,
+                                        and position of elements in the frame. This technique can
+                                        help create a sense of balance and harmony in your photo.
                                     </p>
                                 </div>
-                                <div class=" flex flex-col card p-4 rounded-lg bg-white shadow-md">
-                                    <h3 class="text-lg font-semibold">
-                                        Spacing and Leading
-                                    </h3>
+                                <div class="flex flex-col card p-4 rounded-lg bg-white shadow-md">
+                                    <h3 class="text-lg font-semibold">Spacing and Leading</h3>
                                     <p>
-                                        Spacing and leading are the arrangement of elements in the frame to create a
-                                        sense of balance and harmony.
-                                        This technique can help create a sense of balance and harmony in your photo.
+                                        Spacing and leading are the arrangement of elements in the
+                                        frame to create a sense of balance and harmony. This
+                                        technique can help create a sense of balance and harmony
+                                        in your photo.
                                     </p>
                                 </div>
                             </div>
                         </div>
+
                         <div class="space-y-6">
                             <h3 class="text-lg font-bold mt-5 p-5 mb-4">1.3 Lighting Techniques</h3>
-                            <p class="text-lg ">
-                                Lighting and exposure are essential elements in photography that help convey your
-                                message and create visually
-                                appealing images. They guide how the viewer's eye moves through the image and determine
-                                the emotional impact of your photo.
+                            <p class="text-lg">
+                                Lighting and exposure are essential elements in photography
+                                that help convey your message and create visually appealing
+                                images. They guide how the viewer's eye moves through the
+                                image and determine the emotional impact of your photo.
                             </p>
 
                             <div class="space-y-6">
                                 <!-- Natural Lighting -->
-                                <div
-                                    class="flex flex-col p-6 border-2 border-gray-300 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                                <div class="flex flex-col p-6 border-2 border-gray-300 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
                                     <h3 class="text-xl font-semibold text-teal-700 mb-3">Natural Lighting</h3>
                                     <p class="text-gray-700 mb-4">
-                                        Natural lighting is the light from the sun, moon, stars, and other celestial
-                                        bodies that provides a natural backdrop for your photo.
+                                        Natural lighting is the light from the sun, moon, stars,
+                                        and other celestial bodies that provides a natural
+                                        backdrop for your photo.
                                     </p>
-                                    <div
-                                        class="flex items-center gap-2 text-blue-500 cursor-pointer hover:text-blue-700">
+                                    <div class="flex items-center gap-2 text-blue-500 cursor-pointer hover:text-blue-700">
                                         <i class="fas fa-play mr-2"></i>
-                                        <a href="#video-2" onclick="scrollToSection(event, 'video-2')">Video 2: Natural
-                                            Lighting in Photography</a>
+                                        <a href="#video-2" onclick="scrollToSection(event, 'video-2')">Video 2: Natural Lighting in Photography</a>
                                     </div>
                                 </div>
 
                                 <!-- Artificial Lighting -->
-                                <div
-                                    class="flex flex-col p-6 border-2 border-gray-300 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                                <div class="flex flex-col p-6 border-2 border-gray-300 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
                                     <h3 class="text-xl font-semibold text-orange-700 mb-3">Artificial Lighting</h3>
                                     <p class="text-gray-700 mb-4">
-                                        Artificial lighting is the light produced by a light source, such as a
-                                        flashlight, torch, or lamp.
+                                        Artificial lighting is the light produced by a light
+                                        source, such as a flashlight, torch, or lamp.
                                     </p>
-                                    <div
-                                        class="flex items-center gap-2 text-blue-500 cursor-pointer hover:text-blue-700">
+                                    <div class="flex items-center gap-2 text-blue-500 cursor-pointer hover:text-blue-700">
                                         <i class="fas fa-play mr-2"></i>
-                                        <a href="#video-3" onclick="scrollToSection(event, 'video-3')">Video 3:
-                                            Artificial Lighting in Photography</a>
+                                        <a href="#video-3" onclick="scrollToSection(event, 'video-3')">Video 3: Artificial Lighting in Photography</a>
                                     </div>
                                 </div>
 
                                 <!-- Flash Lighting -->
-                                <div
-                                    class="flex flex-col p-6 border-2 border-gray-300 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                                <div class="flex flex-col p-6 border-2 border-gray-300 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
                                     <h3 class="text-xl font-semibold text-red-700 mb-3">Flash Lighting</h3>
                                     <p class="text-gray-700 mb-4">
-                                        Flash lighting is the light produced by a flash device, such as a compact flash
-                                        or remote shutter release.
+                                        Flash lighting is the light produced by a flash device,
+                                        such as a compact flash or remote shutter release.
                                     </p>
-                                    <div
-                                        class="flex items-center gap-2 text-blue-500 cursor-pointer hover:text-blue-700">
+                                    <div class="flex items-center gap-2 text-blue-500 cursor-pointer hover:text-blue-700">
                                         <i class="fas fa-play mr-2"></i>
-                                        <a href="#video-4" onclick="scrollToSection(event, 'video-4')">Video 4: Flash
-                                            Lighting in Photography</a>
+                                        <a href="#video-4" onclick="scrollToSection(event, 'video-4')">Video 4: Flash Lighting in Photography</a>
                                     </div>
                                 </div>
 
                                 <!-- Exposure -->
-                                <div
-                                    class="flex flex-col p-6 border-2 border-gray-300 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                                <div class="flex flex-col p-6 border-2 border-gray-300 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
                                     <h3 class="text-xl font-semibold text-yellow-700 mb-3">Exposure</h3>
                                     <p class="text-gray-700 mb-4">
-                                        Exposure is the amount of light that reaches the camera sensor, and it
-                                        determines how bright or dark the image will appear.
+                                        Exposure is the amount of light that reaches the camera
+                                        sensor, and it determines how bright or dark the image
+                                        will appear.
                                     </p>
-                                    <div
-                                        class="flex items-center gap-2 text-blue-500 cursor-pointer hover:text-blue-700">
+                                    <div class="flex items-center gap-2 text-blue-500 cursor-pointer hover:text-blue-700">
                                         <i class="fas fa-play mr-2"></i>
-                                        <a href="#video-5" onclick="scrollToSection(event, 'video-5')">Video 5: Exposure
-                                            in Photography</a>
+                                        <a href="#video-5" onclick="scrollToSection(event, 'video-5')">Video 5: Exposure in Photography</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-
-                        <h3 class="text-lg font-semibold mb-2 mt-6">
-                            1.4 Photography styles
-                        </h3>
-
-                        <p class="text-lg ">Photography styles are different approaches to capturing images, and they
-                            help convey your message and create visually appealing images.
-                            They guide how the viewer's eye moves through the image and determine the emotional impact
-                            of your photo.
+                        <h3 class="text-lg font-semibold mb-2 mt-6">1.4 Photography styles</h3>
+                        <p class="text-lg">
+                            Photography styles are different approaches to capturing images,
+                            and they help convey your message and create visually appealing
+                            images. They guide how the viewer's eye moves through the image
+                            and determine the emotional impact of your photo.
                         </p>
-                        <div
-                            class="flex flex-col p-6 bg-gradient-to-r from-button to-heroText rounded-xl shadow-lg space-y-6 mt-6">
-                            <div class="bg-white p-5 rounded-lg shadow-lg ">
+                        <div class="flex flex-col p-6 bg-gradient-to-r from-button to-heroText rounded-xl shadow-lg space-y-6 mt-6">
+                            <div class="bg-white p-5 rounded-lg shadow-lg">
                                 <h3 class="text-xl font-bold mb-4">Portrait</h3>
                                 <p class="text-lg">
-                                    Portrait photography is a style of photography that focuses on capturing the
-                                    subject's face and their emotional state.
+                                    Portrait photography is a style of photography that focuses
+                                    on capturing the subject's face and their emotional state.
                                 </p>
                             </div>
 
-                            <div class="bg-white p-5 rounded-lg shadow-lg ">
+                            <div class="bg-white p-5 rounded-lg shadow-lg">
                                 <h3 class="text-xl font-bold mb-4">Landscape</h3>
-                                <p class=" text-lg">
-                                    Landscape photography is a style of photography that focuses on capturing the
-                                    natural landscape and its elements.
+                                <p class="text-lg">
+                                    Landscape photography is a style of photography that focuses
+                                    on capturing the natural landscape and its elements.
                                 </p>
                             </div>
 
-                            <div class="bg-white p-5 rounded-lg shadow-lg ">
-                                <h3 class="text-xl font-bold  mb-4">Street</h3>
-                                <p class=" text-lg">
-                                    Street photography is a style of photography that focuses on capturing the street
-                                    and its elements.
+                            <div class="bg-white p-5 rounded-lg shadow-lg">
+                                <h3 class="text-xl font-bold mb-4">Street</h3>
+                                <p class="text-lg">
+                                    Street photography is a style of photography that focuses on
+                                    capturing the street and its elements.
                                 </p>
                             </div>
 
-                            <div class="bg-white p-5 rounded-lg shadow-lg ">
-                                <h3 class="text-xl font-bold  mb-4">Action</h3>
-                                <p class=" text-lg">
-                                    Action photography is a style of photography that focuses on capturing the action
-                                    and movement of the subject.
+                            <div class="bg-white p-5 rounded-lg shadow-lg">
+                                <h3 class="text-xl font-bold mb-4">Action</h3>
+                                <p class="text-lg">
+                                    Action photography is a style of photography that focuses on
+                                    capturing the action and movement of the subject.
                                 </p>
                             </div>
 
-                            <div class="bg-white p-5 rounded-lg shadow-lg ">
-                                <h3 class="text-xl font-bold  mb-4">Macro</h3>
-                                <p class=" text-lg">
-                                    Macro photography is a style of photography that focuses on capturing the small
-                                    details and intricacies of the subject.
+                            <div class="bg-white p-5 rounded-lg shadow-lg">
+                                <h3 class="text-xl font-bold mb-4">Macro</h3>
+                                <p class="text-lg">
+                                    Macro photography is a style of photography that focuses on
+                                    capturing the small details and intricacies of the subject.
                                 </p>
                             </div>
 
-                            <div class="bg-white p-5 rounded-lg shadow-lg ">
-                                <h3 class="text-xl font-bold  mb-4">Sports</h3>
-                                <p class=" text-lg">
-                                    Sports photography is a style of photography that focuses on capturing the action
-                                    and movement of the subject in sports.
+                            <div class="bg-white p-5 rounded-lg shadow-lg">
+                                <h3 class="text-xl font-bold mb-4">Sports</h3>
+                                <p class="text-lg">
+                                    Sports photography is a style of photography that focuses on
+                                    capturing the action and movement of the subject in sports.
                                 </p>
                             </div>
                         </div>
-
-
-
                     </div>
+                </section>
             </div>
-            </section>
         </div>
-    </div>
     </div>
     <div id="footer"></div>
     <script src="/js/course-detail.js"></script>
-     <script src="../components/nav.js"></script>
+    <script src="../components/nav.js"></script>
 </body>
-
 </html>

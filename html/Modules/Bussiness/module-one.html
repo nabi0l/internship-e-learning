@@ -10,17 +10,18 @@
       href="/Assests/fontawesome-free-6.7.2-web/css/all.min.css"
     />
   </head>
+
   <body class="bg-accentColor text-gray-600">
     <div class="containers mt-20">
       <div id="navbar"></div>
       <div>
-        <div class="highlights flex flex-col-2 gap-6">
-          <section class="w-full mb-5">
+        <div class="highlights flex flex-col md:flex-row gap-6">
+          <section class="w-full md:w-1/3 mb-5">
             <div
-              class="sidebar bg-button text-heroText m-5 p-5 w-[450px] h-[auto]"
+              class="sidebar bg-button text-heroText m-5 p-5 h-auto hidden md:block"
             >
               <h2 class="text-2xl font-semibold m-2">
-                Master Full-stack Web Development
+                Master Business Management
               </h2>
               <div class="modules space-y-3 bg-accentColor">
                 <div class="module p-3 shadow">
@@ -28,7 +29,7 @@
                     class="flex justify-between items-center cursor-pointer"
                     data-url="/html/Modules/Bussiness/module-one.html"
                   >
-                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                    <h3 class="text-lg font-semibold mb-2 mt-2">
                       Module 1: Introduction to Business Management
                     </h3>
                     <i class="fas fa-caret-down"></i>
@@ -74,7 +75,7 @@
                     class="flex justify-between items-center cursor-pointer"
                     data-url="/html/Modules/Bussiness/module-two.html"
                   >
-                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                    <h3 class="text-lg font-semibold mb-2 mt-2">
                       Module 2: Marketing and Financial Management
                     </h3>
                     <i class="fas fa-caret-down"></i>
@@ -113,7 +114,7 @@
                     class="flex justify-between items-center cursor-pointer"
                     data-url="/html/Modules/Bussiness/module-three.html"
                   >
-                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                    <h3 class="text-lg font-semibold mb-2 mt-2">
                       Module 3: Human Resource and Operations Management
                     </h3>
                     <i class="fas fa-caret-down"></i>
@@ -128,7 +129,7 @@
                       class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
                     >
                       <a
-                        href="#operation "
+                        href="#operation"
                         onclick="scrollToSection(event,'operation')"
                         >Operations Management</a
                       >
@@ -157,7 +158,7 @@
             </div>
           </section>
 
-          <section class="mr-20 pr-14">
+          <section class="w-full md:w-2/3 mr-20 pr-7 pl-7">
             <div class="description mt-5 p-2">
               <h2 class="text-2xl font-semibold m-2 p-5 text-center">
                 Introduction to Business Management
@@ -205,9 +206,8 @@
                         risks in the hope of profit.
                       </li>
                       <li>
-                        <strong>Marketing</strong> - The process of promoting,
-                        selling, and distributing a product or service to
-                        customers.
+                        <strong>Marketing</strong> - The process of promoting
+                        products, services, and ideas to attract customers.
                       </li>
                       <li>
                         <strong>Finance</strong> - Managing money, including
@@ -350,33 +350,44 @@
               </p>
 
               <div>
-                <h3 class="text-lg text-center font-semibold p-5">Strategic Planning Technique</h3>
-                <div class="cards flex flex-col-2 gap-6 p-5">
-                    <div class="card border border-navColor p-5">
-                        <h3 class="text-lg text-center font-semibold mb-2 mt-2 p-5">
-                            SWOT Analysis
-                        </h3>
-                        <p class="text-lg">
-                            SWOT analysis is a strategic planning technique that
-                            identifies strengths, weaknesses, opportunities, and
-                            threats in an organization's business environment. It
-                            helps organizations identify areas for improvement and
-                            develop targeted strategies to address these issues.
-                        </p>
+                <h3 class="text-lg text-center font-semibold p-5">
+                  Strategic Planning Technique
+                </h3>
+                <div class="cards p-5 items-center">
+                  
+                  <div
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 text-center"
+                  >
+                    <div
+                      class="card border border-navColor p-5 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 ease-in-out"
+                    >
+                      <h3 class="text-lg text-center font-semibold mb-2 mt-2">
+                        SWOT Analysis
+                      </h3>
+                      <p class="text-lg">
+                        SWOT analysis is a strategic planning technique that
+                        identifies strengths, weaknesses, opportunities, and
+                        threats in an organization's business environment. It
+                        helps organizations identify areas for improvement and
+                        develop targeted strategies to address these issues.
+                      </p>
                     </div>
-                    <div class="card border border-navColor p-5">
-                        <h3 class="text-lg text-center font-semibold mb-2 mt-2 p-5">
-                            PESTLE Analysis
-                        </h3>
-                        <p class="text-lg">
-                            PESTLE analysis is a strategic planning technique that
-                            identifies potential environmental, social, economic,
-                            and technological threats to an organization's business. It
-                            helps organizations identify areas for improvement and
-                            develop targeted strategies to address these threats.
-                        </p>
+                    <div
+                      class="card border border-navColor p-5 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 ease-in-out"
+                    >
+                      <h3 class="text-lg text-center font-semibold mb-2 mt-2">
+                        PESTLE Analysis
+                      </h3>
+                      <p class="text-lg">
+                        PESTLE analysis is a strategic planning technique that
+                        identifies potential environmental, social, economic,
+                        and technological threats to an organization's business.
+                        It helps organizations identify areas for improvement
+                        and develop targeted strategies to address these
+                        threats.
+                      </p>
                     </div>
-
+                  </div>
                 </div>
               </div>
             </div>
@@ -386,6 +397,6 @@
     </div>
     <div id="footer"></div>
     <script src="/js/course-detail.js"></script>
-     <script src="../components/nav.js"></script>
+    <script src="../components/nav.js"></script>
   </body>
 </html>
