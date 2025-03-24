@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnSphere</title>
+    <link rel="stylesheet" href="/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="/Assests/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+  </head>
+  <body class="bg-accentColor text-gray-600">
+    <div class="containers mt-20">
+      <div id="navbar"></div>
+      <div>
+        <div class="highlights flex flex-col-2 gap-6">
+          <section class="w-full mb-5">
+            <div
+              class="sidebar bg-button text-heroText m-5 p-5 w-[450px] h-[auto]"
+            >
+              <h2 class="text-2xl font-semibold m-2">
+                Master Full-stack Web Development
+              </h2>
+              <div class="modules space-y-3 bg-accentColor">
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/DataScience/module-one.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 1: Introduction to Data Science
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a
+                        href="#intro-data"
+                        onclick="scrollToSection(event, 'intro-data')"
+                        >What is Data Science?</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-workflow"
+                        onclick="scrollToSection(event, 'intro-workflow')"
+                        >Data Science Workflow</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-tools"
+                        onclick="scrollToSection(event, 'intro-tools')"
+                        >Essential Tools for Data Science</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/DataScience/module-two.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 2: Data Collection and Preprocessing
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a
+                        href="#intro-collection"
+                        onclick="scrollToSection(event,'intro-collection')"
+                        >Data Collection Techniques</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-cleaning"
+                        onclick="scrollToSection(event,'intro-cleaning')"
+                        >Data Cleaning and Preparation</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-transformation"
+                        onclick="scrollToSection(event,'intro-transformation')"
+                        >Data Transformation</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/DataScience/module-three.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 3: Statistics and Probability for Data Science
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a href="#intro" onclick="scrollToSection(event,'intro')"
+                        >Descriptive Statistics</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-inferential "
+                        onclick="scrollToSection(event,'intro-inferential')"
+                        >Inferential Statistics</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#probability"
+                        onclick="scrollToSection(event,'probability')"
+                        >Probability Basics</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#correlation"
+                        onclick="scrollToSection(event,'Correlation')"
+                        >Correlation and Regression</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/DataScience/module-four.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 4: Machine Learning Fundamentals
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a href="#intro" onclick="scrollToSection(event, 'intro')"
+                        >Introduction to Machine Learning</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-learning"
+                        onclick="scrollToSection(event, 'intro-learning')"
+                        >Supervised Learning vs Unsupervised Learning</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-model"
+                        onclick="scrollToSection(event, 'intro-model')"
+                        >Model Evaluation and Optimization</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/DataScience/module-five.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 5: Data Science Applications and Case Studies
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a href="#real" onclick="scrollToSection(event, 'real')"
+                        >Real-World Case Studies</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a href="#nlp" onclick="scrollToSection(event, 'nlp')"
+                        >Natural Language Processing (NLP)</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a href="#deep" onclick="scrollToSection(event, 'deep')"
+                        >Deep Learning Basics</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mr-20 pr-14">
+            <div class="description mt-5 p-2">
+              <h2 class="text-2xl font-semibold m-2 p-5 text-center">
+                2. Data Collection and Preprocessing
+              </h2>
+              <p class="text-lg m-2">
+                Data collection is the process of gathering data from various
+                sources, such as databases, APIs, or user input. Preprocessing
+                involves cleaning, transforming, and preparing the data for
+                analysis. This module covers techniques for data collection,
+                data cleaning, data transformation, and data normalization.
+              </p>
+
+              <h3 class="text-lg font-semibold p-5">
+                2.1 Data Collection Techniques
+              </h3>
+              <p class="text-lg m-2">
+                Data Collection Techniques refer to the methods and processes
+                used to gather information or data from different sources for
+                analysis, research, or decision-making. These techniques vary
+                depending on the type of research or project and can involve
+                various tools and approaches to collect relevant data.
+              </p>
+              <p class="text-lg m-2">Data collection techniques can include:</p>
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6"
+              >
+                <div
+                  class="card bg-button shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105"
+                >
+                  <h4 class="font-semibold text-xl mb-3">Web Scraping</h4>
+                  <p class="text-gray-700">
+                    Extracting data from websites for analysis or other
+                    purposes.
+                  </p>
+                </div>
+
+                <div
+                  class="card bg-button shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105"
+                >
+                  <h4 class="font-semibold text-xl mb-3">API Integration</h4>
+                  <p class="text-gray-700">
+                    Connecting and interacting with external services or
+                    platforms via APIs.
+                  </p>
+                </div>
+
+                <div
+                  class="card bg-button shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105"
+                >
+                  <h4 class="font-semibold text-xl mb-3">User Input</h4>
+                  <p class="text-gray-700">
+                    Gathering and processing user input through forms or
+                    interactive elements.
+                  </p>
+                </div>
+
+                <div
+                  class="card bg-button shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105"
+                >
+                  <h4 class="font-semibold text-xl mb-3">Data Mining</h4>
+                  <p class="text-gray-700">
+                    Extracting useful patterns and information from large
+                    datasets.
+                  </p>
+                </div>
+
+                <div
+                  class="card bg-button shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105"
+                >
+                  <h4 class="font-semibold text-xl mb-3">
+                    Machine Learning Algorithms
+                  </h4>
+                  <p class="text-gray-700">
+                    Applying statistical techniques to build predictive models.
+                  </p>
+                </div>
+
+                <div
+                  class="card bg-button shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105"
+                >
+                  <h4 class="font-semibold text-xl mb-3">Data Integration</h4>
+                  <p class="text-gray-700">
+                    Merging and combining data from multiple sources into a
+                    unified dataset.
+                  </p>
+                </div>
+
+                <div
+                  class="card bg-button shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105"
+                >
+                  <h4 class="font-semibold text-xl mb-3">
+                    Social Media Analytics
+                  </h4>
+                  <p class="text-gray-700">
+                    Analyzing data from social media platforms for trends,
+                    engagement, and insights.
+                  </p>
+                </div>
+              </div>
+
+              <h3 class="text-lg font-semibold p-5">
+                2.2 Data Cleaning and Preparation
+              </h3>
+              <p class="text-lg m-2">
+                Data cleaning and preparation is a crucial step in the data science process. It involves identifying and correcting
+                errors, handling missing data, and transforming data into a suitable format for analysis.
+              </p>
+              <p class="text-lg m-2">Data cleaning and preparation can involve the following steps:</p>
+              <ul class="list-disc ml-5 text-md p-3">
+                <li>Identifying and correcting errors in the data</li>
+                <li>Handling missing data by either removing the data points or imputing the missing values</li>
+                <li>Transforming data into a suitable format for analysis</li>
+
+              </ul>
+              <p class="text-lg mt-2">
+                Data cleaning involves removing or fixing inaccuracies,
+                inconsistencies, and missing values in the data. Preprocessing
+                involves transforming the data into a format that can be used
+                for analysis. Common preprocessing techniques include:
+              </p>
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6"
+              >
+                <div
+                  class="rounded-lg shadow-lg p-5 hover:shadow-xl transform transition duration-300 ease-in-out hover:translate-y-2"
+                >
+                  <h4 class="text-xl font-semibold text-gray-800 mb-3">
+                    Data Type Conversion
+                  </h4>
+                  <p class="text-gray-600 text-base">
+                    Converting data from one type to another (e.g., from string
+                    to integer or float) to ensure compatibility for analysis or
+                    processing.
+                  </p>
+                </div>
+
+                <div
+                  class="rounded-lg shadow-lg p-5 hover:shadow-xl transform transition duration-300 ease-in-out hover:translate-y-2"
+                >
+                  <h4 class="text-xl font-semibold text-gray-800 mb-3">
+                    Data Formatting
+                  </h4>
+                  <p class="text-gray-600 text-base">
+                    Adjusting the format of the data (e.g., date format or
+                    number format) to make it suitable for processing or
+                    analysis.
+                  </p>
+                </div>
+
+                <div
+                  class="rounded-lg shadow-lg p-5 hover:shadow-xl transform transition duration-300 ease-in-out hover:translate-y-2"
+                >
+                  <h4 class="text-xl font-semibold text-gray-800 mb-3">
+                    Outlier Detection and Removal
+                  </h4>
+                  <p class="text-gray-600 text-base">
+                    Identifying and removing outliers that can skew the results
+                    of data analysis, ensuring more accurate outcomes.
+                  </p>
+                </div>
+
+                <div
+                  class="rounded-lg shadow-lg p-5 hover:shadow-xl transform transition duration-300 ease-in-out hover:translate-y-2"
+                >
+                  <h4 class="text-xl font-semibold text-gray-800 mb-3">
+                    Handling Missing Values
+                  </h4>
+                  <p class="text-gray-600 text-base">
+                    Addressing missing data in datasets using various strategies
+                    like imputation or removing records to avoid bias.
+                  </p>
+                </div>
+
+                <div
+                  class="rounded-lg shadow-lg p-5 hover:shadow-xl transform transition duration-300 ease-in-out hover:translate-y-2"
+                >
+                  <h4 class="text-xl font-semibold text-gray-800 mb-3">
+                    Normalization and Standardization
+                  </h4>
+                  <p class="text-gray-600 text-base">
+                    Scaling data to a common range or standard scale, improving
+                    the performance of machine learning algorithms.
+                  </p>
+                </div>
+
+                <div
+                  class="rounded-lg shadow-lg p-5 hover:shadow-xl transform transition duration-300 ease-in-out hover:translate-y-2"
+                >
+                  <h4 class="text-xl font-semibold text-gray-800 mb-3">
+                    Feature Selection
+                  </h4>
+                  <p class="text-gray-600 text-base">
+                    Choosing the most relevant features from a dataset that have
+                    a significant impact on the predictive model.
+                  </p>
+                </div>
+
+                <div
+                  class="rounded-lg shadow-lg p-5 hover:shadow-xl transform transition duration-300 ease-in-out hover:translate-y-2"
+                >
+                  <h4 class="text-xl font-semibold text-gray-800 mb-3">
+                    Feature Engineering
+                  </h4>
+                  <p class="text-gray-600 text-base">
+                    Creating new features or transforming existing ones to
+                    improve the predictive power of machine learning models.
+                  </p>
+                </div>
+              </div>
+
+              <h3 class="text-lg font-semibold p-5">2.3 Data Transformation</h3>
+              <p class="text-lg m-2">
+                Data transformation is the process of converting data from one format to another, making it easier to analyze
+                and understand. This can include tasks such as data cleaning, data normalization, and data aggregation.
+                
+              </p>
+              <p class="text-lg mt-2">
+                Data transformation involves changing the representation of data
+                from one format to another. Common transformations include:
+              </p>
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6"
+              >
+                <div
+                  class="rounded-lg shadow-lg p-5 hover:shadow-xl transform transition duration-300 ease-in-out hover:translate-y-2"
+                >
+                  <h4 class="text-xl font-semibold text-gray-800 mb-3">
+                    Aggregation
+                  </h4>
+                  <p class="text-gray-600 text-base">
+                    The process of combining data from multiple records into a
+                    single summary value, such as summing or averaging values.
+                  </p>
+                </div>
+
+                <div
+                  class="rounded-lg shadow-lg p-5 hover:shadow-xl transform transition duration-300 ease-in-out hover:translate-y-2"
+                >
+                  <h4 class="text-xl font-semibold text-gray-800 mb-3">
+                    Grouping
+                  </h4>
+                  <p class="text-gray-600 text-base">
+                    Organizing data into categories or groups, typically used
+                    with aggregation to summarize data within those groups.
+                  </p>
+                </div>
+
+                <div
+                  class="rounded-lg shadow-lg p-5 hover:shadow-xl transform transition duration-300 ease-in-out hover:translate-y-2"
+                >
+                  <h4 class="text-xl font-semibold text-gray-800 mb-3">
+                    Sorting
+                  </h4>
+                  <p class="text-gray-600 text-base">
+                    Arranging data in a particular order, often ascending or
+                    descending, to make analysis easier or to highlight trends.
+                  </p>
+                </div>
+
+                <div
+                  class="rounded-lg shadow-lg p-5 hover:shadow-xl transform transition duration-300 ease-in-out hover:translate-y-2"
+                >
+                  <h4 class="text-xl font-semibold text-gray-800 mb-3">
+                    Pivoting
+                  </h4>
+                  <p class="text-gray-600 text-base">
+                    Rearranging data to create a summary table that allows for
+                    easier comparison and analysis of different data points.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script src="/js/course-detail.js"></script>
+     <script src="../components/nav.js"></script>
+  </body>
+</html>

@@ -5,73 +5,95 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LearnSphere</title>
-    <link rel="stylesheet" href="../css/output.css" />
-    <link rel="stylesheet" href="../Assests/fontawesome-free-6.7.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="/css/output.css" />
+    <link rel="stylesheet" href="/Assests/fontawesome-free-6.7.2-web/css/all.min.css" />
 </head>
 
 <body class="bg-accentColor text-gray-600">
     <div class="containers mt-20">
         <div id="navbar"></div>
         <div>
-            <di class="highlights flex flex-col-2 gap-6">
+            <div class="highlights flex flex-col-2 gap-6">
                 <section class="w-full mb-5">
-                <div class="sidebar bg-button text-heroText m-5 p-5 w-[450px] h-[auto] ">
-                    <h2 class="text-2xl font-semibold m-2 ">Master Full-stack Web Development</h2>
-                    <div class="modules space-y-3 bg-accentColor">
-                        <div class="module p-3 shadow">
-                            <div class="flex justify-between items-center cursor-pointer"  data-url="module-one.html">
-                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 1: Introduction to Web Development</h3>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                            <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor"> <!-- Added 'hidden' class -->
-                                <li class="bg-navColor px-3 py-3 rounded-lg text-center">
-                                    <a href="#intro-web" onclick="scrollToSection(event, 'intro-web')">What is Web Development?</a>
-                                </li>
-                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                    <a href="#intro-mean" onclick="scrollToSection(event, 'intro-mean')">How the Web Works</a>
-                                </li>
-                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                    <a href="#intro-front-back" onclick="scrollToSection(event, 'intro-front-back')">Front-end vs. Back-end</a>
-                                </li>
-                                <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                    <a href="#intro-tools" onclick="scrollToSection(event, 'intro-tools')">Tools for Web Development</a>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        <div class="module p-3 shadow">
-                            <div class="flex justify-between items-center cursor-pointer"  data-url="module-two.html">
-                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 2: HTML & CSS Basics </h3>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                             <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
-                                <li class=" bg-navColor px-3 py-3 rounded-lg text-center"><a href="#intro-basics" onclick="scrollToSection(event,'intro-basics')">Introduction to HTML & CSS</a></li>
-                                <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a href="#intro-html" onclick="scrollToSection(event,'intro-html')">HTML Basics</a></li>
-                                <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a href="#intro-css" onclick="scrollToSection(event,'intro-css')">CSS Basics</a></li>
-                              </ul>   
-                        </div>
-                        <div class="module p-3 shadow">
-                            <div class="flex justify-between items-center cursor-pointer"  data-url="module-three.html">
-                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 3: Responsive Web Design  </h3>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                           <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center">
-                                        <a href="#intro" onclick="scrollToSection(event,'intro')">Responsive Design Principles</a></li>
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#intro-mobile "onclick="scrollToSection(event,'intro-mobile')">Creating Mobile-Friendly Designs</a></li>
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#media" onclick="scrollToSection(event,'media')">CSS Media Queries</a></li>
-                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#image" onclick="scrollToSection(event,'image')">Responsive Images & Video</a></li>
+                    <div class="sidebar bg-button text-heroText m-5 p-5 w-[450px] h-[auto] ">
+                        <h2 class="text-2xl font-semibold m-2 ">Master Full-stack Web Development</h2>
+                        <div class="modules space-y-3 bg-accentColor">
+                            <div class="module p-3 shadow">
+                                <div class="flex justify-between items-center cursor-pointer"
+                                    data-url="module-one.html">
+                                    <h3 class="text-lg font-semibod mb-2 mt-2"> Module 1: Introduction to Web
+                                        Development</h3>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor"> <!-- Added 'hidden' class -->
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                                        <a href="#intro-web" onclick="scrollToSection(event, 'intro-web')">What is Web
+                                            Development?</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-mean" onclick="scrollToSection(event, 'intro-mean')">How the Web
+                                            Works</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-front-back"
+                                            onclick="scrollToSection(event, 'intro-front-back')">Front-end vs.
+                                            Back-end</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-tools" onclick="scrollToSection(event, 'intro-tools')">Tools for
+                                            Web Development</a>
+                                    </li>
                                 </ul>
-                        </div>
-                        <div class="module p-3 shadow">
-                            <div class="flex justify-between items-center cursor-pointer" data-url="module-four.html">
-                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 4: JavaScript Basics  </h3>
-                                <i class="fas fa-caret-down"></i>
                             </div>
-                          <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
+
+                            <div class="module p-3 shadow">
+                                <div class="flex justify-between items-center cursor-pointer"
+                                    data-url="module-two.html">
+                                    <h3 class="text-lg font-semibod mb-2 mt-2"> Module 2: HTML & CSS Basics </h3>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center"><a href="#intro-basics"
+                                            onclick="scrollToSection(event,'intro-basics')">Introduction to HTML &
+                                            CSS</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a href="#intro-html"
+                                            onclick="scrollToSection(event,'intro-html')">HTML Basics</a></li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a href="#intro-css"
+                                            onclick="scrollToSection(event,'intro-css')">CSS Basics</a></li>
+                                </ul>
+                            </div>
+                            <div class="module p-3 shadow">
+                                <div class="flex justify-between items-center cursor-pointer"
+                                    data-url="module-three.html">
+                                    <h3 class="text-lg font-semibod mb-2 mt-2"> Module 3: Responsive Web Design </h3>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center">
+                                        <a href="#intro" onclick="scrollToSection(event,'intro')">Responsive Design
+                                            Principles</a>
+                                    </li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-mobile "
+                                            onclick="scrollToSection(event,'intro-mobile')">Creating Mobile-Friendly
+                                            Designs</a>
+                                    </li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#media" onclick="scrollToSection(event,'media')">CSS Media Queries</a>
+                                    </li>
+                                    <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#image" onclick="scrollToSection(event,'image')">Responsive Images &
+                                            Video</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="module p-3 shadow">
+                                <div class="flex justify-between items-center cursor-pointer"
+                                    data-url="module-four.html">
+                                    <h3 class="text-lg font-semibod mb-2 mt-2"> Module 4: JavaScript Basics </h3>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
                                     <li class=" bg-navColor px-3 py-3 rounded-lg text-center"><a
                                             href="#intro-variable">Variables & Data Types</a></li>
                                     <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a
@@ -81,54 +103,70 @@
                                     <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a
                                             href="#intro-obj">Objects & Arrays</a></li>
                                 </ul>
-                        </div>
-                        <div class="module p-3 shadow">
-                            <div class="flex justify-between items-center cursor-pointer"  data-url="module-five.html">
-                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 5: Advanced JavaScript & DOM Manipulation  </h3>
-                                <i class="fas fa-caret-down"></i>
                             </div>
-                           <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
+                            <div class="module p-3 shadow">
+                                <div class="flex justify-between items-center cursor-pointer"
+                                    data-url="module-five.html">
+                                    <h3 class="text-lg font-semibod mb-2 mt-2"> Module 5: Advanced JavaScript & DOM
+                                        Manipulation </h3>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
                                     <li class=" bg-navColor px-3 py-3 rounded-lg text-center">
-                                        <a href="#domSection" onclick="scrollToSection(event, 'domSection')">Document Object
-                                            Model (DOM)</a></li>
+                                        <a href="#domSection" onclick="scrollToSection(event, 'domSection')">Document
+                                            Object
+                                            Model (DOM)</a>
+                                    </li>
                                     <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
                                         <a href="#eventListener" onclick="scrollToSection(event, 'eventListener')">Event
-                                            Listeners & Event Propagation</a></li>
+                                            Listeners & Event Propagation</a>
+                                    </li>
                                     <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#formValidation" onclick="scrollToSection(event, 'formValidation')">Form
-                                            Validation</a></li>
+                                        <a href="#formValidation"
+                                            onclick="scrollToSection(event, 'formValidation')">Form
+                                            Validation</a>
+                                    </li>
                                     <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#ajaxSection" onclick="scrollToSection(event, 'ajaxSection')">AJAX & API
-                                            Calls</a></li>
+                                        <a href="#ajaxSection" onclick="scrollToSection(event, 'ajaxSection')">AJAX &
+                                            API
+                                            Calls</a>
+                                    </li>
                                 </ul>
-                        </div>
-                        <div class="module p-3 shadow">
-                            <div class="flex justify-between items-center cursor-pointer" data-url="./module-six.html">
-                                <h3 class="text-lg font-semibod mb-2 mt-2"> Module 6: Introduction to Version Control with Git</h3>
-                                <i class="fas fa-caret-down"></i>
                             </div>
-                             <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                            <div class="module p-3 shadow">
+                                <div class="flex justify-between items-center cursor-pointer"
+                                    data-url="./module-six.html">
+                                    <h3 class="text-lg font-semibod mb-2 mt-2"> Module 6: Introduction to Version
+                                        Control with Git</h3>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
                                     <li class="bg-navColor px-3 py-3 rounded-lg text-center">
-                                        <a href="#intro-git" onclick="scrollToSection(event, 'intro-version')"> What is Version control</a>
+                                        <a href="#intro-git" onclick="scrollToSection(event, 'intro-version')"> What is
+                                            Version control</a>
                                     </li>
                                     <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#installgit" onclick="scrollToSection(event, 'installgit')">Installing Git</a>
+                                        <a href="#installgit" onclick="scrollToSection(event, 'installgit')">Installing
+                                            Git</a>
                                     </li>
                                     <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#gitBasics" onclick="scrollToSection(event, 'gitBasics')">Git Basics</a>
+                                        <a href="#gitBasics" onclick="scrollToSection(event, 'gitBasics')">Git
+                                            Basics</a>
                                     </li>
                                     <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#gitcollab" onclick="scrollToSection(event, 'gitcollab')">Git Collaboration & Workflows</a>
+                                        <a href="#gitcollab" onclick="scrollToSection(event, 'gitcollab')">Git
+                                            Collaboration & Workflows</a>
                                     </li>
                                     <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
-                                        <a href="#gitmerge" onclick="scrollToSection(event, 'gitmerge')">Git Branching & Merging</a>
+                                        <a href="#gitmerge" onclick="scrollToSection(event, 'gitmerge')">Git Branching &
+                                            Merging</a>
                                     </li>
                                 </ul>
-                        </div>
+                            </div>
 
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
                 <section class="mr-20 pr-14">
                     <div class="description mt-5 p-2">
@@ -393,22 +431,68 @@
                             latest features and bug fixes, you can become more efficient and
                             effective in your project. Good luck with your learning journey!
                         </p>
-                    
-<div class="text flex flex-col-2 justify-between p-5 mb-5 mt-5" id="navigation-links">
-    <div class="previous" id="previous-container" style="display: none;">
-        <a href="#" id="previous-link" class="text-2xl font-bold">Previous</a>
-    </div>
-    <div class="next" id="next-container" style="display: none;">
-        <a href="#" id="next-link" class="text-2xl font-bold">Next</a>
-    </div>
-</div>
+
+
+                        <div class="p-6 space-y-6 bg-course-gradient rounded-lg shadow-lg mt-20">
+                            <!-- Heading Section -->
+                            <h3 class="text-3xl font-bold text-white bg-navColor p-5 rounded-lg shadow-md">
+                                Learning Activities and Resources
+                            </h3>
+
+                            <!-- Paragraph Section -->
+                            <p class="text-lg text-gray-800 leading-relaxed">
+                                To help you learn more about engineering design and analysis, you can
+                                find various learning activities and resources available on the
+                                LearnSphere platform. Some popular learning activities include:
+                            </p>
+
+                            <!-- List of Learning Activities -->
+                            <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+                                <li class="hover:text-accentColor transition duration-300 ease-in-out">Coursework
+                                    assignments and quizzes</li>
+                                <li class="hover:text-accentColor transition duration-300 ease-in-out">Online lectures
+                                    and videos</li>
+                                <li class="hover:text-accentColor transition duration-300 ease-in-out">Problem-solving
+                                    exercises</li>
+                                <li class="hover:text-accentColor transition duration-300 ease-in-out">Discussion forums
+                                    and Q&A</li>
+                                <li class="hover:text-accentColor transition duration-300 ease-in-out">Interactive
+                                    learning tools and simulations</li>
+                            </ul>
+
+                            <!-- Additional Resources Section -->
+                            <p class="text-lg text-gray-800 leading-relaxed">
+                                You can also find additional resources and learning materials on the
+                                following websites:
+                            </p>
+                            <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+                                <li><a href="https://www.learnsphere.com/"
+                                        class="text-accentColor hover:underline transition duration-300">LearnSphere</a>
+                                </li>
+                                <li><a href="https://www.coursera.org/"
+                                        class="text-accentColor hover:underline transition duration-300">Coursera</a>
+                                </li>
+                                <li><a href="https://www.edx.org/"
+                                        class="text-accentColor hover:underline transition duration-300">edX</a></li>
+                                <li><a href="https://www.udemy.com/"
+                                        class="text-accentColor hover:underline transition duration-300">Udemy</a></li>
+                            </ul>
+
+                            <!-- Conclusion Section -->
+                            <p class="text-lg text-gray-800 leading-relaxed">
+                                As you continue your learning journey, remember to practice active
+                                engagement and seek feedback from your peers and instructors. Good luck
+                                with your engineering design and analysis course!
+                            </p>
+                        </div>
+                    </div>    
                 </section>
-            </div>
         </div>
     </div>
+    </div>
     <div id="footer"></div>
-    <script src="../js/script.js"></script>
-    <script src="../js/course-detail.js"></script>
+    <script src="../components/nav.js"></script>
+    <script src="/js/course-detail.js"></script>
 </body>
 
 </html>

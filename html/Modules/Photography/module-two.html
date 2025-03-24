@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnSphere</title>
+    <link rel="stylesheet" href="/css/output.css" />
+    <link rel="stylesheet" href="/Assests/fontawesome-free-6.7.2-web/css/all.min.css" />
+</head>
+
+<body class="bg-accentColor text-gray-600">
+    <div class="containers mt-20">
+        <div id="navbar"></div>
+        <div>
+            <div class="highlights flex flex-col-2 gap-6">
+                <section class="w-full mb-5">
+                    <div class="sidebar bg-button text-heroText m-5 p-5 w-[450px] h-[auto]">
+                        <h2 class="text-2xl font-semibold m-2">
+                            Master Full-stack Web Development
+                        </h2>
+                        <div class="modules space-y-3 bg-accentColor">
+                            <div class="module p-3 shadow">
+                                <div class="flex justify-between items-center cursor-pointer"
+                                    data-url="/html/Modules/Photography/module-one.html">
+                                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                                        Module 1: Basics of Photography
+                                    </h3>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                                        <a href="#intro" onclick="scrollToSection(event, 'intro')">Understanding Your
+                                            Camera</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-framing"
+                                            onclick="scrollToSection(event, 'intro-framing')">Composition and
+                                            Framing</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-lighting"
+                                            onclick="scrollToSection(event, 'intro-lighting')">Lighting Techniques</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-photography"
+                                            onclick="scrollToSection(event, 'intro-photography')">Photography Styles</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="module p-3 shadow">
+                                <div class="flex justify-between items-center cursor-pointer"
+                                    data-url="/html/Modules/Photography/module-two.html">
+                                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                                        Module 2: Advanced Photography Techniques
+                                    </h3>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                                        <a href="#intro-vcm"
+                                            onclick="scrollToSection(event,'intro-vcm')">Post-Processing and Editing</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-basics"
+                                            onclick="scrollToSection(event,'intro-basics')">Specialized Photography</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-design"
+                                            onclick="scrollToSection(event,'intro-design')">Storytelling through
+                                            Photography</a>
+                                    </li>
+                                    <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                                        <a href="#intro-portfolio"
+                                            onclick="scrollToSection(event,'intro-portfolio')">Building a Photography
+                                            Portfolio</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mr-20 pr-14">
+                    <div class="description mt-5 p-2">
+                        <h2 class="text-2xl font-semibold m-2 p-5 text-center">
+                            2. Advanced Photography Techniques
+                        </h2>
+                        <p class="text-lg">
+                            Advanced Photography Techniques are methods used by
+                            photographers to capture images that go beyond basic shooting
+                            skills. These techniques often require a deeper understanding of
+                            camera settings, creative vision, and sometimes specialized
+                            equipment. They allow photographers to express their artistic
+                            style, enhance the mood of an image, and capture scenes that
+                            would be impossible with traditional methods. They often involve
+                            manipulating light, exposure, focus, or camera movement to
+                            create effects that enhance the storytelling or emotional impact
+                            of a photograph.
+                        </p>
+
+                        <h3 class="text-lg font-bold mt-4">Advanced Photography Techniques</h3>
+                        <div class="cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-5 p-5">
+                            <div
+                                class="card bg-button text-white p-6  rounded-xl shadow-xl hover:scale-105 transform transition-all duration-300">
+                                <h3 class="text-xl font-bold mb-4">Long Exposure Photography</h3>
+                                <p class="text-lg mb-4">
+                                    Long exposure photography captures images with extended exposure time, creating
+                                    bright, high-contrast skies and dramatic effects, often used for extreme weather
+                                    or impactful visuals.
+                                </p>
+                                <div class="flex justify-end">
+                                    <a href="https://www.youtube.com/watch?v=z4w_O75kF9Q" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="bg-transparent border-2 border-accentColor text-accentColor px-6 py-2 rounded-full hover:bg-accentColor hover:text-gray-800 transition">
+                                        Watch Video
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div
+                                class="card bg-button text-white p-6 rounded-xl shadow-xl hover:scale-105 transform transition-all duration-300">
+                                <h3 class="text-xl font-bold mb-4">Macro Photography</h3>
+                                <p class="text-lg mb-4">
+                                    Macro photography captures small or close-up objects, such as animals or flowers, to
+                                    create detailed and realistic images that highlight intricate details.
+                                </p>
+                                <div class="flex justify-end">
+                                    <a href="https://www.youtube.com/watch?v=J8Z36s6_X5c" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="bg-transparent border-2 border-accentColor text-accentColor px-6 py-2 rounded-full hover:bg-accentColor hover:text-gray-800 transition">
+                                        Watch Video
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div
+                                class="card bg-button text-white p-6 rounded-xl shadow-xl hover:scale-105 transform transition-all duration-300">
+                                <h3 class="text-xl font-bold mb-4">Color Grading</h3>
+                                <p class="text-lg mb-4">
+                                    Color grading adjusts an image's colors to enhance mood and create a desired
+                                    palette, making photos more dynamic and visually impactful
+                                </p>
+                                <div class="flex justify-end">
+                                    <a href="https://www.youtube.com/watch?v=J8Z36s6_X5c" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="bg-transparent border-2 border-accentColor text-accentColor px-6 py-2 rounded-full hover:bg-accentColor hover:text-gray-800 transition">
+                                        Watch Video
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- <div
+                                    class="card bg-button text-white p-6 rounded-xl shadow-xl hover:scale-105 transform transition-all duration-300">
+                                    <h3 class="text-xl font-bold mb-4">Instant Film Photography</h3>
+                                    <p class="text-lg mb-4">
+                                        Instant film photography uses special film to capture detailed, close-up images, creating realistic photos that are easy to share.
+                                    </p>
+                                    <div class="flex justify-end">
+                                        <a href="https://www.youtube.com/watch?v=J8Z36s6_X5c" target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="bg-transparent border-2 border-accentColor text-accentColor px-6 py-2 rounded-full hover:bg-accentColor hover:text-gray-800 transition">
+                                            Watch Video
+                                        </a>
+                                    </div>
+                                </div> -->
+                        </div>
+
+
+                        <h3 class="text-lg font-semibold mb-2 mt-2 p-5">
+                            2.1 Post-processing Editing
+                        </h3>
+                        <p class="text-lg">
+                            Post-processing editing is the process of editing images after
+                            they have been captured. This involves removing unwanted
+                            elements, changing the colors, adjusting the brightness,
+                            contrast, and other visual aspects of the images.
+                            Post-processing editing can enhance the overall quality of the
+                            images and make them more visually appealing. Some popular
+                            post-processing editing software include Adobe Photoshop,
+                            Lightroom, and Canon EOS Digital Rebel XT. Post-processing
+                            editing allows photographers to create more dynamic, realistic,
+                            and visually impactful images that are easier to share with
+                            others.
+                        </p>
+
+                        <h3 class="text-lg font-semibold mb-2 mt-2 p-5">
+                            2.2 Specialized Photography
+                        </h3>
+                        <p class="text-lg">
+                            Specialized photography is a method of photography that focuses
+                            on capturing specific scenes or subjects. Some popular
+                            specialized photography techniques include wildlife photography,
+                            portrait photography, street photography, fashion photography,
+                            and travel photography. Specialized photography allows
+                            photographers to capture images that are more engaging and
+                            visually appealing than traditional photography. Some popular
+                            specialized photography equipment includes DSLRs, mirrorless
+                            cameras, and smartphones. Specialized photography can help
+                            photographers create more memorable, impactful, and visually
+                            appealing images that are easier to share with others.
+                        </p>
+
+                        <div>
+                            <div class="cards">
+                                <div class="card p-6 rounded-xl shadow-xl">
+                                    <h3 class="text-xl font-bold mb-4">Wildlife Photography</h3>
+                                    <p class="text-lg mb-4">
+                                        Wildlife photography captures images of animals, birds, or other wildlife in
+                                        their natural habitats, creating realistic and engaging images that are easy to
+                                        share.
+                                    </p>
+                                </div>
+
+                                <div class="card p-6 rounded-xl shadow-xl">
+                                    <h3 class="text-xl font-bold mb-4">Portrait Photography</h3>
+                                    <p class="text-lg mb-4">
+                                        Portrait photography captures images of individuals in their natural appearance,
+                                        creating realistic and engaging images that are easy to share.
+                                    </p>
+                                </div>
+
+                                <div class="card p-6 rounded-xl shadow-xl">
+                                    <h3 class="text-xl font-bold mb-4">Street Photography</h3>
+                                    <p class="text-lg mb-4">
+                                        Street photography captures images of people, buildings, and other street
+                                        scenes, creating realistic and engaging images that are easy to share.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <h3 class="text-lg font-semibold mb-2 mt-2 p-5">
+                            2.3 Storytelling through Photography
+                        </h3>
+                        <p class="text-lg">
+                            Storytelling through photography is the process of using visual
+                            elements to tell a story. This involves capturing images that
+                            represent the events, people, or situations that are happening
+                            in a particular context. Storytelling through photography allows
+                            photographers to create images that are more engaging and
+                            visually appealing than traditional photography. Some popular
+                            storytelling through photography techniques include narrative
+                            photography, photojournalism, and photo essays. Storytelling
+                            through photography can help photographers create more
+                            memorable, impactful, and visually appealing images that are
+                            easier to share with others.
+                        </p>
+
+                        <h3 class="text-lg font-semibold mb-2 mt-2 p-5">
+                            2.4 Building a Photography Portfolio
+                        </h3>
+                        <p class="text-lg">
+                            Building a photography portfolio is the process of creating a
+                            collection of high-quality, engaging, and visually appealing
+                            images that showcase your skills, experiences, and success
+                            achievements in photography. Building a photography portfolio
+                            can help you build credibility, trust, and reputation in the
+                            photography industry. Some popular photography portfolio tools
+                            include Adobe Photoshop, Lightroom, and Canon EOS Digital Rebel
+                            XT. Building a photography portfolio allows you to create more
+                            memorable, impactful, and visually appealing images that are
+                            easier to share with others.
+                        </p>
+
+                        <div>
+                            <h2 class="text-2xl font-semibold m-2 p-5 text-center">
+                                Popular Photography Software
+                            </h2>
+                            <div class="cards flex flex-wrap gap-6 justify-center">
+                                <div
+                                    class="card w-[280px] h-[200px] p-4 flex flex-col items-center justify-between rounded-lg">
+                                    <img src="../Photography/Adobe-Photoshop.webp" alt=""
+                                        class="w-full h-[60%] object-contain rounded-md mb-2" />
+                                    <p class="text-center text-lg font-semibold">
+                                        Adobe Photoshop
+                                    </p>
+                                </div>
+                                <div
+                                    class="card w-[280px] h-[200px] p-4 flex flex-col items-center justify-between rounded-lg">
+                                    <img src="../Photography/lightroom.jpeg" alt=""
+                                        class="w-full h-[100px] object-contain rounded-md mb-2" />
+                                    <p class="text-center text-lg font-semibold">Lightroom</p>
+                                </div>
+                                <div
+                                    class="card w-[280px] h-[200px] p-4 flex flex-col items-center justify-between rounded-lg">
+                                    <img src="../Photography/canon.jpeg" alt=""
+                                        class="w-full h-[60%] object-contain rounded-md mb-2" />
+                                    <p class="text-center text-lg font-semibold">Canon EOS</p>
+                                </div>
+                                <div
+                                    class="card w-[280px] h-[200px] p-4 flex flex-col items-center justify-between rounded-lg">
+                                    <img src="../Photography/fujifilm.jpeg" alt=""
+                                        class="w-full h-[60%] object-contain rounded-md mb-2" />
+                                    <p class="text-center text-lg font-semibold">Fujifilm</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-6 space-y-6 bg-course-gradient rounded-lg shadow-lg mt-20">
+                            <!-- Heading Section -->
+                            <h3 class="text-3xl font-bold text-white bg-navColor p-5 rounded-lg shadow-md">
+                                Learning Activities and Resources
+                            </h3>
+
+                            <!-- Paragraph Section -->
+                            <p class="text-lg text-gray-800 leading-relaxed">
+                                To help you learn more about engineering design and analysis, you can
+                                find various learning activities and resources available on the
+                                LearnSphere platform. Some popular learning activities include:
+                            </p>
+
+                            <!-- List of Learning Activities -->
+                            <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+                                <li class="hover:text-accentColor transition duration-300 ease-in-out">Coursework
+                                    assignments and quizzes</li>
+                                <li class="hover:text-accentColor transition duration-300 ease-in-out">Online lectures
+                                    and videos</li>
+                                <li class="hover:text-accentColor transition duration-300 ease-in-out">Problem-solving
+                                    exercises</li>
+                                <li class="hover:text-accentColor transition duration-300 ease-in-out">Discussion forums
+                                    and Q&A</li>
+                                <li class="hover:text-accentColor transition duration-300 ease-in-out">Interactive
+                                    learning tools and simulations</li>
+                            </ul>
+
+                            <!-- Additional Resources Section -->
+                            <p class="text-lg text-gray-800 leading-relaxed">
+                                You can also find additional resources and learning materials on the
+                                following websites:
+                            </p>
+                            <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+                                <li><a href="https://www.learnsphere.com/"
+                                        class="text-accentColor hover:underline transition duration-300">LearnSphere</a>
+                                </li>
+                                <li><a href="https://www.coursera.org/"
+                                        class="text-accentColor hover:underline transition duration-300">Coursera</a>
+                                </li>
+                                <li><a href="https://www.edx.org/"
+                                        class="text-accentColor hover:underline transition duration-300">edX</a></li>
+                                <li><a href="https://www.udemy.com/"
+                                        class="text-accentColor hover:underline transition duration-300">Udemy</a></li>
+                            </ul>
+
+                            <!-- Conclusion Section -->
+                            <p class="text-lg text-gray-800 leading-relaxed">
+                                As you continue your learning journey, remember to practice active
+                                engagement and seek feedback from your peers and instructors. Good luck
+                                with your engineering design and analysis course!
+                            </p>
+                        </div>
+                    </div>    
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="/js/course-detail.js"></script>
+      <script src="../components/nav.js"></script>
+</body>
+
+</html>

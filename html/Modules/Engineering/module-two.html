@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnSphere</title>
+    <link rel="stylesheet" href="/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="/Assests/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+  </head>
+
+  <body class="bg-accentColor text-gray-600">
+    <div class="containers mt-20">
+      <div id="navbar"></div>
+      <div>
+        <div class="highlights flex flex-col-2 gap-6">
+          <section class="w-full mb-5">
+            <div
+              class="sidebar bg-button text-heroText m-5 p-5 w-[450px] h-[auto]"
+            >
+              <h2 class="text-2xl font-semibold m-2">
+                Master Full-stack Web Development
+              </h2>
+              <div class="modules space-y-3 bg-accentColor">
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/Engineering/module-one.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 1: Fundamentals of Engineering
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a href="#intro" onclick="scrollToSection(event, 'intro')"
+                        >Introduction to Engineering</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-mat"
+                        onclick="scrollToSection(event, 'intro-mat')"
+                        >Mathematics for Engineers</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-td"
+                        onclick="scrollToSection(event, 'intro-td')"
+                        >Technical Drawing and CAD</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/Engineering/module-two.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 2: Engineering Design and Analysis
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a
+                        href="#intro-engp"
+                        onclick="scrollToSection(event,'intro-engp')"
+                        >Engineering Design Process</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-material"
+                        onclick="scrollToSection(event,'intro-material')"
+                        >Materials Science</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-pjm"
+                        onclick="scrollToSection(event,'intro-pjm')"
+                        >Project Management in Engineering</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mr-20 pr-14">
+            <div class="description mt-5 p-2">
+              <h2 class="text-2xl font-semibold m-2 p-5 text-center">
+                2. Engineering Design and Analysis
+              </h2>
+
+              <p class="text-lg">
+                Engineering design is the process of creating a detailed plan,
+                design, and construction of a structure, system, or component to
+                meet specific requirements. It involves the application of
+                principles of physics, mathematics, engineering mechanics, and
+                other fields to analyze the problem, design the solution, and
+                create a product that meets or exceeds desired performance. This
+                module will explore the various stages of engineering design,
+                including conceptual design, feasibility studies, structural
+                analysis, and design verification.
+              </p>
+
+              <h3 class="text-lg font-semibold m-2 p-5">
+                2.1 Engineering Design Process
+              </h3>
+              <p class="text-lg">
+                The engineering design process consists of several stages, each
+                with its own purpose and specific requirements. Here is a
+                general overview of the stages and their roles:
+              </p>
+
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-5"
+              >
+                <div
+                  class="px-6 py-4 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300 cursor-pointer"
+                >
+                  <h4 class="font-semibold mb-2">Conception</h4>
+                  <p>
+                    The initial stage of the design process where the primary
+                    goals, constraints, and desired outcomes are established.
+                    This phase sets the foundation for all future work.
+                  </p>
+                </div>
+
+                <div
+                  class="px-6 py-4 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300 cursor-pointer"
+                >
+                  <h4 class="font-semibold mb-2">Feasibility Studies</h4>
+                  <p>
+                    A critical assessment of the practicality and viability of
+                    the proposed project. This involves analyzing technical,
+                    financial, and operational constraints to determine if the
+                    project can proceed.
+                  </p>
+                </div>
+
+                <div
+                  class="px-6 py-4 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300 cursor-pointer"
+                >
+                  <h4 class="font-semibold mb-2">Structural Analysis</h4>
+                  <p>
+                    The process of analyzing and evaluating the physical
+                    structure to ensure it can withstand expected loads,
+                    stresses, and environmental conditions. This ensures safety
+                    and durability.
+                  </p>
+                </div>
+
+                <div
+                  class="px-6 py-4 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300 cursor-pointer"
+                >
+                  <h4 class="font-semibold mb-2">Design Verification</h4>
+                  <p>
+                    Verifying that the design meets the required specifications
+                    and standards. This phase ensures the design will perform as
+                    expected in real-world conditions before implementation.
+                  </p>
+                </div>
+
+                <div
+                  class="px-6 py-4 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300 cursor-pointer"
+                >
+                  <h4 class="font-semibold mb-2">Construction</h4>
+                  <p>
+                    The final stage where the design is brought to life. This
+                    phase includes the actual building of the product or
+                    structure, with careful attention to detail and adherence to
+                    plans.
+                  </p>
+                </div>
+              </div>
+
+              <h3 class="text-lg font-semibold m-2 p-5">
+                2.2 Materials Science
+              </h3>
+              <p class="text-lg">
+                Materials science is a branch of condensed matter physics and
+                mechanics that deals with the physical and chemical behavior of
+                solid materials. It aims to understand the mechanisms behind the
+                physical properties of materials, such as their strength,
+                toughness, and ductility. Materials science has significant
+                applications in various fields, including engineering,
+                construction, and manufacturing. This module will explore
+                various aspects of materials science, including the behavior of
+                metals, ceramics, and polymers, as well as the development of
+                new materials with improved properties.
+              </p>
+
+              <div class="">
+                <div class="p-6">
+                  <div class="card p-6">
+                    <h4 class="font-semibold mb-4 text-xl">
+                      Materials Properties
+                    </h4>
+                    <p class="text-lg mb-4">
+                      Exploring the physical and chemical behavior of metals,
+                      ceramics, and polymers.
+                    </p>
+                    <iframe
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/BHZALtqAjeM?si=grWZBRQR3dgeOhhr"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="text-lg font-semibold m-2 p-5">
+                2.3 Project Management in Engineering
+              </h3>
+              <p class="text-lg">
+                Project management is the process of organizing, coordinating,
+                and executing a project effectively. It involves the development
+                of a project plan, the identification of project objectives, the
+                allocation of resources, and the monitoring and control of the
+                project's progress. This module will explore various aspects of
+                project management, including the development of project plans,
+                the identification of project objectives, the allocation of
+                resources, and the monitoring and control of the project's
+                progress.
+              </p>
+
+              <div class="p-6">
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+                >
+                  <div
+                    class="card border border-navColor p-6 rounded-lg shadow-md hover:shadow-xl"
+                  >
+                    <h4 class="font-semibold mb-4 text-xl">
+                      Project Management Tools
+                    </h4>
+                    <p class="text-md text-gray-700">
+                      Some popular project management tools include Asana,
+                      Trello, and Jira. These tools help you manage your
+                      project, track progress, and allocate resources
+                      effectively.
+                    </p>
+                  </div>
+
+                  <div
+                    class="card border border-navColor p-6 rounded-lg shadow-md hover:shadow-xl"
+                  >
+                    <h4 class="font-semibold mb-4 text-xl">
+                      Project Management Techniques
+                    </h4>
+                    <p class="text-md">
+                      Some popular project management techniques include agile,
+                      waterfall, and kanban. Agile methods involve iterative
+                      development and a focus on customer feedback, while
+                      waterfall methods involve a linear sequence of stages and
+                      steps. Kanban is a visual method that helps you visualize
+                      and manage your project's workflow.
+                    </p>
+                  </div>
+
+                  <div
+                    class="card border border-navColor p-6 rounded-lg shadow-md hover:shadow-xl"
+                  >
+                    <h4 class="font-semibold mb-4 text-xl">
+                      Project Management Best Practices
+                    </h4>
+                    <p class="text-md text-gray-700">
+                      Some popular project management best practices include the
+                      Kanban method, the use of agile methodologies, and the
+                      importance of communication and collaboration. These best
+                      practices help you create a successful and efficient
+                      project.
+                    </p>
+                  </div>
+
+                  <div
+                    class="card border border-navColor p-6 rounded-lg shadow-md hover:shadow-xl"
+                  >
+                    <h4 class="font-semibold mb-4 text-xl">
+                      Project Management Software
+                    </h4>
+                    <p class="text-md">
+                      Some popular project management software include Asana,
+                      Trello, and Jira. These tools help you manage your
+                      project, track progress, and allocate resources
+                      effectively.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="p-6 space-y-6 bg-course-gradient rounded-lg shadow-lg mt-20"
+              >
+                <!-- Heading Section -->
+                <h3
+                  class="text-3xl font-bold text-white bg-navColor p-5 rounded-lg shadow-md"
+                >
+                  Learning Activities and Resources
+                </h3>
+
+                <!-- Paragraph Section -->
+                <p class="text-lg text-gray-800 leading-relaxed">
+                  To help you learn more about engineering design and analysis,
+                  you can find various learning activities and resources
+                  available on the LearnSphere platform. Some popular learning
+                  activities include:
+                </p>
+
+                <!-- List of Learning Activities -->
+                <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+                  <li
+                    class="hover:text-accentColor transition duration-300 ease-in-out"
+                  >
+                    Coursework assignments and quizzes
+                  </li>
+                  <li
+                    class="hover:text-accentColor transition duration-300 ease-in-out"
+                  >
+                    Online lectures and videos
+                  </li>
+                  <li
+                    class="hover:text-accentColor transition duration-300 ease-in-out"
+                  >
+                    Problem-solving exercises
+                  </li>
+                  <li
+                    class="hover:text-accentColor transition duration-300 ease-in-out"
+                  >
+                    Discussion forums and Q&A
+                  </li>
+                  <li
+                    class="hover:text-accentColor transition duration-300 ease-in-out"
+                  >
+                    Interactive learning tools and simulations
+                  </li>
+                </ul>
+
+                <!-- Additional Resources Section -->
+                <p class="text-lg text-gray-800 leading-relaxed">
+                  You can also find additional resources and learning materials
+                  on the following websites:
+                </p>
+                <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+                  <li>
+                    <a
+                      href="https://www.learnsphere.com/"
+                      class="text-accentColor hover:underline transition duration-300"
+                      >LearnSphere</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.coursera.org/"
+                      class="text-accentColor hover:underline transition duration-300"
+                      >Coursera</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.edx.org/"
+                      class="text-accentColor hover:underline transition duration-300"
+                      >edX</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.udemy.com/"
+                      class="text-accentColor hover:underline transition duration-300"
+                      >Udemy</a
+                    >
+                  </li>
+                </ul>
+
+                <!-- Conclusion Section -->
+                <p class="text-lg text-gray-800 leading-relaxed">
+                  As you continue your learning journey, remember to practice
+                  active engagement and seek feedback from your peers and
+                  instructors. Good luck with your engineering design and
+                  analysis course!
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script src="/js/course-detail.js"></script>
+    <script src="../components/nav.js"></script>
+  </body>
+</html>

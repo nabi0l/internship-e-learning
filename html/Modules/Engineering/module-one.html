@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnSphere</title>
+    <link rel="stylesheet" href="/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="/Assests/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+  </head>
+  <body class="bg-accentColor text-gray-600">
+    <div class="containers mt-20">
+      <div id="navbar"></div>
+      <div>
+        <div class="highlights flex flex-col-2 gap-6">
+          <section class="w-full mb-5">
+            <div
+              class="sidebar bg-button text-heroText m-5 p-5 w-[450px] h-[auto]"
+            >
+              <h2 class="text-2xl font-semibold m-2">
+                Master Full-stack Web Development
+              </h2>
+              <div class="modules space-y-3 bg-accentColor">
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/Engineering/module-one.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 1: Fundamentals of Engineering
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a href="#intro" onclick="scrollToSection(event, 'intro')"
+                        >Introduction to Engineering</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-mat"
+                        onclick="scrollToSection(event, 'intro-mat')"
+                        >Mathematics for Engineers</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-td"
+                        onclick="scrollToSection(event, 'intro-td')"
+                        >Technical Drawing and CAD</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/Engineering/module-two.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 2: Engineering Design and Analysis
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a
+                        href="#intro-engp"
+                        onclick="scrollToSection(event,'intro-engp')"
+                        >Engineering Design Process</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-material"
+                        onclick="scrollToSection(event,'intro-material')"
+                        >Materials Science</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-pjm"
+                        onclick="scrollToSection(event,'intro-pjm')"
+                        >Project Management in Engineering</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mr-20 pr-14">
+            <div class="description mt-5 p-2">
+              <h2 class="text-2xl font-semibold m-2 p-5 text-center">
+                Introduction to Engineering
+              </h2>
+              <p class="text-lg font-semibold p-2">Overview</p>
+              <p class="text-lg">
+                Engineering is a broad discipline that combines various
+                scientific, technical, and practical disciplines to design and
+                build structures, machines, and systems for various purposes. It
+                involves the study and application of principles of physics,
+                chemistry, mathematics, and engineering sciences.
+              </p>
+
+              <h3 class="text-xl font-semibold m-2 p-5">
+                1.1 Mathematics for Engineers
+              </h3>
+              <p class="text-lg">
+                Mathematics plays a crucial role in engineering as it is the
+                foundation of the field. It is used to analyze, solve problems,
+                and design solutions that meet the needs of the engineering
+                community. Some key topics covered in mathematics for engineers
+                include calculus, linear algebra, differential equations, and
+                statistics.
+              </p>
+
+              <div class="p-6">
+                <!-- Cards Section -->
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+                >
+                  <!-- Card 1 - Calculus -->
+                  <div class="bg-button p-6 shadow-lg rounded-lg">
+                    <div class="card-header mb-4">
+                      <h3 class="text-lg font-semibold">Calculus</h3>
+                    </div>
+                    <div class="card-body">
+                      <p class="text-gray-700">
+                        Calculus is a branch of mathematics that deals with
+                        rates of change, accumulation, and related concepts. It
+                        is used in engineering to analyze motion, electricity,
+                        heat, and other physical phenomena.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Card 2 - Linear Algebra -->
+                  <div class="bg-button p-6 shadow-lg rounded-lg">
+                    <div class="card-header mb-4">
+                      <h3 class="text-lg font-semibold">Linear Algebra</h3>
+                    </div>
+                    <div class="card-body">
+                      <p class="text-gray-700">
+                        Linear algebra is a branch of mathematics that deals
+                        with vector spaces and linear transformations. It is
+                        used in engineering to analyze and solve problems
+                        related to linear systems, such as systems of equations,
+                        matrices, and vector spaces.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Card 3 - Differential Equations -->
+                  <div class="bg-button p-6 shadow-lg rounded-lg">
+                    <div class="card-header mb-4">
+                      <h3 class="text-lg font-semibold">
+                        Differential Equations
+                      </h3>
+                    </div>
+                    <div class="card-body">
+                      <p class="text-gray-700">
+                        Differential equations are mathematical equations that
+                        describe the change of a function over a variable, such
+                        as time. They are used in engineering to analyze and
+                        solve problems related to motion, heat, and other
+                        physical phenomena.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Card 4 - Statistics -->
+                  <div class="bg-button p-6 shadow-lg rounded-lg">
+                    <div class="card-header mb-4">
+                      <h3 class="text-lg font-semibold">Statistics</h3>
+                    </div>
+                    <div class="card-body">
+                      <p class="text-gray-700">
+                        Statistics is a branch of mathematics that deals with
+                        collecting, organizing, analyzing, and interpreting
+                        data. It is used in engineering to analyze data related
+                        to processes, populations, and samples, to make informed
+                        decisions, and to test hypotheses.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <div class="my-8">
+                  <img
+                    class="w-full h-auto rounded-lg shadow-md"
+                    src="https://www.engineeringeducation.gov/wp-content/uploads/2021/02/Mathematics-for-Engineers-1.jpg"
+                    alt="Mathematics for Engineers"
+                  />
+                </div> -->
+
+                <!-- Description Section -->
+                <p class="text-lg mt-5 text-gray-700">
+                  Mathematics is the foundation of engineering as it is used to
+                  analyze, solve problems, and design solutions that meet the
+                  needs of the engineering community.
+                </p>
+              </div>
+
+              <h3 class="text-xl font-semibold m-2 p-5">
+                1.2 Technical Drawing and CAD
+              </h3>
+              <p class="text-lg">
+                Technical drawing and Computer-Aided Design (CAD) are essential
+                tools in engineering. Technical drawing is a visual
+                representation of a structure or system, while CAD enables
+                engineers to create, modify, and analyze models of their
+                designs. Some popular CAD software used in engineering include
+                AutoCAD, Revit, and SolidWorks.
+              </p>
+              <p class="text-lg mt-5">
+                Technical drawing and CAD can be used to communicate the design
+                of a structure, to analyze the design for safety, to identify
+                potential issues, and to provide design suggestions.
+              </p>
+
+              <h3 class="text-xl font-semibold text-center m-2 p-5">
+                1.2.1 Technical Drawing
+              </h3>
+
+              <p class="text-lg">
+                Technical drawing is a visual representation of a structure or
+                system that outlines the components, their arrangement, and
+                their relationships. It helps engineers visualize the design
+                process and identify potential issues or challenges early on.
+                Technical drawings can be created using various software tools,
+                such as AutoCAD, Revit, and SolidWorks.
+              </p>
+              <p class="text-lg mt-5">
+                Technical drawings can be used to communicate the design of a
+                structure, to analyze the design for safety, to identify
+                potential issues, and to provide design suggestions.
+              </p>
+              <p class="text-lg mt-5">
+                Technical drawings can be created using various software tools,
+                such as AutoCAD, Revit, and SolidWorks. Some popular CAD
+                software used in engineering include AutoCAD, Revit, and
+                SolidWorks.
+              </p>
+              <h3 class="text-xl font-semibold text-center m-2 p-5">
+                1.2.2 Computer-Aided Design (CAD)
+              </h3>
+              <p class="text-lg">
+                Computer-Aided Design (CAD) is a technology that allows
+                engineers to create, modify, and analyze 3D models of their
+                designs. CAD software enables engineers to visualize the design
+                process, identify potential issues, and provide design
+                suggestions. Some popular CAD software used in engineering
+                include AutoCAD, Revit, and SolidWorks.
+              </p>
+              <p class="text-lg mt-5">
+                CAD software enables engineers to visualize the design process,
+                identify potential issues, and provide design suggestions. Some
+                popular CAD software used in engineering include AutoCAD, Revit,
+                and SolidWorks.
+              </p>
+
+              <h3 class="text-xl font-semibold m-2 p-5">
+                1.3 Engineering Design Process
+              </h3>
+              <p class="text-lg">
+                Engineering design is a complex process that involves several
+                stages and considerations. The primary stages include
+                requirements gathering, feasibility analysis, conceptual design,
+                detailed design, and construction. Engineers use various tools,
+                techniques, and methods to complete these stages, such as design
+                reviews, collaborative workshops, and simulation.
+              </p>
+
+              <div>
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-5"
+                >
+                  <!-- Card 1 -->
+                  <div class="bg-white p-6 shadow-lg rounded-lg">
+                    <h4 class="text-xl font-semibold mb-3">
+                      Define the Problem
+                    </h4>
+                    <p class="text-gray-700">
+                      Understand the problem that needs to be solved, gather
+                      initial requirements, and clearly define the design goals.
+                    </p>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div class="bg-white p-6 shadow-lg rounded-lg">
+                    <h4 class="text-xl font-semibold mb-3">
+                      Research & Analysis
+                    </h4>
+                    <p class="text-gray-700">
+                      Research existing solutions, perform feasibility studies,
+                      and analyze the system’s requirements before proceeding
+                      with design.
+                    </p>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div class="bg-white p-6 shadow-lg rounded-lg">
+                    <h4 class="text-xl font-semibold mb-3">
+                      Conceptual Design
+                    </h4>
+                    <p class="text-gray-700">
+                      Develop multiple design concepts based on research and
+                      analysis, focusing on addressing the problem effectively.
+                    </p>
+                  </div>
+
+                  <!-- Card 4 -->
+                  <div class="bg-white p-6 shadow-lg rounded-lg">
+                    <h4 class="text-xl font-semibold mb-3">
+                      Prototype Development
+                    </h4>
+                    <p class="text-gray-700">
+                      Create a prototype or model to visualize the design
+                      concept and test its functionality before full-scale
+                      production.
+                    </p>
+                  </div>
+
+                  <!-- Card 5 -->
+                  <div class="bg-white p-6 shadow-lg rounded-lg">
+                    <h4 class="text-xl font-semibold mb-3">
+                      Testing & Evaluation
+                    </h4>
+                    <p class="text-gray-700">
+                      Conduct tests to evaluate the design’s performance and
+                      identify any potential issues or areas for improvement.
+                    </p>
+                  </div>
+
+                  <!-- Card 6 -->
+                  <div class="bg-white p-6 shadow-lg rounded-lg">
+                    <h4 class="text-xl font-semibold mb-3">
+                      Refinement & Finalization
+                    </h4>
+                    <p class="text-gray-700">
+                      Refine the design based on feedback and testing, ensuring
+                      it meets all requirements, and finalize the design for
+                      production.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script src="/js/course-detail.js"></script>
+    <script src="../components/nav.js"></script>
+  </body>
+</html>

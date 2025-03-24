@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnSphere</title>
+    <link rel="stylesheet" href="/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="/Assests/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+  </head>
+  <body class="bg-accentColor text-gray-600">
+    <div class="containers mt-20">
+      <div id="navbar"></div>
+      <div>
+        <div class="highlights flex flex-col-2 gap-6">
+          <section class="w-full mb-5">
+            <div
+              class="sidebar bg-button text-heroText m-5 p-5 w-[450px] h-[auto]"
+            >
+              <h2 class="text-2xl font-semibold m-2">
+                Master Full-stack Web Development
+              </h2>
+              <div class="modules space-y-3 bg-accentColor">
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/DataScience/module-one.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 1: Introduction to Data Science
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a
+                        href="#intro-data"
+                        onclick="scrollToSection(event, 'intro-data')"
+                        >What is Data Science?</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-workflow"
+                        onclick="scrollToSection(event, 'intro-workflow')"
+                        >Data Science Workflow</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-tools"
+                        onclick="scrollToSection(event, 'intro-tools')"
+                        >Essential Tools for Data Science</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/DataScience/module-two.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 2: Data Collection and Preprocessing
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a
+                        href="#intro-collection"
+                        onclick="scrollToSection(event,'intro-collection')"
+                        >Data Collection Techniques</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-cleaning"
+                        onclick="scrollToSection(event,'intro-cleaning')"
+                        >Data Cleaning and Preparation</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-transformation"
+                        onclick="scrollToSection(event,'intro-transformation')"
+                        >Data Transformation</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/DataScience/module-three.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 3: Statistics and Probability for Data Science
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a href="#intro" onclick="scrollToSection(event,'intro')"
+                        >Descriptive Statistics</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-inferential "
+                        onclick="scrollToSection(event,'intro-inferential')"
+                        >Inferential Statistics</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#probability"
+                        onclick="scrollToSection(event,'probability')"
+                        >Probability Basics</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#correlation"
+                        onclick="scrollToSection(event,'Correlation')"
+                        >Correlation and Regression</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/DataScience/module-four.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 4: Machine Learning Fundamentals
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a href="#intro" onclick="scrollToSection(event, 'intro')"
+                        >Introduction to Machine Learning</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-learning"
+                        onclick="scrollToSection(event, 'intro-learning')"
+                        >Supervised Learning vs Unsupervised Learning</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-model"
+                        onclick="scrollToSection(event, 'intro-model')"
+                        >Model Evaluation and Optimization</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/DataScience/module-five.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 5: Data Science Applications and Case Studies
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a href="#real" onclick="scrollToSection(event, 'real')"
+                        >Real-World Case Studies</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a href="#nlp" onclick="scrollToSection(event, 'nlp')"
+                        >Natural Language Processing (NLP)</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a href="#deep" onclick="scrollToSection(event, 'deep')"
+                        >Deep Learning Basics</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mr-20 pr-14">
+            <div class="description mt-5 p-2">
+              <h2 class="text-2xl font-semibold m-2 p-5 text-center">
+                3. Statistics and Probability for Data Science
+              </h2>
+              <p class="text-lg m-2">
+                This module covers the foundations of statistics and probability
+                in data science. It covers descriptive statistics, inferential
+                statistics, probability basics, correlation and regression, and
+                more. Throughout the course, you will learn how to apply these
+                concepts to analyze and understand data.
+              </p>
+
+              <h3 class="text-lg font-semibold p-5">
+                3.1 Descriptive Statistics
+              </h3>
+              <p class="text-lg m-2">
+                Descriptive statistics is a branch of statistics that deals with
+                summarizing and describing the basic features of a set of data.
+                It provides insights into the central tendency, dispersion, and
+                shape of the data. Examples of descriptive statistics include
+                mean, median, mode, range, variance, and standard deviation.
+              </p>
+
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4"
+              >
+                <div
+                  class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
+                >
+                  <h4 class="text-2xl font-semibold mb-3">Mean</h4>
+                  <p class="text-gray-700">
+                    The mean is the average of a set of numbers. It is
+                    calculated by summing all the numbers and dividing by the
+                    number of values.
+                  </p>
+                </div>
+
+                <div
+                  class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
+                >
+                  <h4 class="text-2xl font-semibold mb-3">Median</h4>
+                  <p class="text-gray-700">
+                    The median is the middle value of a sorted set of numbers.
+                    If the set has an even number of values, the median is the
+                    average of the two middle values.
+                  </p>
+                </div>
+
+                <div
+                  class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
+                >
+                  <h4 class="text-2xl font-semibold mb-3">Mode</h4>
+                  <p class="text-gray-700">
+                    The mode is the most frequently occurring value in a set of
+                    numbers. If there is no mode, the set may not have a unique
+                    mode.
+                  </p>
+                </div>
+
+                <div
+                  class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
+                >
+                  <h4 class="text-2xl font-semibold mb-3">Range</h4>
+                  <p class="text-gray-700">
+                    The range is the difference between the largest and smallest
+                    values in a set of numbers. It provides a measure of
+                    dispersion or variability.
+                  </p>
+                </div>
+
+                <div
+                  class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
+                >
+                  <h4 class="text-2xl font-semibold mb-3">Variance</h4>
+                  <p class="text-gray-700">
+                    The variance is the average of the squared differences
+                    between each data point and the mean. It measures the spread
+                    of the data around the mean.
+                  </p>
+                </div>
+
+                <div
+                  class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
+                >
+                  <h4 class="text-2xl font-semibold mb-3">
+                    Standard Deviation
+                  </h4>
+                  <p class="text-gray-700">
+                    The standard deviation is the square root of the variance.
+                    It measures the amount of variation or dispersion in a set
+                    of numbers. It is a common measure of the spread of the data
+                    around the mean.
+                  </p>
+                </div>
+              </div>
+
+              <h3 class="text-lg font-semibold p-5">
+                3.2 Inferential Statistics
+              </h3>
+              <p class="text-lg m-2">
+                Inferential statistics is a branch of statistics that deals with
+                making inferences or conclusions about a population based on a
+                sample of data. It involves using statistical methods to
+                estimate population parameters and test hypotheses.
+              </p>
+
+              <div>
+                <div
+                  class="bg-button rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300 mb-5"
+                >
+                  <h4 class="text-2xl font-semibold mb-3">Sampling</h4>
+                  <p class="text-gray-700">
+                    Sampling is the process of selecting a subset of data from a
+                    larger population to estimate population parameters or make
+                    inferences. It involves selecting a random sample from a
+                    population and using it to make statistical inferences.
+                  </p>
+                </div>
+
+                <div
+                  class="bg-button rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300 mb-5"
+                >
+                  <h4 class="text-2xl font-semibold mb-3">
+                    Confidence Intervals
+                  </h4>
+                  <p class="text-gray-700">
+                    A confidence interval is a range of values within which a
+                    population parameter is likely to lie. It is a measure of
+                    the reliability of a statistical estimate. It is calculated
+                    using the formula: confidence interval = point estimate ±
+                    margin of error
+                  </p>
+                </div>
+
+                <div
+                  class="bg-button rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
+                >
+                  <h4 class="text-2xl font-semibold mb-3">
+                    Hypothesis Testing
+                  </h4>
+                  <p class="text-gray-700">
+                    Hypothesis testing is a statistical method used to determine
+                    whether a hypothesis is true or false based on sample data.
+                    It involves comparing the observed data to a hypothesized
+                    distribution or value.
+                  </p>
+                </div>
+              </div>
+
+              <h3 class="text-lg font-semibold p-5">3.3 Probability Basics</h3>
+              <p class="text-lg m-2">
+                Probability is a measure of the likelihood or chance that an
+                event will occur. It is a number between 0 and 1, where 0
+                indicates that the event is impossible and 1 indicates that the
+                event is certain. Probability is calculated using probabilities
+                of individual events, conditional probabilities, and joint
+                probabilities.
+              </p>
+
+              <div>
+                <div
+                  class="rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300 mb-5"
+                >
+                  <h4 class="text-2xl font-semibold mb-3">
+                    Probability Distributions
+                  </h4>
+                  <p class="text-gray-700">
+                    Probability distributions are mathematical functions that
+                    describe the probabilities of different outcomes when a
+                    random variable is observed. Examples of probability
+                    distributions include the binomial distribution, normal
+                    distribution, and Poisson distribution.
+                  </p>
+                </div>
+
+                <div
+                  class="rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300 mb-5"
+                >
+                  <h4 class="text-2xl font-semibold mb-3">
+                    Conditional Probability
+                  </h4>
+                  <p class="text-gray-700">
+                    Conditional probability is the probability of an event
+                    occurring given that another event has already occurred. It
+                    is calculated using the formula: P(A|B) = P(A ∩ B) / P(B)
+                  </p>
+                </div>
+
+                <div
+                  class="rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
+                >
+                  <h4 class="text-2xl font-semibold mb-3">Joint Probability</h4>
+                  <p class="text-gray-700">
+                    Joint probability is the probability of two or more events
+                    occurring simultaneously. It is calculated using the
+                    formula: P(A ∩ B) = P(A) * P(B|A)
+                  </p>
+                </div>
+              </div>
+
+              <h3 class="text-lg font-semibold p-5">
+                3.4 Correlation and Regression
+              </h3>
+              <p class="text-lg m-2">
+                Correlation and regression are statistical methods used to
+                examine the relationship between two variables. Correlation
+                measures the strength and direction of the linear relationship
+                between two variables, while regression models the relationship
+                between a dependent variable and one or more independent
+                variables.
+              </p>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 p-4">
+                <div
+                  class="border border-navColor rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
+                >
+                  <h4 class="text-2xl font-semibold mb-3">Correlation</h4>
+                  <p class="text-gray-700">
+                    Correlation is a measure of the strength and direction of
+                    the linear relationship between two variables. It ranges
+                    from -1 to 1, where -1 indicates a perfect negative
+                    correlation, 0 indicates no correlation, and 1 indicates a
+                    perfect positive correlation.
+                  </p>
+                </div>
+
+                <div
+                  class="border border-navColor rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
+                >
+                  <h4 class="text-2xl font-semibold mb-3">Regression</h4>
+                  <p class="text-gray-700">
+                    Regression is a statistical method used to determine the
+                    relationship between a dependent variable and one or more
+                    independent variables. It models the relationship between
+                    the dependent variable and the independent variables as a
+                    linear equation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script src="/js/course-detail.js"></script>
+     <script src="../components/nav.js"></script>
+  </body>
+</html>

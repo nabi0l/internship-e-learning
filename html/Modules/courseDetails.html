@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LearnSphere</title>
-    <link rel="stylesheet" href="../Assests/fontawesome-free-6.7.2-web/css/all.min.css">
-    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../../Assests/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../../css/output.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">
     <div class="header">
-        <header class="bg-navColor flex justify-between items-center fixed top-0 w-full z-50 p-3 shadow-md relative">
+        <header class="bg-navColor flex justify-between items-center fixed top-0 w-full z-50 p-3 shadow-md">
             <!-- Logo -->
             <div class="flex items-center">
                 <img src="/Assests/images/logo.png" alt="LearnSphere Logo" class="w-14 h-14" />
                 <h2 class="text-accentColor font-bold text-2xl ml-2">LearnSphere</h2>
             </div>
 
-            <!-- Hamburger Icon (visible only on sm) -->
+            <!-- Hamburger Icon (only visible on sm size) -->
             <button id="menu-toggle" class="text-accentColor text-3xl block sm:block md:hidden focus:outline-none">
                 <i class="fas fa-bars"></i>
             </button>
@@ -32,8 +32,8 @@
             </nav>
         </header>
 
-        <!-- Dropdown Menu (hidden initially) -->
-        <div id="dropdown-menu" class="hidden bg-white text-navColor shadow-md rounded-lg absolute top-20 right-4 w-40 z-10">
+        <!-- Dropdown Menu (only on sm size) -->
+        <div id="dropdown-menu" class="hidden bg-white text-navColor shadow-md rounded-lg absolute top-20 right-4 w-40 sm:block md:hidden">
             <a href="/html/home.html" class="block px-4 py-2 hover:bg-gray-200">Home</a>
             <a href="/html/online-program.html" class="block px-4 py-2 hover:bg-gray-200">Programs</a>
             <a href="/html/about.html" class="block px-4 py-2 hover:bg-gray-200">About Us</a>
@@ -42,19 +42,17 @@
         </div>
     </div>
 
-    <!-- Adjusted JavaScript for Toggle -->
+    <!-- Toggle Dropdown Script -->
     <script>
-    document.addEventListener("DOMContentLoaded", () => {
-  const menuToggle = document.getElementById("menu-toggle");
-  const dropdownMenu = document.getElementById("dropdown-menu");
+       document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menu-toggle");
+    const dropdownMenu = document.getElementById("dropdown-menu");
 
-  // Check if elements exist before adding event listener
-  if(menuToggle && dropdownMenu){
-    menuToggle.addEventListener("click", () => {
-       console.log('Hamburger menu clicked');
-      dropdownMenu.classList.toggle("hidden");
-    });
-  }
+    if (menuToggle && dropdownMenu) {
+        menuToggle.addEventListener("click", () => {
+            dropdownMenu.classList.toggle("hidden");
+        });
+    }
 });
 
     </script>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnSphere</title>
+    <link rel="stylesheet" href="/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="/Assests/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+  </head>
+  <body class="bg-accentColor text-gray-600">
+    <div class="containers mt-20">
+      <div id="navbar"></div>
+      <div>
+        <div class="highlights flex flex-col-2 gap-6">
+          <section class="w-full mb-5">
+            <div
+              class="sidebar bg-button text-heroText m-5 p-5 w-[450px] h-[auto]"
+            >
+              <h2 class="text-2xl font-semibold m-2">
+                Master Full-stack Web Development
+              </h2>
+              <div class="modules space-y-3 bg-accentColor">
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/Bussiness/module-one.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 1: Introduction to Business Management
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a href="#intro" onclick="scrollToSection(event, 'intro')"
+                        >Business Basics</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-mgt"
+                        onclick="scrollToSection(event, 'intro-mgt')"
+                        >Management Theories</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-org"
+                        onclick="scrollToSection(event, 'intro-org')"
+                        >Organizational Structure</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-strategic"
+                        onclick="scrollToSection(event, 'intro-strategic')"
+                        >Strategic Planning</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/Bussiness/module-two.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 2: Marketing and Financial Management
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a
+                        href="#intro-marketing"
+                        onclick="scrollToSection(event,'intro-marketing')"
+                        >Marketing Basics</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-financial"
+                        onclick="scrollToSection(event,'intro-financial')"
+                        >Financial Management</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-human"
+                        onclick="scrollToSection(event,'intro-human')"
+                        >Human Resource Management</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/Bussiness/module-three.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 3: Human Resource and Operations Management
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a href="#hrm" onclick="scrollToSection(event,'hrm')"
+                        >Human Resource Management (HRM)</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#operation "
+                        onclick="scrollToSection(event,'operation')"
+                        >Operations Management</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#project"
+                        onclick="scrollToSection(event,'project')"
+                        >Project Management</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#bussiness"
+                        onclick="scrollToSection(event,'bussiness')"
+                        >Business Communication and Negotiation</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mr-20 pr-14">
+            <div class="description mt-5 p-2">
+              <h2 class="text-2xl font-semibold m-2 p-5 text-center">
+                Introduction to Business Management
+              </h2>
+              <p class="text-lg font-semibold p-2">Overview</p>
+              <p class="text-lg">
+                Business management is a discipline that deals with the
+                strategic planning, control, and execution of businesses. It
+                involves identifying, analyzing, and managing the organization's
+                operations, people, and resources to achieve the desired
+                business objectives. This course will provide you with a
+                comprehensive understanding of the key concepts, techniques, and
+                tools used in business management, as well as practical examples
+                and real-life applications.
+              </p>
+
+              <h3 class="text-lg font-semibold mb-2 mt-2 p-5">
+                1.1 Business Basics
+              </h3>
+              <p class="text-lg">
+                Business management is a complex and multi-faceted field that
+                encompasses various aspects, such as organizational behavior,
+                market analysis, customer relationship management, and
+                organizational behavior. To understand the basics of business
+                management, you should have a strong understanding of the
+                following concepts: organizational behavior, market analysis,
+                customer relationship management, organizational structure, and
+                strategic planning.
+              </p>
+
+              <p class="text-lg mt-4 mb-4">
+                Business is the activity of making one's living or making money
+                by producing or buying and selling products (goods and
+                services). The basics of business include understanding the
+                following key concepts:
+              </p>
+
+              <div>
+                <div class="cards mt-5">
+                  <div class="card">
+                    <ul class="list-disc pl-5 space-y-2">
+                      <li>
+                        <strong>Entrepreneurship</strong> - The process of
+                        starting and managing a business, taking on financial
+                        risks in the hope of profit.
+                      </li>
+                      <li>
+                        <strong>Marketing</strong> - The process of promoting,
+                        selling, and distributing a product or service to
+                        customers.
+                      </li>
+                      <li>
+                        <strong>Finance</strong> - Managing money, including
+                        investment, capital, and budgeting for a business.
+                      </li>
+                      <li>
+                        <strong>Operations</strong> - The day-to-day activities
+                        required to run a business, from product creation to
+                        customer service.
+                      </li>
+                      <li>
+                        <strong>Human Resources</strong> - The management of
+                        employees, including hiring, training, and compensation.
+                      </li>
+                    </ul>
+                    <p class="text-lg text-gray-700 mt-4">
+                      To succeed in business, understanding these areas and how
+                      they interconnect is essential for growth and
+                      profitability.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="text-lg font-semibold mb-2 mt-2 p-5">
+                1.2 Management Theories
+              </h3>
+              <p class="text-lg">
+                Business management is a discipline that deals with the
+                strategic planning, control, and execution of businesses. It
+                involves identifying, analyzing, and managing the organization's
+                operations, people, and resources to achieve the desired
+                business objectives. Management theories help you understand the
+                fundamental principles and approaches used in business
+                management. Some common management theories include strategic
+                management, operational management, and human resource
+                management.
+              </p>
+
+              <p class="text-lg mt-4 mb-4">
+                Management theories help you understand the fundamental
+                principles and approaches used in business management, such as:
+              </p>
+              <ul class="list-disc pl-5 space-y-2">
+                <li>
+                  <strong>Planning</strong> - The development of a strategic
+                  plan for achieving a business objective.
+                </li>
+                <li>
+                  <strong>Control</strong> - The process of managing the
+                  organization's operations, people, and resources to achieve a
+                  goal.
+                </li>
+                <li>
+                  <strong>Decision Making</strong> - The process of making
+                  decisions that impact the organization's operations, people,
+                  and resources to achieve a goal.
+                </li>
+                <li>
+                  <strong>Risk Management</strong> - The process of managing
+                  potential risks to achieve a goal.
+                </li>
+                <li>
+                  <strong>Execution</strong> - The process of implementing a
+                  strategic plan and achieving the organization's goals.
+                </li>
+              </ul>
+
+              <h3 class="text-lg font-semibold mb-2 mt-2 p-5">
+                1.3 Organizational Structure
+              </h3>
+              <p class="text-lg">
+                Organizational structure is the arrangement of people,
+                processes, and resources within an organization to facilitate
+                collaboration, communication, and decision-making.
+              </p>
+
+              <p class="text-lg mb-4 mt-4">
+                Organizational structure can be classified as either
+                hierarchical, functional, or agile. Hierarchical structures,
+                such as corporate hierarchies, involve a hierarchy of employees
+                or managers. Functional structures, such as job roles,
+                departments, and functions, involve a division of tasks and
+                responsibilities within an organization. Agile structures, such
+                as lean manufacturing and agile development, involve a
+                continuous improvement and adaptability of processes and systems
+                within an organization.
+              </p>
+
+              <div class="card bg-white p-6 mt-6 rounded-lg shadow-md">
+                <h4 class="font-semibold mb-4 text-xl">Key Concepts</h4>
+                <p class="text-lg text-gray-700 mb-4">
+                  Understanding and managing organizational structure is
+                  essential for growth and profitability. To achieve this, you
+                  should have a strong understanding of the following key
+                  concepts:
+                </p>
+                <ul class="list-disc pl-5 space-y-2 text-lg">
+                  <li>
+                    <strong>Hierarchical Structures</strong> - Corporate
+                    hierarchies with defined roles and levels of authority.
+                  </li>
+                  <li>
+                    <strong>Functional Structures</strong> - Division of tasks
+                    and responsibilities across departments or functions.
+                  </li>
+                  <li>
+                    <strong>Agile Structures</strong> - Focus on continuous
+                    improvement, adaptability, and flexibility in processes.
+                  </li>
+                </ul>
+                <p class="text-lg text-gray-700 mt-4">
+                  These structures impact the organization's processes,
+                  resources, and overall structure. Having a strong
+                  understanding of them ensures effective management and
+                  efficient operations.
+                </p>
+              </div>
+
+              <p class="text-lg mt-4 mb-4">
+                Organizational structure plays a crucial role in business
+                management, as it affects the effectiveness and efficiency of
+                operations, the ability of employees to perform their roles
+                effectively, and the overall success of the business. Some
+                common organizational structures include hierarchical,
+                functional, and agile.
+              </p>
+
+              <h3 class="text-lg font-semibold mb-2 mt-2 p-5">
+                1.4 Strategic Planning
+              </h3>
+              <p class="text-lg">
+                Strategic planning is the process of identifying, analyzing, and
+                developing a comprehensive strategy for an organization to
+                achieve its desired business objectives. Strategic planning
+                involves considering the long-term, intermediate, and short-term
+                implications of the organization's decisions and actions. Some
+                common strategic planning techniques include SWOT analysis,
+                PESTLE analysis, and strategic planning frameworks.
+              </p>
+
+              <div>
+                <h3 class="text-lg text-center font-semibold p-5">Strategic Planning Technique</h3>
+                <div class="cards flex flex-col-2 gap-6 p-5">
+                    <div class="card border border-navColor p-5">
+                        <h3 class="text-lg text-center font-semibold mb-2 mt-2 p-5">
+                            SWOT Analysis
+                        </h3>
+                        <p class="text-lg">
+                            SWOT analysis is a strategic planning technique that
+                            identifies strengths, weaknesses, opportunities, and
+                            threats in an organization's business environment. It
+                            helps organizations identify areas for improvement and
+                            develop targeted strategies to address these issues.
+                        </p>
+                    </div>
+                    <div class="card border border-navColor p-5">
+                        <h3 class="text-lg text-center font-semibold mb-2 mt-2 p-5">
+                            PESTLE Analysis
+                        </h3>
+                        <p class="text-lg">
+                            PESTLE analysis is a strategic planning technique that
+                            identifies potential environmental, social, economic,
+                            and technological threats to an organization's business. It
+                            helps organizations identify areas for improvement and
+                            develop targeted strategies to address these threats.
+                        </p>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script src="/js/course-detail.js"></script>
+     <script src="../components/nav.js"></script>
+  </body>
+</html>

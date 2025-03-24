@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnSphere</title>
+    <link rel="stylesheet" href="/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="/Assests/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+  </head>
+  <body class="bg-accentColor text-gray-600">
+    <div class="containers mt-20">
+      <div id="navbar"></div>
+      <div>
+        <div class="highlights flex flex-col-2 gap-6">
+          <section class="w-full mb-5">
+            <div
+              class="sidebar bg-button text-heroText m-5 p-5 w-[450px] h-[auto]"
+            >
+              <h2 class="text-2xl font-semibold m-2">
+                Master Full-stack Web Development
+              </h2>
+              <div class="modules space-y-3 bg-accentColor">
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/DataScience/module-one.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 1: Introduction to Data Science
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a
+                        href="#intro-data"
+                        onclick="scrollToSection(event, 'intro-data')"
+                        >What is Data Science?</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-workflow"
+                        onclick="scrollToSection(event, 'intro-workflow')"
+                        >Data Science Workflow</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-tools"
+                        onclick="scrollToSection(event, 'intro-tools')"
+                        >Essential Tools for Data Science</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/DataScience/module-two.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 2: Data Collection and Preprocessing
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a
+                        href="#intro-collection"
+                        onclick="scrollToSection(event,'intro-collection')"
+                        >Data Collection Techniques</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-cleaning"
+                        onclick="scrollToSection(event,'intro-cleaning')"
+                        >Data Cleaning and Preparation</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-transformation"
+                        onclick="scrollToSection(event,'intro-transformation')"
+                        >Data Transformation</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/DataScience/module-three.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 3: Statistics and Probability for Data Science
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a href="#intro" onclick="scrollToSection(event,'intro')"
+                        >Descriptive Statistics</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-inferential "
+                        onclick="scrollToSection(event,'intro-inferential')"
+                        >Inferential Statistics</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#probability"
+                        onclick="scrollToSection(event,'probability')"
+                        >Probability Basics</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#correlation"
+                        onclick="scrollToSection(event,'Correlation')"
+                        >Correlation and Regression</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/DataScience/module-four.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 4: Machine Learning Fundamentals
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a href="#intro" onclick="scrollToSection(event, 'intro')"
+                        >Introduction to Machine Learning</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-learning"
+                        onclick="scrollToSection(event, 'intro-learning')"
+                        >Supervised Learning vs Unsupervised Learning</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-model"
+                        onclick="scrollToSection(event, 'intro-model')"
+                        >Model Evaluation and Optimization</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/DataScience/module-five.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 5: Data Science Applications and Case Studies
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a href="#real" onclick="scrollToSection(event, 'real')"
+                        >Real-World Case Studies</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a href="#nlp" onclick="scrollToSection(event, 'nlp')"
+                        >Natural Language Processing (NLP)</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a href="#deep" onclick="scrollToSection(event, 'deep')"
+                        >Deep Learning Basics</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mr-20 pr-14">
+            <div class="description mt-5 p-2">
+              <h2 class="text-2xl font-semibold m-2 p-5 text-center">
+                5. Data Science Applications and Case Studies
+              </h2>
+              <p class="text-lg m-2">
+                Discover real-world applications and case studies in data
+                science, including industries like healthcare, finance,
+                education, and more. These examples showcase the power of data
+                science to improve various aspects of our lives.
+              </p>
+              <!-- <p class="text-lg mt-2">
+                To learn more about specific case studies or explore more
+                real-world data science applications, visit our
+                <a
+                  href="https://www.analyticsvidhya.com/blog/2021/03/top-50-real-world-data-science-case-studies/"
+                  target="_blank"
+                  class="text-blue-500 hover:text-blue-600"
+                >
+                  Data Science Case Studies
+                </a>
+              </p> -->
+
+              <h3 class="text-lg font-semibold p-5">
+                5.1 Real-World Case Studies
+              </h3>
+              <p class="text-lg mt-2">
+                Explore some of the most popular real-world data science case
+                studies across various industries. These examples showcase the
+                power of data science to improve various aspects of our lives.
+              </p>
+
+              <div class="flex flex-wrap justify-around mt-5">
+                <div class="module p-3 shadow border border-heroText">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Cases/case-study-1.html"
+                  >
+                    <h3 class="text-lg font-semibold mb-2 mt-2">
+                      Case Study 1
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <p class="text-lg mt-2">
+                    This case study explores the impact of AI on healthcare
+                    delivery. By leveraging data science techniques, we aim to
+                    improve patient outcomes and reduce healthcare costs.
+                  </p>
+                  <p class="text-lg mt-2">
+                    <a
+                      href="/html/Cases/case-study-1.html"
+                      class="text-blue-500 hover:text-blue-600"
+                      >Read More</a
+                    >
+                  </p>
+                </div>
+                <div class="module p-3 shadow mt-5 border border-heroText">
+                  <div
+                    class="flex justify-between items-center cursor-pointer "
+                    data-url="/html/Cases/case-study-2.html"
+                  >
+                    <h3 class="text-lg font-semibold mb-2 mt-2">
+                      Case Study 2
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <p class="text-lg mt-2 ">
+                    This case study explores the impact of AI on education. By
+                    leveraging data science techniques, we aim to improve
+                    student outcomes and reduce educational costs.
+                  </p>
+                  <p class="text-lg mt-2">
+                    <a
+                      href="/html/Cases/case-study-2.html"
+                      class="text-blue-500 hover:text-blue-600"
+                      >Read More</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <h3 class="text-lg font-semibold p-5">
+                5.2 Natural Language Processing (NLP)
+              </h3>
+
+              <p class="text-lg mt-2">
+                Natural Language Processing (NLP) is a field of artificial
+                intelligence that focuses on the interaction between computers
+                and human language. It enables machines to understand,
+                interpret, and respond to text and spoken language in a
+                meaningful way. NLP techniques help process vast amounts of
+                unstructured text data, extracting valuable insights from
+                sources like social media, customer reviews, and documents. This
+                field plays a significant role in developing applications that
+                require language understanding and generation.
+              </p>
+
+              <p class="text-lg mt-2">
+                NLP techniques are widely used in sentiment analysis to assess
+                opinions and emotions, text classification for categorizing
+                documents, and machine translation for converting text between
+                languages. Other advanced NLP tasks include named entity
+                recognition, language modeling, and text summarization. With the
+                growing need for analyzing text data, NLP has become essential
+                in business intelligence, healthcare, customer service, and
+                more.
+              </p>
+
+              <div class="">
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-4"
+                >
+                  <!-- Card 1: Sentiment Analysis -->
+                  <div
+                  class="bg-white border rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 hover:border-heroText"
+                  >
+                    <h4 class="text-xl font-semibold text-gray-800 mb-4">
+                      Sentiment Analysis
+                    </h4>
+                    <p class="text-gray-600">
+                      Sentiment analysis detects the emotions and opinions
+                      expressed in text, helping businesses understand customer
+                      feedback and market sentiment.
+                    </p>
+                  </div>
+
+                  <!-- Card 2: Text Classification -->
+                  <div
+                   class="bg-white border rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 hover:border-heroText"
+                  >
+                    <h4 class="text-xl font-semibold text-gray-800 mb-4">
+                      Text Classification
+                    </h4>
+                    <p class="text-gray-600">
+                      Text classification categorizes textual data into
+                      predefined labels, making it useful for spam detection,
+                      topic labeling, and content moderation.
+                    </p>
+                  </div>
+
+                  <!-- Card 3: Machine Translation -->
+                  <div
+                    class="bg-white border rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 hover:border-heroText"
+                  >
+                    <h4 class="text-xl font-semibold text-gray-800 mb-4">
+                      Machine Translation
+                    </h4>
+                    <p class="text-gray-600">
+                      Machine translation converts text from one language to
+                      another using advanced NLP models, supporting global
+                      communication and cross-cultural understanding.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="text-lg font-semibold p-5">
+                5.3 Deep Learning Basics
+              </h3>
+
+              <p class="text-lg mt-2">
+                Deep learning is a subset of machine learning that utilizes
+                neural networks with multiple layers to analyze and interpret
+                complex data patterns. Unlike traditional machine learning, deep
+                learning can automatically extract features from raw data,
+                making it particularly effective for tasks like image
+                recognition, natural language processing, and speech synthesis.
+                By using layers of neurons, deep learning models can capture
+                intricate relationships in data, enabling them to make accurate
+                predictions.
+              </p>
+
+              <p class="text-lg mt-2">
+                Some of the most common types of deep learning architectures
+                include Convolutional Neural Networks (CNNs), which are
+                effective for image processing; Recurrent Neural Networks
+                (RNNs), designed for sequential data like time series and text;
+                and Long Short-Term Memory (LSTM) networks, a variant of RNNs
+                that handle long-term dependencies effectively. These models
+                have significant applications in autonomous driving, healthcare
+                diagnostics, and virtual assistants.
+              </p>
+
+              <div class="">
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-4"
+                >
+                  <!-- Card 1: Convolutional Neural Networks (CNNs) -->
+                  <div
+                    class="bg-white border rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 hover:border-heroText"
+                  >
+                    <h4 class="text-xl font-semibold text-gray-800 mb-4">
+                      Convolutional Neural Networks (CNNs)
+                    </h4>
+                    <p class="text-gray-600">
+                      CNNs are primarily used for image processing, object
+                      detection, and visual recognition tasks. They extract
+                      features through convolutional layers, pooling, and
+                      activation functions.
+                    </p>
+                  </div>
+
+                  <!-- Card 2: Recurrent Neural Networks (RNNs) -->
+                  <div
+                    class="bg-white border rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 hover:border-heroText"
+                  >
+                    <h4 class="text-xl font-semibold text-gray-800 mb-4">
+                      Recurrent Neural Networks (RNNs)
+                    </h4>
+                    <p class="text-gray-600">
+                      RNNs are designed to handle sequential data like time
+                      series, language modeling, and text generation. They
+                      maintain memory through feedback loops, processing one
+                      step at a time.
+                    </p>
+                  </div>
+
+                  <!-- Card 3: Long Short-Term Memory (LSTMs) -->
+                  <div
+                    class="bg-white border rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 hover:border-heroText"
+                  >
+                    <h4 class="text-xl font-semibold text-gray-800 mb-4">
+                      Long Short-Term Memory (LSTMs)
+                    </h4>
+                    <p class="text-gray-600">
+                      LSTMs are an advanced form of RNNs designed to handle
+                      long-term dependencies in sequences. They mitigate the
+                      vanishing gradient problem, making them ideal for language
+                      translation and speech recognition.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="p-6 space-y-6 bg-course-gradient rounded-lg shadow-lg mt-20"
+              >
+                <!-- Heading Section -->
+                <h3
+                  class="text-3xl font-bold text-white bg-navColor p-5 rounded-lg shadow-md"
+                >
+                  Learning Activities and Resources
+                </h3>
+
+                <!-- Paragraph Section -->
+                <p class="text-lg text-gray-800 leading-relaxed">
+                  To help you learn more about engineering design and analysis,
+                  you can find various learning activities and resources
+                  available on the LearnSphere platform. Some popular learning
+                  activities include:
+                </p>
+
+                <!-- List of Learning Activities -->
+                <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+                  <li
+                    class="hover:text-accentColor transition duration-300 ease-in-out"
+                  >
+                    Coursework assignments and quizzes
+                  </li>
+                  <li
+                    class="hover:text-accentColor transition duration-300 ease-in-out"
+                  >
+                    Online lectures and videos
+                  </li>
+                  <li
+                    class="hover:text-accentColor transition duration-300 ease-in-out"
+                  >
+                    Problem-solving exercises
+                  </li>
+                  <li
+                    class="hover:text-accentColor transition duration-300 ease-in-out"
+                  >
+                    Discussion forums and Q&A
+                  </li>
+                  <li
+                    class="hover:text-accentColor transition duration-300 ease-in-out"
+                  >
+                    Interactive learning tools and simulations
+                  </li>
+                </ul>
+
+                <!-- Additional Resources Section -->
+                <p class="text-lg text-gray-800 leading-relaxed">
+                  You can also find additional resources and learning materials
+                  on the following websites:
+                </p>
+                <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+                  <li>
+                    <a
+                      href="https://www.learnsphere.com/"
+                      class="text-accentColor hover:underline transition duration-300"
+                      >LearnSphere</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.coursera.org/"
+                      class="text-accentColor hover:underline transition duration-300"
+                      >Coursera</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.edx.org/"
+                      class="text-accentColor hover:underline transition duration-300"
+                      >edX</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.udemy.com/"
+                      class="text-accentColor hover:underline transition duration-300"
+                      >Udemy</a
+                    >
+                  </li>
+                </ul>
+
+                <!-- Conclusion Section -->
+                <p class="text-lg text-gray-800 leading-relaxed">
+                  As you continue your learning journey, remember to practice
+                  active engagement and seek feedback from your peers and
+                  instructors. Good luck with your engineering design and
+                  analysis course!
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script src="/js/course-detail.js"></script>
+     <script src="../components/nav.js"></script>
+  </body>
+</html>

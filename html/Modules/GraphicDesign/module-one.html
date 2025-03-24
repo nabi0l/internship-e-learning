@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnSphere</title>
+    <link rel="stylesheet" href="/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="/Assests/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+  </head>
+  <body class="bg-accentColor text-gray-600">
+    <div class="containers mt-20">
+      <div id="navbar"></div>
+      <div>
+        <div class="highlights flex flex-col-2 gap-6">
+          <section class="w-full mb-5">
+            <div
+              class="sidebar bg-button text-heroText m-5 p-5 w-[450px] h-[auto]"
+            >
+              <h2 class="text-2xl font-semibold m-2">
+                Master Graphic Design Basics
+              </h2>
+              <div class="modules space-y-3 bg-accentColor">
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/GraphicDesign/module-one.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 1: Introduction to Graphic Design
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a href="#intro" onclick="scrollToSection(event, 'intro')"
+                        >Basics of Graphic Design</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-elements"
+                        onclick="scrollToSection(event, 'intro-elements')"
+                        >Elements and Principles of Design</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-design"
+                        onclick="scrollToSection(event, 'intro-design')"
+                        >Design Software and Tools</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/GraphicDesign/module-two.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 2: Visual Communication and Branding
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a
+                        href="#intro-vcm"
+                        onclick="scrollToSection(event,'intro-vcm')"
+                        >Understanding Visual Communication</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-basics"
+                        onclick="scrollToSection(event,'intro-basics')"
+                        >Branding Basics</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-design"
+                        onclick="scrollToSection(event,'intro-design')"
+                        >Marketing Design</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/GraphicDesign/module-three.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 3: Advanced Graphic Design Techniques
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a
+                        href="#intro-advanced"
+                        onclick="scrollToSection(event,'intro-advanced')"
+                        >Advanced Design Software Skills</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-ui"
+                        onclick="scrollToSection(event,'intro-ui')"
+                        >User Interface (UI) and User Experience (UX) Design</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-digital"
+                        onclick="scrollToSection(event,'intro-digital')"
+                        >Digital Illustration and Art</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mr-20 pr-14">
+            <div class="description mt-5 p-2">
+              <h2 class="text-2xl font-semibold m-2 p-5 text-center">
+                Introduction to Graphic Design
+              </h2>
+              <p class="text-lg font-semibold p-2">Overview</p>
+              <p class="text-lg">
+                Graphic design is the process of creating visual content for
+                various purposes, such as advertising, packaging, and branding.
+                It involves creating images, icons, and other visual elements
+                that communicate a message, inspire, or entertain. LearnSphere
+                offers a comprehensive introduction to graphic design, covering
+                various topics such as basics of design, design software and
+                tools, visual communication and branding, and advanced graphic
+                design techniques. Through hands-on projects, you will learn how
+                to create visually appealing and effective designs.
+              </p>
+
+              <h3 class="text-lg font-semibold mb-2 mt-2 p-5">
+                1.1 Basics of Graphic Design
+              </h3>
+              <p class="text-lg">
+                Graphic design is a creative process that involves using various
+                techniques, materials, and tools to create visually appealing
+                and impactful designs. Some basic concepts include color theory,
+                typography, composition, and balance. LearnSphere will provide
+                you with a comprehensive understanding of these concepts and
+                help you develop your skills in graphic design.
+              </p>
+
+              <h3 class="text-lg font-semibold mb-2 mt-2 p-5">
+                1.2 Elements and Principles of Design
+              </h3>
+              <p class="text-lg">
+                Elements and principles of design are essential components of a
+                design that help create a cohesive and engaging visual
+                experience. Some key elements include colors, shapes, patterns,
+                and textures. LearnSphere will provide you with a comprehensive
+                understanding of these elements and principles, as well as
+                guidance on how to apply them in your designs. Additionally, you
+                will learn about the importance of balance and harmony in
+                design.
+              </p>
+
+              <div class="">
+                <h2>Principles</h2>
+                <div class="cards grid grid-cols-3 gap-6 p-6">
+                  <div
+                    class="card p-6  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  >
+                    <h3
+                      class="card-title text-2xl font-semibold text-center  mb-4"
+                    >
+                      Color Theory
+                    </h3>
+                    <p class="card-text text-md">
+                      Color theory helps create visually appealing designs by
+                      understanding the properties and relationships of colors
+                      like hue, saturation, and brightness.
+                    </p>
+                  </div>
+
+                  <div
+                    class="card p-6  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  >
+                    <h3
+                      class="card-title text-2xl font-semibold text-center  mb-4"
+                    >
+                      Typography
+                    </h3>
+                    <p class="card-text text-md">
+                      Typography involves the arrangement of type on a page,
+                      including the choice of font, size, weight, and spacing to
+                      create visually engaging designs.
+                    </p>
+                  </div>
+
+                  <div
+                    class="card p-6  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  >
+                    <h3
+                      class="card-title text-2xl font-semibold text-center mb-4"
+                    >
+                      Composition
+                    </h3>
+                    <p class="card-text text-md ">
+                      Composition is the arrangement of elements on a page to
+                      create a cohesive and engaging visual experience.
+                    </p>
+                  </div>
+
+                  <div
+                    class="card p-6  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  >
+                    <h3
+                      class="card-title text-2xl font-semibold text-center mb-4"
+                    >
+                      Balance
+                    </h3>
+                    <p class="card-text text-md ">
+                      Balance ensures harmony and cohesion of elements on a page
+                      for a visually appealing experience.
+                    </p>
+                  </div>
+
+                  <div
+                    class="card p-6  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  >
+                    <h3
+                      class="card-title text-2xl font-semibold text-center  mb-4"
+                    >
+                      Color Palette
+                    </h3>
+                    <p class="card-text text-md ">
+                      A color palette is a collection of colors used to create
+                      visually engaging designs.
+                    </p>
+                  </div>
+
+                  <div
+                    class="card p-6  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  >
+                    <h3
+                      class="card-title text-2xl font-semibold text-center  mb-4"
+                    >
+                      Vector Graphics
+                    </h3>
+                    <p class="card-text text-md ">
+                      Vector graphics are smaller in size and require less
+                      memory, making them ideal for dynamic and visually
+                      appealing designs.
+                    </p>
+                  </div>
+
+                  <div
+                    class="card p-6  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  >
+                    <h3
+                      class="card-title text-2xl font-semibold text-center mb-4"
+                    >
+                      Adobe Illustrator
+                    </h3>
+                    <p class="card-text text-md t">
+                      Adobe Illustrator is a vector graphics software that
+                      allows precise creation, editing, and manipulation of
+                      images.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="text-lg font-semibold mb-2 mt-2 p-5">
+                1.3 Design Software and Tools
+              </h3>
+              <p class="text-lg">
+                Design software and tools are essential tools for creating
+                visually appealing and effective designs. Some popular design
+                software and tools include Adobe Photoshop, Illustrator,
+                InDesign, and Figma. LearnSphere will provide you with a
+                comprehensive understanding of these design software and tools,
+                as well as guidance on how to use them effectively in your
+                graphic design projects.
+              </p>
+
+              <div class="mb-6">
+                <h2 class="text-2xl font-semibold m-2 p-5 text-center">
+                  Tools
+                </h2>
+                <div class="cards flex flex-col-4 gap-6">
+                  <div class="card border border-heroText p-5">
+                    <div class="card-image">
+                      <img
+                        src="./img/Should you download Photoshop_.jpeg"
+                        alt="A screenshot of Adobe Photoshop"
+                        class="w-24 h-24 mx-auto mb-4 text-center"/>
+                    </div>
+                    <div class="card-content">
+                      <h3 class="card-title text-lg text-center font-semibold">
+                        Adobe Photoshop
+                      </h3>
+                      <p class="card-text">
+                        Adobe Photoshop is a powerful image editing software
+                        that allows you to create, edit, and manipulate images
+                        with high precision and control.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="card border border-heroText items-center text-center p-3">
+                    <div class="card-image">
+                      <img
+                        src="./img/AI Logo [Adobe Illustrator] _ Design Week _ Logobutik.jpeg"
+                        alt="A screenshot of Adobe Illustrator"
+                      class="w-24 h-24 mx-auto mb-4 text-center"/>
+                    </div>
+                    <div class="card-content">
+                      <h3 class="card-title text-lg text-center font-semibold">
+                        Adobe Illustrator
+                      </h3>
+                      <p class="card-text">
+                        Adobe Illustrator is a vector graphics editor that
+                        allows you to create, edit, and manipulate images with
+                        high precision and control.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="card border border-heroText items-center text-center p-3 ">
+                    <div class="card-image items-center">
+                      <img
+                        src="./img/Adobe InDesign.jpeg"
+                        alt="A screenshot of Adobe InDesign"
+                      class="w-24 h-24 mx-auto mb-4 text-center"/>
+                    </div>
+                    <div class="card-content">
+                      <h3 class="card-title text-lg text-center font-semibold">
+                        Adobe InDesign
+                      </h3>
+                      <p class="card-text">
+                        Adobe InDesign is a page layout and design software that
+                        allows you to create, edit, and manipulate documents
+                        with high precision and control.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script src="/js/course-detail.js"></script>
+     <script src="../components/nav.js"></script>
+  </body>
+</html>

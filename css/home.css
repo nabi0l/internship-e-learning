@@ -64,40 +64,8 @@
   margin-top:20px ;
 }
 
-.plan {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px; 
-    margin: 20px;
-    padding: 20px;
-  }
+
+
+
+
   
-  .plan .rightside,
-  .plan .leftside {
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    height: auto;
-    line-height: 1.5;
-  }
-
-  .plan .rightside:hover,
-.plan .leftside:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-  .plan .leftside{
-    background-color: #A7947A;
-    color: #F6F4F5;
-    margin-bottom: 5px;
-    padding-bottom: 5px;
-  }
-
-  .categories{
-   
-    gap: 20px; 
-    margin: 20px;
-    background: linear-gradient(to bottom, #A7947A, #906E55, #A98164);
-  }

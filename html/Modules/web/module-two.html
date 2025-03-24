@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LearnSphere</title>
-    <link rel="stylesheet" href="../css/output.css">
-    <link rel="stylesheet" href="../Assests/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="/css/output.css">
+    <link rel="stylesheet" href="/Assests/fontawesome-free-6.7.2-web/css/all.min.css">
 </head>
 <body class="bg-accentColor text-gray-600">
     <div class="containers mt-20">
@@ -72,13 +72,13 @@
                             </div>
                           <ul class=" hidden pl-4 mt-2 space-y-2 text-accentColor">
                                     <li class=" bg-navColor px-3 py-3 rounded-lg text-center"><a
-                                            href="#intro-variable">Variables & Data Types</a></li>
+                                            href="#intro-variable" onclick="scrollToSection(event, 'intro-variable')">Variables & Data Types</a></li>
                                     <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a
-                                            href="#intro-condition">Conditionals & Loops</a></li>
+                                            href="#intro-condition" onclick="scrollToSection(event, 'intro-condition')">Conditionals & Loops</a></li>
                                     <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a
-                                            href="#intro-func">Functions & Event Handlers</a></li>
+                                            href="#intro-func" onclick="scrollToSection(event, 'intro-func')">Functions & Event Handlers</a></li>
                                     <li class=" bg-navColor px-3 py-3 rounded-lg text-center mt-2"><a
-                                            href="#intro-obj">Objects & Arrays</a></li>
+                                            href="#intro-obj" onclick="scrollToSection(event, 'intro-obj')">Objects & Arrays</a></li>
                                 </ul>
                         </div>
                         <div class="module p-3 shadow">
@@ -156,7 +156,7 @@
                                     </ul>
                                 </div>
                                 <div class="w-1/2 flex justify-center">
-                                    <img src="../html/Modules/web/code.png" alt="Code Image" class="w-full h-80">
+                                    <img src="./img/code.png" alt="Code Image" class="w-full h-80">
                                 </div>
                             </div>
                             
@@ -174,34 +174,11 @@
                             
                         <h4>Example</h4>
                         <div class="image-result flex flex-row  p-5 items-center">
-                            <!-- <div class="description w-1/2">
-                                <ul class="list-disc ml-4 text-xl p-2">
-                                    <li>font-family </li>
-                                    <li>font-size</li>
-                                    <li>color</li>
-                                    <li>background-color</li>
-                                    <li>text-align</li>
-                                    <li>margin</li>
-                                    <li>padding</li>
-                                    <li>display</li>
-                                    <li>justify-content</li>
-                                    <li>align-items</li>
-    
-                                </ul>
-                            </div> -->
+                           
                         <div class="flex justify-center items-center w-1/2">
-                            <img src="../html/Modules/web/code2.png" alt="Code Image" class="w-full h-60">
+                            <img src="./img/code2.png" alt="Code Image" class="w-full h-60">
                         </div>
-                      </div>
-
-                 <div class="text flex flex-col-2 justify-between p-5 mb-5 mt-5" id="navigation-links">
-    <div class="previous" id="previous-container" style="display: none;">
-        <a href="#" id="previous-link" class="text-2xl font-bold">Previous</a>
-    </div>
-    <div class="next" id="next-container" style="display: none;">
-        <a href="#" id="next-link" class="text-2xl font-bold">Next</a>
-    </div>
-</div>            </div>  
+                      </div>            </div>  
                     
                     
                 </section>
@@ -210,7 +187,7 @@
         </div>
     </div>
     <div id="footer"></div>
-    <script src="../js/script.js"></script>
-    <script src="../js/course-detail.js"></script>
+     <script src="../components/nav.js"></script>
+    <script src="/js/course-detail.js"></script>
 </body>
 </html>

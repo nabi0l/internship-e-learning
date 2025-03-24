@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnSphere</title>
+    <link rel="stylesheet" href="/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="/Assests/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+  </head>
+  <body class="bg-accentColor text-gray-600">
+    <div class="containers mt-20">
+      <div id="navbar"></div>
+      <div>
+        <div class="highlights flex flex-col-2 gap-6">
+          <section class="w-full mb-5">
+            <div
+              class="sidebar bg-button text-heroText m-5 p-5 w-[450px] h-[auto]"
+            >
+              <h2 class="text-2xl font-semibold m-2">
+                Master Full-stack Web Development
+              </h2>
+              <div class="modules space-y-3 bg-accentColor">
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/GraphicDesign/module-one.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 1: Introduction to Graphic Design
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a href="#intro" onclick="scrollToSection(event, 'intro')"
+                        >Basics of Graphic Design</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-elements"
+                        onclick="scrollToSection(event, 'intro-elements')"
+                        >Elements and Principles of Design</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-design"
+                        onclick="scrollToSection(event, 'intro-design')"
+                        >Design Software and Tools</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/GraphicDesign/module-two.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 2: Visual Communication and Branding
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a
+                        href="#intro-vcm"
+                        onclick="scrollToSection(event,'intro-vcm')"
+                        >Understanding Visual Communication</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-basics"
+                        onclick="scrollToSection(event,'intro-basics')"
+                        >Branding Basics</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-design"
+                        onclick="scrollToSection(event,'intro-design')"
+                        >Marketing Design</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="module p-3 shadow">
+                  <div
+                    class="flex justify-between items-center cursor-pointer"
+                    data-url="/html/Modules/GraphicDesign/module-three.html"
+                  >
+                    <h3 class="text-lg font-semibod mb-2 mt-2">
+                      Module 3: Advanced Graphic Design Techniques
+                    </h3>
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                      <a
+                        href="#intro-advanced"
+                        onclick="scrollToSection(event,'intro-advanced')"
+                        >Advanced Design Software Skills</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-ui"
+                        onclick="scrollToSection(event,'intro-ui')"
+                        >User Interface (UI) and User Experience (UX) Design</a
+                      >
+                    </li>
+                    <li
+                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
+                    >
+                      <a
+                        href="#intro-digital"
+                        onclick="scrollToSection(event,'intro-digital')"
+                        >Digital Illustration and Art</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mr-20 pr-14">
+            <div class="description mt-5 p-2">
+              <h2 class="text-2xl font-semibold m-2 p-5 text-center p-5">
+                2. Visual Communication and Branding
+              </h2>
+
+              <p class="text-lg font-medium">
+                Visual communication is the process of conveying ideas,
+                opinions, or experiences in a clear and engaging way through
+                visual means. In this course, you'll learn about various
+                techniques for creating effective visual communication,
+                including storytelling, infographics, and visual storytelling.
+                You'll also explore the importance of visual communication in
+                branding, marketing, and public speaking.
+              </p>
+
+              <h3 id="intro-vcm" class="text-lg font-semibold mt-5 p-5">
+                2.1 Understanding Visual Communication
+              </h3>
+
+              <p class="text-lg font-medium">
+                Visual communication is about creating a visual representation
+                of ideas, opinions, or experiences. It involves using images,
+                charts, graphs, and other visual elements to communicate complex
+                information in a clear and engaging way. There are three main
+                types of visual communication: infographics, storytelling, and
+                visual storytelling. In this course, you will learn about each
+                type and how to use them effectively.
+              </p>
+
+              <h3 id="intro-basics" class="text-lg font-semibold mt-5 p-5">
+                2.2 Branding Basics
+              </h3>
+              <p class="text-lg font-medium">
+                Branding is the creation and representation of a company's
+                identity, values, and mission. In this course, you will learn
+                about the basics of branding, including logo design, color
+                theory, typography, and marketing materials. You will also
+                explore various branding strategies and techniques, such as
+                visual merchandising, digital marketing, and social media
+                marketing.
+              </p>
+
+              <div class="branding-basics p-6">
+                <h3 class="text-xl font-bold text-center text-heroText mb-6">
+                  Branding Basics
+                </h3>
+                <div
+                  class="cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                >
+                  <!-- Card 1: Logo Design -->
+                  <div
+                    class="card p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  >
+                    <h4 class="text-xl font-semibold mb-2">Logo Design</h4>
+                    <p class="text-md mb-4">
+                      Learn how to create a visually appealing logo for your
+                      brand.
+                    </p>
+                    <a
+                      href="/html/Modules/GraphicDesign/branding-logo-design.html"
+                      class="text-blue-500 hover:text-blue-700 font-semibold"
+                      >Learn More</a
+                    >
+                  </div>
+
+                  <!-- Card 2: Color Theory -->
+                  <div
+                    class="card p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  >
+                    <h4 class="text-xl font-semibold mb-2">Color Theory</h4>
+                    <p class="text-md mb-4">
+                      Learn about the principles of color, including hue, value,
+                      and saturation.
+                    </p>
+                    <a
+                      href="/html/Modules/GraphicDesign/branding-color-theory.html"
+                      class="text-blue-500 hover:text-blue-700 font-semibold"
+                      >Learn More</a
+                    >
+                  </div>
+
+                  <!-- Card 3: Typography -->
+                  <div
+                    class="card p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  >
+                    <h4 class="text-xl font-semibold mb-2">Typography</h4>
+                    <p class="text-md mb-4">
+                      Learn about the different types of typography, including
+                      serif and sans-serif fonts.
+                    </p>
+                    <a
+                      href="/html/Modules/GraphicDesign/branding-typography.html"
+                      class="text-blue-500 hover:text-blue-700 font-semibold"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <h3 id="intro-design" class="text-lg font-semibold mt-5 p-5">
+                2.3 Marketing Design
+              </h3>
+              <p class="text-lg font-medium">
+                Marketing design is the process of creating and implementing
+                marketing strategies to reach and engage customers. In this
+                course, you will learn about various marketing design
+                techniques, including content marketing, social media marketing,
+                email marketing, and SEO. You will also explore various
+                marketing tools and platforms, such as Google Analytics, Adobe
+                Analytics, and Mailchimp.
+              </p>
+
+              <div class="p-6">
+                <!-- Section Title -->
+                <h2 class="text-xl font-bold mb-6 text-center">
+                  Marketing Basics
+                </h2>
+
+                <!-- Cards Container -->
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                >
+                  <!-- Card 1: Content Marketing -->
+                  <div
+                    class="p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  >
+                    <h4 class="text-xl font-semibold mb-2">
+                      Content Marketing
+                    </h4>
+                    <p>
+                      Learn how to create engaging and informative content that
+                      resonates with your target audience.
+                    </p>
+                  </div>
+
+                  <!-- Card 2: Social Media Marketing -->
+                  <div
+                    class="p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  >
+                    <h4 class="text-xl font-semibold mb-2">
+                      Social Media Marketing
+                    </h4>
+                    <p>
+                      Learn how to create and manage content on social media
+                      platforms to reach and engage customers.
+                    </p>
+                  </div>
+
+                  <!-- Card 3: Email Marketing -->
+                  <div
+                    class="p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  >
+                    <h4 class="text-xl font-semibold mb-2">Email Marketing</h4>
+                    <p>
+                      Learn how to create and manage email newsletters to reach
+                      and engage customers.
+                    </p>
+                  </div>
+
+                  <!-- Card 4: SEO -->
+                  <div
+                    class="p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  >
+                    <h4 class="text-xl font-semibold mb-2">SEO</h4>
+                    <p>
+                      Learn how to optimize your website for search engines to
+                      increase visibility and rankings.
+                    </p>
+                  </div>
+
+                  
+                </div>
+
+                <!-- Homework Assignment -->
+                <h3 class="text-2xl font-bold mt-6 mb-3 text-center">
+                  Homework Assignment
+                </h3>
+                <p class="text-center">
+                  Create a visual communication presentation about your favorite
+                  brand or product. Your presentation should include a logo
+                  design, a brief description of the brand or product, and a
+                  storytelling example to illustrate the brand's message or
+                  value.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script src="/js/course-detail.js"></script>
+    <script src="../components/nav.js"></script>
+  </body>
+</html>

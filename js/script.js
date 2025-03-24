@@ -12,6 +12,7 @@ async function loadComponent(componentId, filePath) {
 
 // Load Navbar and Footer on page load
 document.addEventListener("DOMContentLoaded", function () {
-    loadComponent('navbar', '../components/nav-bar.html');  // Load Navbar
-    loadComponent('footer', '../components/footer.html');  // Load Footer
+  loadComponent("navbar", "../../components/nav-bar.html"); // Load Navbar
+  loadComponent("footer", "../../components/footer.html"); // Load Footer
+  // Load Footer
 });
