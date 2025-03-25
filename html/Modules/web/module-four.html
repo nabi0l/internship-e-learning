@@ -1,397 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LearnSphere</title>
-    <link rel="stylesheet" href="/css/output.css" />
-    <link
-      rel="stylesheet"
-      href="/Assests/fontawesome-free-6.7.2-web/css/all.min.css"
-    />
-  </head>
-  <body class="bg-accentColor text-gray-600">
-    <div class="containers mt-20">
-      <div id="navbar"></div>
-      <div>
-        <div class="highlights flex flex-col-2 gap-6">
-          <section class="w-full mb-5">
-           <div class="sidebar bg-button text-heroText m-5 p-5 h-auto hidden md:block">
-              <h2 class="text-2xl font-semibold m-2">
-                Master Full-stack Web Development
-              </h2>
-              <div class="modules space-y-3 bg-accentColor">
-                <div class="module p-3 shadow">
-                  <div
-                    class="flex justify-between items-center cursor-pointer"
-                    data-url="module-one.html"
-                  >
-                    <h3 class="text-lg font-semibod mb-2 mt-2">
-                      Module 1: Introduction to Web Development
-                    </h3>
-                    <i class="fas fa-caret-down"></i>
-                  </div>
-                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
-                    <!-- Added 'hidden' class -->
-                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
-                      <a
-                        href="#intro-web"
-                        onclick="scrollToSection(event, 'intro-web')"
-                        >What is Web Development?</a
-                      >
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a
-                        href="#intro-mean"
-                        onclick="scrollToSection(event, 'intro-mean')"
-                        >How the Web Works</a
-                      >
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a
-                        href="#intro-front-back"
-                        onclick="scrollToSection(event, 'intro-front-back')"
-                        >Front-end vs. Back-end</a
-                      >
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a
-                        href="#intro-tools"
-                        onclick="scrollToSection(event, 'intro-tools')"
-                        >Tools for Web Development</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <div class="module p-3 shadow">
-                  <div
-                    class="flex justify-between items-center cursor-pointer"
-                    data-url="module-two.html"
-                  >
-                    <h3 class="text-lg font-semibod mb-2 mt-2">
-                      Module 2: HTML & CSS Basics
-                    </h3>
-                    <i class="fas fa-caret-down"></i>
-                  </div>
-                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
-                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
-                      <a
-                        href="#intro-basics"
-                        onclick="scrollToSection(event,'intro-basics')"
-                        >Introduction to HTML & CSS</a
-                      >
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a
-                        href="#intro-html"
-                        onclick="scrollToSection(event,'intro-html')"
-                        >HTML Basics</a
-                      >
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a
-                        href="#intro-css"
-                        onclick="scrollToSection(event,'intro-css')"
-                        >CSS Basics</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <div class="module p-3 shadow">
-                  <div
-                    class="flex justify-between items-center cursor-pointer"
-                    data-url="module-three.html"
-                  >
-                    <h3 class="text-lg font-semibod mb-2 mt-2">
-                      Module 3: Responsive Web Design
-                    </h3>
-                    <i class="fas fa-caret-down"></i>
-                  </div>
-                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
-                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
-                      <a href="#intro" onclick="scrollToSection(event,'intro')"
-                        >Responsive Design Principles</a
-                      >
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a
-                        href="#intro-mobile "
-                        onclick="scrollToSection(event,'intro-mobile')"
-                        >Creating Mobile-Friendly Designs</a
-                      >
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a href="#media" onclick="scrollToSection(event,'media')"
-                        >CSS Media Queries</a
-                      >
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a href="#image" onclick="scrollToSection(event,'image')"
-                        >Responsive Images & Video</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <div class="module p-3 shadow">
-                  <div
-                    class="flex justify-between items-center cursor-pointer"
-                    data-url="module-four.html"
-                  >
-                    <h3 class="text-lg font-semibod mb-2 mt-2">
-                      Module 4: JavaScript Basics
-                    </h3>
-                    <i class="fas fa-caret-down"></i>
-                  </div>
-                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
-                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
-                      <a href="#intro-variable">Variables & Data Types</a>
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a href="#intro-condition">Conditionals & Loops</a>
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a href="#intro-func">Functions & Event Handlers</a>
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a href="#intro-obj">Objects & Arrays</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="module p-3 shadow">
-                  <div
-                    class="flex justify-between items-center cursor-pointer"
-                    data-url="module-five.html"
-                  >
-                    <h3 class="text-lg font-semibod mb-2 mt-2">
-                      Module 5: Advanced JavaScript & DOM Manipulation
-                    </h3>
-                    <i class="fas fa-caret-down"></i>
-                  </div>
-                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
-                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
-                      <a
-                        href="#domSection"
-                        onclick="scrollToSection(event, 'domSection')"
-                        >Document Object Model (DOM)</a
-                      >
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a
-                        href="#eventListener"
-                        onclick="scrollToSection(event, 'eventListener')"
-                        >Event Listeners & Event Propagation</a
-                      >
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a
-                        href="#formValidation"
-                        onclick="scrollToSection(event, 'formValidation')"
-                        >Form Validation</a
-                      >
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a
-                        href="#ajaxSection"
-                        onclick="scrollToSection(event, 'ajaxSection')"
-                        >AJAX & API Calls</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <div class="module p-3 shadow">
-                  <div
-                    class="flex justify-between items-center cursor-pointer"
-                    data-url="./module-six.html"
-                  >
-                    <h3 class="text-lg font-semibod mb-2 mt-2">
-                      Module 6: Introduction to Version Control with Git
-                    </h3>
-                    <i class="fas fa-caret-down"></i>
-                  </div>
-                  <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
-                    <li class="bg-navColor px-3 py-3 rounded-lg text-center">
-                      <a
-                        href="#intro-git"
-                        onclick="scrollToSection(event, 'intro-version')"
-                      >
-                        What is Version control</a
-                      >
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a
-                        href="#installgit"
-                        onclick="scrollToSection(event, 'installgit')"
-                        >Installing Git</a
-                      >
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a
-                        href="#gitBasics"
-                        onclick="scrollToSection(event, 'gitBasics')"
-                        >Git Basics</a
-                      >
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a
-                        href="#gitcollab"
-                        onclick="scrollToSection(event, 'gitcollab')"
-                        >Git Collaboration & Workflows</a
-                      >
-                    </li>
-                    <li
-                      class="bg-navColor px-3 py-3 rounded-lg text-center mt-2"
-                    >
-                      <a
-                        href="#gitmerge"
-                        onclick="scrollToSection(event, 'gitmerge')"
-                        >Git Branching & Merging</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </section>
 
-          <section class="w-full md:w-2/3 mr-20 pr-7 pl-7">
-            <div class="description mt-5 p-2">
-              <h2 class="text-2xl text-center mb-2 font-bold" id="intro-basics">
-                4 Introduction to JavaScript Basics
-              </h2>
-              <p class="text-lg">
-                JavaScript is a versatile, cross-platform, and object-oriented
-                programming language. It's used to create interactive web pages,
-                web applications, and mobile apps. In this module, we'll explore
-                the basics of JavaScript, including variables, data types,
-                conditionals, loops, functions, and objects.
-              </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LearnSphere</title>
+  <link rel="stylesheet" href="/css/output.css" />
+  <link rel="stylesheet" href="/Assests/fontawesome-free-6.7.2-web/css/all.min.css" />
+</head>
 
-              <h3 class="text-xl mb-2 mt-5 p-5" id="intro-variable">
-                4.1 Variables
-              </h3>
-              <p class="text-lg">
-                Variables are used to store and manipulate data values. They
-                have a name, a type, and a value. In JavaScript, variables are
-                declared using the `let` keyword, followed by the variable name
-                and an initial value. Here's an example:
-              </p>
-              <pre><code class="javascript">let x = 10;</code></pre>
-
-              <div class="shadow-lg rounded-xl p-6 mt-5">
-                <h3 class="text-2xl font-bold flex items-center p-5">
-                  Data Types
-                </h3>
-                <p class="text-lg text-gray-700 mt-2">
-                  JavaScript has several data types:
-                </p>
-
-                <ul class="mt-4 space-y-3 text-xl p-5">
-                  <li class="flex items-center">
-                    <strong>Numbers- </strong> (e.g., 10, 3.14, -5)
+<body class="bg-accentColor text-gray-600">
+  <div class="containers mt-20">
+    <div id="navbar"></div>
+    <div>
+      <div class="highlights flex flex-col-2 gap-6">
+        <section class="w-full md:w-1/3 mb-5">
+          <div class="sidebar bg-button text-heroText m-5 p-5 h-auto hidden md:block">
+            <h2 class="text-2xl font-semibold m-2">
+              Master Full-stack Web Development
+            </h2>
+            <div class="modules space-y-3 bg-accentColor">
+              <div class="module p-3 shadow">
+                <div class="flex justify-between items-center cursor-pointer" data-url="module-one.html">
+                  <h3 class="text-lg font-semibod mb-2 mt-2">
+                    Module 1: Introduction to Web Development
+                  </h3>
+                  <i class="fas fa-caret-down"></i>
+                </div>
+                <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                  <!-- Added 'hidden' class -->
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                    <a href="#intro-web" onclick="scrollToSection(event, 'intro-web')">What is Web Development?</a>
                   </li>
-                  <li class="flex items-center">
-                    <strong>Strings- </strong> (e.g., "Hello", 'World')
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                    <a href="#intro-mean" onclick="scrollToSection(event, 'intro-mean')">How the Web Works</a>
                   </li>
-                  <li class="flex items-center">
-                    <strong>Booleans- </strong> (true or false)
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                    <a href="#intro-front-back" onclick="scrollToSection(event, 'intro-front-back')">Front-end vs.
+                      Back-end</a>
                   </li>
-                  <li class="flex items-center">
-                    <strong>Null- </strong> (null value)
-                  </li>
-                  <li class="flex items-center">
-                    <strong>Undefined- </strong> (uninitialized value)
-                  </li>
-                  <li class="flex items-center">
-                    <strong>Symbol- </strong> (new in ES6)
-                  </li>
-                  <li class="flex items-center">
-                    <strong>Objects- </strong> (e.g., { name: "John", age: 30 })
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                    <a href="#intro-tools" onclick="scrollToSection(event, 'intro-tools')">Tools for Web Development</a>
                   </li>
                 </ul>
               </div>
-
-              <h3 class="text-xl p-5 mt-5" id="intro-condition">
-                4.2 Conditionals & Loops
-              </h3>
-              <h3 class="text-xl text-center mb-2 mt-5 font-semibold">
-                Conditionals
-              </h3>
-              <p class="text-lg">
-                Conditionals are used to control the flow of a program based on
-                certain conditions. JavaScript supports the following
-                conditional statements:
-              </p>
-
-              <div
-                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4 shadow-md bg-button p-5"
-              >
-                <div
-                  class="flex flex-col items-center text-gray-800 border p-3 rounded-lg shadow-md"
-                >
-                  <h4 class="text-xl font-bold">if</h4>
-                  <p class="text-lg">
-                    The if statement evaluates a condition and executes the
-                    associated code block if the condition is true.
-                  </p>
+              <div class="module p-3 shadow">
+                <div class="flex justify-between items-center cursor-pointer" data-url="module-two.html">
+                  <h3 class="text-lg font-semibod mb-2 mt-2">
+                    Module 2: HTML & CSS Basics
+                  </h3>
+                  <i class="fas fa-caret-down"></i>
                 </div>
-                <div
-                  class="flex flex-col items-center text-gray-800 border p-3 rounded-lg shadow-md"
-                >
-                  <h4 class="text-xl font-bold">if...else</h4>
-                  <p class="text-lg">
-                    The if...else statement evaluates a condition and executes
-                    one of the associated code blocks based on the condition.
-                  </p>
-                </div>
-                <div
-                  class="flex flex-col items-center text-gray-800 border p-3 rounded-lg shadow-md"
-                >
-                  <h4 class="text-xl font-bold">else if</h4>
-                  <p class="text-lg">
-                    The else if statement is used to check multiple conditions
-                    and execute the associated code block if any of the
-                    conditions are true.
-                  </p>
-                </div>
+                <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                    <a href="#intro-basics" onclick="scrollToSection(event,'intro-basics')">Introduction to HTML &
+                      CSS</a>
+                  </li>
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                    <a href="#intro-html" onclick="scrollToSection(event,'intro-html')">HTML Basics</a>
+                  </li>
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                    <a href="#intro-css" onclick="scrollToSection(event,'intro-css')">CSS Basics</a>
+                  </li>
+                </ul>
               </div>
-              <p class="text-lg p-5 mt-5">
-                Here's an example of using an <strong>if</strong> statement:
+              <div class="module p-3 shadow">
+                <div class="flex justify-between items-center cursor-pointer" data-url="module-three.html">
+                  <h3 class="text-lg font-semibod mb-2 mt-2">
+                    Module 3: Responsive Web Design
+                  </h3>
+                  <i class="fas fa-caret-down"></i>
+                </div>
+                <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                    <a href="#intro" onclick="scrollToSection(event,'intro')">Responsive Design Principles</a>
+                  </li>
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                    <a href="#intro-mobile " onclick="scrollToSection(event,'intro-mobile')">Creating Mobile-Friendly
+                      Designs</a>
+                  </li>
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                    <a href="#media" onclick="scrollToSection(event,'media')">CSS Media Queries</a>
+                  </li>
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                    <a href="#image" onclick="scrollToSection(event,'image')">Responsive Images & Video</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="module p-3 shadow">
+                <div class="flex justify-between items-center cursor-pointer" data-url="module-four.html">
+                  <h3 class="text-lg font-semibod mb-2 mt-2">
+                    Module 4: JavaScript Basics
+                  </h3>
+                  <i class="fas fa-caret-down"></i>
+                </div>
+                <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                    <a href="#intro-variable">Variables & Data Types</a>
+                  </li>
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                    <a href="#intro-condition">Conditionals & Loops</a>
+                  </li>
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                    <a href="#intro-func">Functions & Event Handlers</a>
+                  </li>
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                    <a href="#intro-obj">Objects & Arrays</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="module p-3 shadow">
+                <div class="flex justify-between items-center cursor-pointer" data-url="module-five.html">
+                  <h3 class="text-lg font-semibod mb-2 mt-2">
+                    Module 5: Advanced JavaScript & DOM Manipulation
+                  </h3>
+                  <i class="fas fa-caret-down"></i>
+                </div>
+                <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                    <a href="#domSection" onclick="scrollToSection(event, 'domSection')">Document Object Model (DOM)</a>
+                  </li>
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                    <a href="#eventListener" onclick="scrollToSection(event, 'eventListener')">Event Listeners & Event
+                      Propagation</a>
+                  </li>
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                    <a href="#formValidation" onclick="scrollToSection(event, 'formValidation')">Form Validation</a>
+                  </li>
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                    <a href="#ajaxSection" onclick="scrollToSection(event, 'ajaxSection')">AJAX & API Calls</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="module p-3 shadow">
+                <div class="flex justify-between items-center cursor-pointer" data-url="./module-six.html">
+                  <h3 class="text-lg font-semibod mb-2 mt-2">
+                    Module 6: Introduction to Version Control with Git
+                  </h3>
+                  <i class="fas fa-caret-down"></i>
+                </div>
+                <ul class="hidden pl-4 mt-2 space-y-2 text-accentColor">
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center">
+                    <a href="#intro-git" onclick="scrollToSection(event, 'intro-version')">
+                      What is Version control</a>
+                  </li>
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                    <a href="#installgit" onclick="scrollToSection(event, 'installgit')">Installing Git</a>
+                  </li>
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                    <a href="#gitBasics" onclick="scrollToSection(event, 'gitBasics')">Git Basics</a>
+                  </li>
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                    <a href="#gitcollab" onclick="scrollToSection(event, 'gitcollab')">Git Collaboration & Workflows</a>
+                  </li>
+                  <li class="bg-navColor px-3 py-3 rounded-lg text-center mt-2">
+                    <a href="#gitmerge" onclick="scrollToSection(event, 'gitmerge')">Git Branching & Merging</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="w-full md:w-2/3 mr-20 pr-7 pl-7">
+          <div class="description mt-5 p-2">
+            <h2 class="text-2xl text-center mb-2 font-bold" id="intro-basics">
+              4 Introduction to JavaScript Basics
+            </h2>
+            <p class="text-lg">
+              JavaScript is a versatile, cross-platform, and object-oriented
+              programming language. It's used to create interactive web pages,
+              web applications, and mobile apps. In this module, we'll explore
+              the basics of JavaScript, including variables, data types,
+              conditionals, loops, functions, and objects.
+            </p>
+
+            <h3 class="text-xl mb-2 mt-5 p-5" id="intro-variable">
+              4.1 Variables
+            </h3>
+            <p class="text-lg">
+              Variables are used to store and manipulate data values. They
+              have a name, a type, and a value. In JavaScript, variables are
+              declared using the `let` keyword, followed by the variable name
+              and an initial value. Here's an example:
+            </p>
+            <pre><code class="javascript">let x = 10;</code></pre>
+
+            <div class="shadow-lg rounded-xl p-6 mt-5">
+              <h3 class="text-2xl font-bold flex items-center p-5">
+                Data Types
+              </h3>
+              <p class="text-lg text-gray-700 mt-2">
+                JavaScript has several data types:
               </p>
-              <pre class="p-5 rounded-lg shadow-lg overflow-x-auto">
+
+              <ul class="mt-4 space-y-3 text-xl p-5">
+                <li class="flex items-center">
+                  <strong>Numbers- </strong> (e.g., 10, 3.14, -5)
+                </li>
+                <li class="flex items-center">
+                  <strong>Strings- </strong> (e.g., "Hello", 'World')
+                </li>
+                <li class="flex items-center">
+                  <strong>Booleans- </strong> (true or false)
+                </li>
+                <li class="flex items-center">
+                  <strong>Null- </strong> (null value)
+                </li>
+                <li class="flex items-center">
+                  <strong>Undefined- </strong> (uninitialized value)
+                </li>
+                <li class="flex items-center">
+                  <strong>Symbol- </strong> (new in ES6)
+                </li>
+                <li class="flex items-center">
+                  <strong>Objects- </strong> (e.g., { name: "John", age: 30 })
+                </li>
+              </ul>
+            </div>
+
+            <h3 class="text-xl p-5 mt-5" id="intro-condition">
+              4.2 Conditionals & Loops
+            </h3>
+            <h3 class="text-xl text-center mb-2 mt-5 font-semibold">
+              Conditionals
+            </h3>
+            <p class="text-lg">
+              Conditionals are used to control the flow of a program based on
+              certain conditions. JavaScript supports the following
+              conditional statements:
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4 shadow-md bg-button p-5">
+              <div class="flex flex-col items-center text-gray-800 border p-3 rounded-lg shadow-md">
+                <h4 class="text-xl font-bold">if</h4>
+                <p class="text-lg">
+                  The if statement evaluates a condition and executes the
+                  associated code block if the condition is true.
+                </p>
+              </div>
+              <div class="flex flex-col items-center text-gray-800 border p-3 rounded-lg shadow-md">
+                <h4 class="text-xl font-bold">if...else</h4>
+                <p class="text-lg">
+                  The if...else statement evaluates a condition and executes
+                  one of the associated code blocks based on the condition.
+                </p>
+              </div>
+              <div class="flex flex-col items-center text-gray-800 border p-3 rounded-lg shadow-md">
+                <h4 class="text-xl font-bold">else if</h4>
+                <p class="text-lg">
+                  The else if statement is used to check multiple conditions
+                  and execute the associated code block if any of the
+                  conditions are true.
+                </p>
+              </div>
+            </div>
+            <p class="text-lg p-5 mt-5">
+              Here's an example of using an <strong>if</strong> statement:
+            </p>
+            <pre class="p-5 rounded-lg shadow-lg overflow-x-auto">
                          <code class="javascript">let x = 10;
                          if (x > 0) {
                              console.log("x is positive");
@@ -399,15 +266,15 @@
                              console.log("x is not positive");
                          }</code></pre>
 
-              <h3 class="text-xl font-bold text-center mb-2 mt-5 p-5">
-                4.2.1 Switch Statement
-              </h3>
-              <p class="text-lg mb-3">
-                The <strong>switch</strong> statement executes different actions
-                based on conditions. It's often used with strings or numbers.
-              </p>
+            <h3 class="text-xl font-bold text-center mb-2 mt-5 p-5">
+              4.2.1 Switch Statement
+            </h3>
+            <p class="text-lg mb-3">
+              The <strong>switch</strong> statement executes different actions
+              based on conditions. It's often used with strings or numbers.
+            </p>
 
-              <pre class="p-5 rounded-lg shadow-lg overflow-x-auto">
+            <pre class="p-5 rounded-lg shadow-lg overflow-x-auto">
                          <code class="javascript">let x = 1;
                          switch (x) {
                              case 0:
@@ -421,79 +288,79 @@
                          }
                         </code></pre>
 
-              <h3 class="text-xl mb-2 mt-5 p-5 font-bold">4.2 Loops</h3>
+            <h3 class="text-xl mb-2 mt-5 p-5 font-bold">4.2 Loops</h3>
 
-              <h3 class="text-lg text-center mb-2 mt-5 font-semibold">
-                For Loop
-              </h3>
-              <p class="text-lg text-gray-700">
-                The <strong>for</strong> loop is used to iterate over a block of
-                code a specified number of times. It has three parts:
-                initialization, condition, and increment/decrement. Here's an
-                example:
-              </p>
-              <pre class="p-5 rounded-lg shadow-lg overflow-x-auto">
+            <h3 class="text-lg text-center mb-2 mt-5 font-semibold">
+              For Loop
+            </h3>
+            <p class="text-lg text-gray-700">
+              The <strong>for</strong> loop is used to iterate over a block of
+              code a specified number of times. It has three parts:
+              initialization, condition, and increment/decrement. Here's an
+              example:
+            </p>
+            <pre class="p-5 rounded-lg shadow-lg overflow-x-auto">
 <code class="javascript">for (let i = 0; i &lt; 5; i++) {
     console.log(i);
 }</code></pre>
 
-              <h3 class="text-lg text-center mb-2 mt-5 font-semibold">
-                While Loop
-              </h3>
-              <p class="text-lg">
-                The <strong>while</strong> loop is used to iterate over a block
-                of code as long as a specified condition is true. It has a
-                single condition. Here's an example:
-              </p>
-              <pre class="p-5 rounded-lg shadow-lg overflow-x-auto">
+            <h3 class="text-lg text-center mb-2 mt-5 font-semibold">
+              While Loop
+            </h3>
+            <p class="text-lg">
+              The <strong>while</strong> loop is used to iterate over a block
+              of code as long as a specified condition is true. It has a
+              single condition. Here's an example:
+            </p>
+            <pre class="p-5 rounded-lg shadow-lg overflow-x-auto">
 <code class="javascript">let i = 0;
 while (i &lt; 5) {
     console.log(i);
     i++;
 }</code></pre>
 
-              <h3 class="text-lg text-center mb-2 mt-5 font-semibold">
-                Do...While Loop
-              </h3>
-              <p class="text-lg">
-                The <strong>do...while</strong> loop is similar to the
-                <strong>while</strong> loop, but it executes the loop at least
-                once before checking the condition. Here's an example:
-              </p>
-              <pre class="p-5 rounded-lg shadow-lg overflow-x-auto">
+            <h3 class="text-lg text-center mb-2 mt-5 font-semibold">
+              Do...While Loop
+            </h3>
+            <p class="text-lg">
+              The <strong>do...while</strong> loop is similar to the
+              <strong>while</strong> loop, but it executes the loop at least
+              once before checking the condition. Here's an example:
+            </p>
+            <pre class="p-5 rounded-lg shadow-lg overflow-x-auto">
             <code class="javascript">let i = 0;
                     do {
                 console.log(i);
               i++;
            } while (i &lt; 5);</code></pre>
 
-              <h3 class="text-xl mb-2 mt-5 p-5 font-bold" id="intro-func">
-                4.3 Functions
-              </h3>
-              <p class="text-lg">
-                Functions are reusable blocks of code that perform a specific
-                task. They can take input parameters, perform calculations, and
-                return a result. Here's an example of a function in JavaScript:
-              </p>
-              <pre class="p-5 rounded-lg shadow-lg overflow-x-auto">
+            <h3 class="text-xl mb-2 mt-5 p-5 font-bold" id="intro-func">
+              4.3 Functions
+            </h3>
+            <p class="text-lg">
+              Functions are reusable blocks of code that perform a specific
+              task. They can take input parameters, perform calculations, and
+              return a result. Here's an example of a function in JavaScript:
+            </p>
+            <pre class="p-5 rounded-lg shadow-lg overflow-x-auto">
 <code class="javascript">function greet(name) {
     console.log("Hello, " + name);
 }
 greet("John");</code></pre>
 
-              <h3 class="text-lg mb-2 mt-5 p-5" id="intro-obj">
-                4.4 Objects & Arrays
-              </h3>
-              <h3 class="text-lg text-center mb-2 mt-5 font-semibold">
-                4.4.1 Objects
-              </h3>
-              <p class="text-lg">
-                Objects are used to store related data and behavior in a single
-                unit. They are created using the <code>{}</code> syntax and can
-                have properties and methods. Here's an example of an object in
-                JavaScript:
-              </p>
-              <pre class="p-5 rounded-lg shadow-lg overflow-x-auto">
+            <h3 class="text-lg mb-2 mt-5 p-5" id="intro-obj">
+              4.4 Objects & Arrays
+            </h3>
+            <h3 class="text-lg text-center mb-2 mt-5 font-semibold">
+              4.4.1 Objects
+            </h3>
+            <p class="text-lg">
+              Objects are used to store related data and behavior in a single
+              unit. They are created using the <code>{}</code> syntax and can
+              have properties and methods. Here's an example of an object in
+              JavaScript:
+            </p>
+            <pre class="p-5 rounded-lg shadow-lg overflow-x-auto">
 <code class="javascript">let person = {
     name: "John",
     age: 30,
@@ -503,26 +370,83 @@ greet("John");</code></pre>
 }
 person.greet();</code></pre>
 
-              <h3 class="text-lg text-center mb-2 mt-5 font-semibold">
-                4.4.2 Arrays
-              </h3>
-              <p class="text-lg text-center">
-                Arrays are used to store multiple values in a single variable.
-                They are created using the <code>[]</code> syntax and can
-                contain any data type. Here's an example of an array in
-                JavaScript:
-              </p>
-              <pre class="p-5 rounded-lg shadow-lg overflow-x-auto">
+            <h3 class="text-lg text-center mb-2 mt-5 font-semibold">
+              4.4.2 Arrays
+            </h3>
+            <p class="text-lg text-center">
+              Arrays are used to store multiple values in a single variable.
+              They are created using the <code>[]</code> syntax and can
+              contain any data type. Here's an example of an array in
+              JavaScript:
+            </p>
+            <pre class="p-5 rounded-lg shadow-lg overflow-x-auto">
 <code class="javascript">let numbers = [1, 2, 3, 4, 5];
 console.log(numbers[0]); // Output: 1
               console.log(numbers[4]); // Output: 5</code></pre>
-            </div>
-          </section>
-        </div>
+
+              <div class="navigation-buttons flex justify-between mt-5">
+                <a
+                  id="prev-button"
+                  href="#"
+                  class="bg-button text-white px-4 py-2 rounded"
+                  >Previous</a
+                >
+                <a
+                  id="next-button"
+                  href="#"
+                  class="bg-button text-white px-4 py-2 rounded"
+                  >Next</a
+                >
+              </div>
+          </div>
+        </section>
       </div>
     </div>
-    <div id="footer"></div>
-    <script src="../components/nav.js"></script>
-    <script src="/js/course-detail.js"></script>
-  </body>
+  </div>
+  <div id="footer"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const prevButton = document.getElementById("prev-button");
+    const nextButton = document.getElementById("next-button");
+
+    // Make sure all paths are correct
+    const modules = [
+        { url: "module-one.html" },
+        { url: "module-two.html" },
+        { url: "module-three.html" },
+        { url: "module-four.html" },
+        { url: "module-five.html" },
+        { url: "module-six.html" }
+    ];
+
+    // Get the current module filename from the URL
+    const currentPath = window.location.pathname;
+    const currentModule = currentPath.split("/").pop(); // Get the filename
+    const currentModuleIndex = modules.findIndex(module => module.url === currentModule);
+
+    // Debugging logs to check issues
+    console.log("Current Path:", currentPath);
+    console.log("Current Module:", currentModule);
+    console.log("Current Index:", currentModuleIndex);
+
+    // Set the Previous button
+    if (currentModuleIndex > 0) {
+        prevButton.href = modules[currentModuleIndex - 1].url;
+    } else {
+        prevButton.style.display = "none"; // Hide if there's no previous module
+    }
+
+    // Set the Next button
+    if (currentModuleIndex < modules.length - 1 && currentModuleIndex !== -1) {
+        nextButton.href = modules[currentModuleIndex + 1].url;
+    } else {
+        nextButton.style.display = "none"; // Hide if there's no next module
+    }
+});
+
+  </script>
+  <script src="../components/nav.js"></script>
+  <script src="/js/course-detail.js"></script>
+</body>
+
 </html>

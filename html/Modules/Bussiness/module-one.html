@@ -390,12 +390,64 @@
                   </div>
                 </div>
               </div>
+              <div class="navigation-buttons flex justify-between mt-5">
+                <a
+                  id="prev-button"
+                  href="#"
+                  class="bg-button text-white px-4 py-2 rounded"
+                  >Previous</a
+                >
+                <a
+                  id="next-button"
+                  href="#"
+                  class="bg-button text-white px-4 py-2 rounded"
+                  >Next</a
+                >
+              </div>
             </div>
           </section>
         </div>
       </div>
     </div>
     <div id="footer"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    const prevButton = document.getElementById("prev-button");
+    const nextButton = document.getElementById("next-button");
+
+    // Make sure all paths are correct
+    const modules = [
+        { url: "module-one.html" },
+        { url: "module-two.html" },
+        { url: "module-three.html" }
+    ];
+
+    // Get the current module filename from the URL
+    const currentPath = window.location.pathname;
+    const currentModule = currentPath.split("/").pop(); // Get the filename
+    const currentModuleIndex = modules.findIndex(module => module.url === currentModule);
+
+    // Debugging logs to check issues
+    console.log("Current Path:", currentPath);
+    console.log("Current Module:", currentModule);
+    console.log("Current Index:", currentModuleIndex);
+
+    // Set the Previous button
+    if (currentModuleIndex > 0) {
+        prevButton.href = modules[currentModuleIndex - 1].url;
+    } else {
+        prevButton.style.display = "none"; // Hide if there's no previous module
+    }
+
+    // Set the Next button
+    if (currentModuleIndex < modules.length - 1 && currentModuleIndex !== -1) {
+        nextButton.href = modules[currentModuleIndex + 1].url;
+    } else {
+        nextButton.style.display = "none"; // Hide if there's no next module
+    }
+});
+
+    </script>
     <script src="/js/course-detail.js"></script>
     <script src="../components/nav.js"></script>
   </body>
